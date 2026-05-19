@@ -35,6 +35,13 @@ type HierarchyEditorTarget =
   | {type: "user"; user: string}
   | {type: "system"; system: string};
 
+type TaskGroup = {
+  name: string;
+  tasks: TaskRow[];
+};
+
+const MISSING_TASK_GROUP_LABEL = "Unknown task group";
+
 const selectionKey = (user: string, task: string): string => JSON.stringify([user, task]);
 
 const selectedKeysFromData = (
@@ -55,6 +62,22 @@ const getSystemGroups = (users: UserRow[]): Map<string, UserRow[]> => {
   });
 
   return groups;
+};
+
+const getTaskGroups = (tasks: TaskRow[]): TaskGroup[] => {
+  const groups = new Map<string, TaskRow[]>();
+
+  tasks.forEach((task) => {
+    const groupName = task.taskGroup || MISSING_TASK_GROUP_LABEL;
+    const groupTasks = groups.get(groupName) ?? [];
+    groupTasks.push(task);
+    groups.set(groupName, groupTasks);
+  });
+
+  return Array.from(groups.entries()).map(([name, groupTasks]) => ({
+    name,
+    tasks: groupTasks,
+  }));
 };
 
 const getPairKeys = (users: UserRow[], tasks: TaskRow[]): string[] => {
@@ -130,6 +153,7 @@ const DataManipulator: React.FC<DataManipulatorProps> = ({
   const tasks = useMemo(() => availableData?.tasks.tasks ?? [], [availableData]);
   const allKeys = useMemo(() => getPairKeys(users, tasks), [users, tasks]);
   const systemGroups = useMemo(() => getSystemGroups(users), [users]);
+  const taskGroups = useMemo(() => getTaskGroups(tasks), [tasks]);
   const selectedCount = selectedKeys.size;
   const allowHierarchyCancel = hierarchyOptions?.allowCancel ?? false;
 
@@ -206,6 +230,10 @@ const DataManipulator: React.FC<DataManipulatorProps> = ({
 
   const isTaskSelected = (task: TaskRow): boolean => {
     return hasEveryKey(selectedKeys, getPairKeys(users, [task]));
+  };
+
+  const isTaskGroupSelected = (taskGroup: TaskGroup): boolean => {
+    return hasEveryKey(selectedKeys, getPairKeys(users, taskGroup.tasks));
   };
 
   const isSystemSelected = (systemUsers: UserRow[]): boolean => {
@@ -360,6 +388,18 @@ const DataManipulator: React.FC<DataManipulatorProps> = ({
                   H
                 </Button>
               </div>
+            ))}
+          </div>
+
+          <div className="data-manipulator-task-group-row">
+            {taskGroups.map((taskGroup) => (
+              <Button
+                key={taskGroup.name}
+                type={isTaskGroupSelected(taskGroup) ? "primary" : "default"}
+                onClick={() => toggleScope(getPairKeys(users, taskGroup.tasks))}
+              >
+                {taskGroup.name} ({taskGroup.tasks.length})
+              </Button>
             ))}
           </div>
 

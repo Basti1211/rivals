@@ -29,7 +29,8 @@
 }
 
 .data-manipulator-actions,
-.data-manipulator-system-row {
+.data-manipulator-system-row,
+.data-manipulator-task-group-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
@@ -40,7 +41,8 @@
 }
 
 .data-manipulator-actions .ant-btn,
-.data-manipulator-system-row .ant-btn {
+.data-manipulator-system-row .ant-btn,
+.data-manipulator-task-group-row .ant-btn {
   height: 26px;
   padding-inline: 0.5rem;
   font-size: 0.72rem;
@@ -48,6 +50,7 @@
 
 .data-manipulator-actions .ant-btn > span,
 .data-manipulator-system-row .ant-btn > span,
+.data-manipulator-task-group-row .ant-btn > span,
 .data-manipulator-task-button > span,
 .data-manipulator-user-button > span,
 .data-manipulator-hierarchy-button > span {
