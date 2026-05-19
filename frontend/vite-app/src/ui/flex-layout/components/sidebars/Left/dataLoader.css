@@ -1,0 +1,239 @@
+/* =========================
+   Data Loader Layout
+========================= */
+
+.data-loader {
+  width: min(1050px, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.data-loader-section {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.35rem;
+  margin-bottom: 1.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+/* =========================
+   Use Demo Section
+========================= */
+
+.use-demo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+/* =========================
+   Upload Data Section
+========================= */
+
+.upload-data-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.upload-group {
+  padding: 1.15rem;
+  background: var(--color-surface-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+/* =========================
+   JSON Upload Box
+========================= */
+
+.json-upload-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.drag-drop-field {
+  min-height: 145px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 1.25rem;
+  text-align: center;
+
+  background: var(--color-surface);
+  border: 1.5px dashed var(--color-border-strong);
+  border-radius: var(--radius-md);
+
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.drag-drop-field:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-soft);
+}
+
+.drag-drop-field.is-dragging {
+  border-color: var(--color-primary);
+  background: var(--color-primary-soft);
+}
+
+.drag-drop-field p:first-child {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.drag-drop-field p:last-child {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+
+/* =========================
+   Summary Section
+========================= */
+
+.summary-section {
+  min-height: 170px;
+}
+
+.summary-content {
+  min-height: 100px;
+  padding: 1rem;
+  background: var(--color-surface-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.summary-metric {
+  min-width: 0;
+  padding: 0.85rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.summary-metric span {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--color-text-light);
+  font-size: 0.85rem;
+}
+
+.summary-metric strong {
+  display: block;
+  color: var(--color-text);
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+
+.summary-alert {
+  margin-top: 1rem;
+}
+
+.summary-files {
+  margin-top: 1rem;
+}
+
+.summary-files h3 {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+}
+
+.summary-file-list {
+  display: grid;
+  gap: 0.45rem;
+  max-height: 190px;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  list-style: none;
+}
+
+.summary-file-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-width: 0;
+  padding: 0.55rem 0.65rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.summary-file-list span {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--color-text);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.summary-file-list small {
+  flex: 0 0 auto;
+  color: var(--color-text-light);
+}
+
+.summary-file-actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.summary-file-delete.ant-btn {
+  width: 1.5rem;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  line-height: 1;
+}
+
+.summary-empty {
+  margin: 0;
+  color: var(--color-text-light);
+}
+
+/* =========================
+   Responsive Styling
+========================= */
+
+@media (max-width: 768px) {
+  .data-loader {
+    padding: 1rem;
+  }
+
+  .data-loader-section {
+    padding: 1rem;
+  }
+
+  .upload-group {
+    padding: 1rem;
+  }
+
+  .drag-drop-field {
+    min-height: 125px;
+    padding: 1rem;
+  }
+
+  .summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 460px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+}

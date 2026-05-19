@@ -1,0 +1,106 @@
+.hierarchy-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+}
+
+.hierarchy-selector-toolbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.hierarchy-selector-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.hierarchy-selector-toolbar h3 {
+  margin: 0;
+  font-size: 0.92rem;
+  letter-spacing: 0;
+}
+
+.hierarchy-selector-meta {
+  margin-top: 0.18rem;
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+}
+
+.hierarchy-selector-canvas {
+  overflow: auto;
+  max-height: min(60vh, 600px);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-soft);
+}
+
+.hierarchy-selector-canvas svg {
+  display: block;
+  min-width: 560px;
+}
+
+.hierarchy-selector-link {
+  fill: none;
+  stroke: var(--color-border);
+  stroke-width: 1.2;
+}
+
+.hierarchy-selector-node {
+  cursor: pointer;
+}
+
+.hierarchy-selector-node circle {
+  fill: var(--color-surface);
+  stroke: var(--color-text-muted);
+  stroke-width: 1.2;
+}
+
+.hierarchy-selector-node text {
+  fill: var(--color-text);
+  font-size: 0.4rem;
+  paint-order: stroke;
+  stroke: var(--color-surface-soft);
+  stroke-width: 1.5px;
+}
+
+.hierarchy-selector-node.is-selected circle {
+  fill: var(--color-primary);
+  stroke: var(--color-primary-dark);
+}
+
+.hierarchy-selector-node.is-cancelled {
+  opacity: 0.34;
+}
+
+.hierarchy-selector-node.is-cancelled circle {
+  fill: #e5e7eb;
+  stroke: #9ca3af;
+}
+
+.hierarchy-selector-node.is-cancelled text {
+  text-decoration: line-through;
+}
+
+.hierarchy-selector-cancel {
+  cursor: pointer;
+  fill: var(--color-text-muted);
+  font-size: 0.42rem;
+  font-weight: 800;
+  stroke: var(--color-surface-soft);
+  stroke-width: 1.2px;
+}
+
+.hierarchy-selector-node.is-root {
+  cursor: default;
+}
+
+.hierarchy-selector-node.is-root circle {
+  fill: var(--color-text-muted);
+  stroke: var(--color-text-muted);
+}

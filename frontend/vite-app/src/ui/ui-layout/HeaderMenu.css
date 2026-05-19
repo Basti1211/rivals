@@ -1,0 +1,85 @@
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+    height: 72px;
+    padding: 0 1.5rem;
+    color: #111827;
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(246, 249, 252, 0.94)),
+        #ffffff;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.24);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.app-header__brand {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    gap: 0.85rem;
+}
+
+.app-header__eyebrow {
+    margin: 0 0 0.1rem;
+    color: #64748b;
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.app-header__title {
+    margin: 0;
+    color: #0f172a;
+    font-size: clamp(1.2rem, 2.1vw, 1.75rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.app-header__title::after {
+    display: none;
+}
+
+.app-header__actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+    gap: 0.75rem;
+}
+
+.app-header__summary-button.ant-btn {
+    height: 38px;
+    padding: 0 1.05rem;
+    font-weight: 700;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.18);
+}
+
+
+@media (max-width: 680px) {
+    .app-header {
+        height: auto;
+        min-height: 76px;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0.85rem 1rem;
+    }
+
+    .app-header__actions {
+        width: 100%;
+        justify-content: stretch;
+    }
+
+    .app-header__summary-button.ant-btn {
+        flex: 1 1 0;
+    }
+
+    .app-header__title {
+        white-space: normal;
+    }
+}

@@ -1,0 +1,12 @@
+
+# Types
+pydantic==2.12.5
+
+# Scientific Python
+numpy==2.4.2
+
+# API Request Handling
+fastapi==0.129.0
+uvicorn[standard]==0.40.0
+gunicorn==25.1.0
+

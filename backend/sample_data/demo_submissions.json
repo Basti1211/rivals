@@ -1,0 +1,6082 @@
+[
+    {
+        "task_id": "2f7bdaff-34cf-4b8d-b01c-00fe9384a7f3",
+        "user": "prak4",
+        "timestamp": 1769699069124,
+        "status": -1,
+        "answer_text": "meat, green pepper, leaves\n",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "2f7bdaff-34cf-4b8d-b01c-00fe9384a7f3",
+        "user": "prak2",
+        "timestamp": 1769699103920,
+        "status": 1,
+        "answer_text": "fish, onion, green chilli",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "2f7bdaff-34cf-4b8d-b01c-00fe9384a7f3",
+        "user": "exquisitor1",
+        "timestamp": 1769699125186,
+        "status": 1,
+        "answer_text": "chilli, fish, korriander 06804",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "2f7bdaff-34cf-4b8d-b01c-00fe9384a7f3",
+        "user": "prak4",
+        "timestamp": 1769699146354,
+        "status": -1,
+        "answer_text": "meat, green pepper, lemon\n",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "2f7bdaff-34cf-4b8d-b01c-00fe9384a7f3",
+        "user": "prak1",
+        "timestamp": 1769699184445,
+        "status": 1,
+        "answer_text": "green chilli, tomato, green salad",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "2f7bdaff-34cf-4b8d-b01c-00fe9384a7f3",
+        "user": "prak5",
+        "timestamp": 1769699223585,
+        "status": -1,
+        "answer_text": "green salad, tomatoes, green beans",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "2f7bdaff-34cf-4b8d-b01c-00fe9384a7f3",
+        "user": "prak3",
+        "timestamp": 1769699240930,
+        "status": 1,
+        "answer_text": "green pepper, red pepper, shredded salad",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "2f7bdaff-34cf-4b8d-b01c-00fe9384a7f3",
+        "user": "prak4",
+        "timestamp": 1769699253676,
+        "status": 0,
+        "answer_text": "meat, pepper, lemon\n",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "abd688a7-3c6a-4f42-8816-26afe2fda608",
+        "user": "prak2",
+        "timestamp": 1769692351170,
+        "status": 1,
+        "answer_text": "Loisiana long leaf lumber company",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "abd688a7-3c6a-4f42-8816-26afe2fda608",
+        "user": "prak3",
+        "timestamp": 1769692385087,
+        "status": -1,
+        "answer_text": "Village of Fisher",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "abd688a7-3c6a-4f42-8816-26afe2fda608",
+        "user": "exquisitor1",
+        "timestamp": 1769692393081,
+        "status": 1,
+        "answer_text": "Leaf Lumber Company 04600",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "abd688a7-3c6a-4f42-8816-26afe2fda608",
+        "user": "prak5",
+        "timestamp": 1769692470194,
+        "status": 1,
+        "answer_text": "Louisiana Leaf Long Lumber",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "abd688a7-3c6a-4f42-8816-26afe2fda608",
+        "user": "prak3",
+        "timestamp": 1769692498729,
+        "status": 1,
+        "answer_text": "long leaf lumber company",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "8394c58d-b04d-404a-bdd0-a27703dda309",
+        "user": "prak4",
+        "timestamp": 1769694185251,
+        "status": 1,
+        "answer_text": "matxinbenta",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "8394c58d-b04d-404a-bdd0-a27703dda309",
+        "user": "prak1",
+        "timestamp": 1769694186430,
+        "status": 1,
+        "answer_text": "matxinbenta",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "8394c58d-b04d-404a-bdd0-a27703dda309",
+        "user": "prak2",
+        "timestamp": 1769694197905,
+        "status": 1,
+        "answer_text": "matxinbenta",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "8394c58d-b04d-404a-bdd0-a27703dda309",
+        "user": "prak3",
+        "timestamp": 1769694218126,
+        "status": 1,
+        "answer_text": "Matxinbenta",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "8394c58d-b04d-404a-bdd0-a27703dda309",
+        "user": "exquisitor1",
+        "timestamp": 1769694277359,
+        "status": -1,
+        "answer_text": "aldundia vid 20349",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "8394c58d-b04d-404a-bdd0-a27703dda309",
+        "user": "exquisitor1",
+        "timestamp": 1769694319689,
+        "status": 1,
+        "answer_text": "matxinbenta vid 20349",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "8394c58d-b04d-404a-bdd0-a27703dda309",
+        "user": "prak5",
+        "timestamp": 1769694349711,
+        "status": -1,
+        "answer_text": "Berrikuntzako",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "8394c58d-b04d-404a-bdd0-a27703dda309",
+        "user": "prak5",
+        "timestamp": 1769694362211,
+        "status": 1,
+        "answer_text": "Matxinbenta",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "fd5a9a6c-64e0-420e-9503-8b1dc02bd2ab",
+        "user": "exquisitor1",
+        "timestamp": 1769705047406,
+        "status": 1,
+        "answer_text": "STOP Vid 27173",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "fd5a9a6c-64e0-420e-9503-8b1dc02bd2ab",
+        "user": "prak4",
+        "timestamp": 1769705095960,
+        "status": 1,
+        "answer_text": "top",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "fd5a9a6c-64e0-420e-9503-8b1dc02bd2ab",
+        "user": "prak3",
+        "timestamp": 1769705109165,
+        "status": 1,
+        "answer_text": "STOP",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "fd5a9a6c-64e0-420e-9503-8b1dc02bd2ab",
+        "user": "prak1",
+        "timestamp": 1769705243629,
+        "status": 1,
+        "answer_text": "stop",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "fd5a9a6c-64e0-420e-9503-8b1dc02bd2ab",
+        "user": "prak5",
+        "timestamp": 1769705264367,
+        "status": 1,
+        "answer_text": "stop",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "60d8b9da-2a6f-471e-a15d-3dc38d4b7c32",
+        "user": "prak3",
+        "timestamp": 1769707973658,
+        "status": 1,
+        "answer_text": "latte macchiato",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "60d8b9da-2a6f-471e-a15d-3dc38d4b7c32",
+        "user": "exquisitor1",
+        "timestamp": 1769707984709,
+        "status": 1,
+        "answer_text": "Latte Macchiato 16095",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "60d8b9da-2a6f-471e-a15d-3dc38d4b7c32",
+        "user": "prak1",
+        "timestamp": 1769707997940,
+        "status": 1,
+        "answer_text": "latte macchiato",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "60d8b9da-2a6f-471e-a15d-3dc38d4b7c32",
+        "user": "prak4",
+        "timestamp": 1769708006650,
+        "status": 1,
+        "answer_text": "latte machiato",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "60d8b9da-2a6f-471e-a15d-3dc38d4b7c32",
+        "user": "prak5",
+        "timestamp": 1769708013559,
+        "status": 1,
+        "answer_text": "latte macchiato",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "60d8b9da-2a6f-471e-a15d-3dc38d4b7c32",
+        "user": "prak2",
+        "timestamp": 1769708039955,
+        "status": 1,
+        "answer_text": "latte machiato",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "ca71a498-2fd9-4f8a-adca-f5f2690693d9",
+        "user": "prak4",
+        "timestamp": 1769709223019,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "16104",
+        "answer_video_start_time": 750000,
+        "answer_video_end_time": 750000
+    },
+    {
+        "task_id": "ca71a498-2fd9-4f8a-adca-f5f2690693d9",
+        "user": "prak5",
+        "timestamp": 1769709226958,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "16104",
+        "answer_video_start_time": 758000,
+        "answer_video_end_time": 758000
+    },
+    {
+        "task_id": "ca71a498-2fd9-4f8a-adca-f5f2690693d9",
+        "user": "prak1",
+        "timestamp": 1769709228846,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "16104",
+        "answer_video_start_time": 758000,
+        "answer_video_end_time": 758000
+    },
+    {
+        "task_id": "ca71a498-2fd9-4f8a-adca-f5f2690693d9",
+        "user": "prak2",
+        "timestamp": 1769709235431,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "16104",
+        "answer_video_start_time": 758000,
+        "answer_video_end_time": 758000
+    },
+    {
+        "task_id": "ca71a498-2fd9-4f8a-adca-f5f2690693d9",
+        "user": "prak4",
+        "timestamp": 1769709246901,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16104",
+        "answer_video_start_time": 734000,
+        "answer_video_end_time": 734000
+    },
+    {
+        "task_id": "ca71a498-2fd9-4f8a-adca-f5f2690693d9",
+        "user": "prak5",
+        "timestamp": 1769709256872,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "16104",
+        "answer_video_start_time": 736119,
+        "answer_video_end_time": 736119
+    },
+    {
+        "task_id": "ca71a498-2fd9-4f8a-adca-f5f2690693d9",
+        "user": "prak1",
+        "timestamp": 1769709276073,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16104",
+        "answer_video_start_time": 734000,
+        "answer_video_end_time": 734000
+    },
+    {
+        "task_id": "ca71a498-2fd9-4f8a-adca-f5f2690693d9",
+        "user": "exquisitor1",
+        "timestamp": 1769709276503,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16104",
+        "answer_video_start_time": 731166,
+        "answer_video_end_time": 761541
+    },
+    {
+        "task_id": "ca71a498-2fd9-4f8a-adca-f5f2690693d9",
+        "user": "prak2",
+        "timestamp": 1769709277170,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16104",
+        "answer_video_start_time": 734000,
+        "answer_video_end_time": 734000
+    },
+    {
+        "task_id": "ca71a498-2fd9-4f8a-adca-f5f2690693d9",
+        "user": "exquisitor1",
+        "timestamp": 1769709280595,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "16104",
+        "answer_video_start_time": 738763,
+        "answer_video_end_time": 738763
+    },
+    {
+        "task_id": "ca71a498-2fd9-4f8a-adca-f5f2690693d9",
+        "user": "prak3",
+        "timestamp": 1769709282708,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "16104",
+        "answer_video_start_time": 742000,
+        "answer_video_end_time": 742000
+    },
+    {
+        "task_id": "ca71a498-2fd9-4f8a-adca-f5f2690693d9",
+        "user": "prak3",
+        "timestamp": 1769709346763,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16104",
+        "answer_video_start_time": 734045,
+        "answer_video_end_time": 734045
+    },
+    {
+        "task_id": "ca71a498-2fd9-4f8a-adca-f5f2690693d9",
+        "user": "prak5",
+        "timestamp": 1769709362411,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16104",
+        "answer_video_start_time": 734000,
+        "answer_video_end_time": 734000
+    },
+    {
+        "task_id": "ca71a498-2fd9-4f8a-adca-f5f2690693d9",
+        "user": "exquisitor1",
+        "timestamp": 1769709424638,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "16104",
+        "answer_video_start_time": 357708,
+        "answer_video_end_time": 359250
+    },
+    {
+        "task_id": "ca71a498-2fd9-4f8a-adca-f5f2690693d9",
+        "user": "exquisitor1",
+        "timestamp": 1769709432301,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "16104",
+        "answer_video_start_time": 426083,
+        "answer_video_end_time": 448041
+    },
+    {
+        "task_id": "ca71a498-2fd9-4f8a-adca-f5f2690693d9",
+        "user": "exquisitor1",
+        "timestamp": 1769709441666,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "16104",
+        "answer_video_start_time": 73333,
+        "answer_video_end_time": 73875
+    },
+    {
+        "task_id": "ca71a498-2fd9-4f8a-adca-f5f2690693d9",
+        "user": "exquisitor1",
+        "timestamp": 1769709446752,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "16104",
+        "answer_video_start_time": 26291,
+        "answer_video_end_time": 30916
+    },
+    {
+        "task_id": "bda61341-54df-46b8-8210-7e252ceedf3a",
+        "user": "prak5",
+        "timestamp": 1769709911654,
+        "status": 1,
+        "answer_text": "16:05",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "bda61341-54df-46b8-8210-7e252ceedf3a",
+        "user": "prak3",
+        "timestamp": 1769709932149,
+        "status": 1,
+        "answer_text": "Around 4:04",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "bda61341-54df-46b8-8210-7e252ceedf3a",
+        "user": "prak1",
+        "timestamp": 1769709935894,
+        "status": 1,
+        "answer_text": "4:05",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "bda61341-54df-46b8-8210-7e252ceedf3a",
+        "user": "prak2",
+        "timestamp": 1769709970565,
+        "status": -1,
+        "answer_text": "2:01",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "bda61341-54df-46b8-8210-7e252ceedf3a",
+        "user": "prak4",
+        "timestamp": 1769709979316,
+        "status": 1,
+        "answer_text": "4:05",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "bda61341-54df-46b8-8210-7e252ceedf3a",
+        "user": "exquisitor1",
+        "timestamp": 1769709994686,
+        "status": 1,
+        "answer_text": "4:05 Vid 22150",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "bda61341-54df-46b8-8210-7e252ceedf3a",
+        "user": "prak2",
+        "timestamp": 1769709999066,
+        "status": -1,
+        "answer_text": "2:27",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "bda61341-54df-46b8-8210-7e252ceedf3a",
+        "user": "prak2",
+        "timestamp": 1769710053377,
+        "status": -1,
+        "answer_text": "2:26",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "bda61341-54df-46b8-8210-7e252ceedf3a",
+        "user": "prak2",
+        "timestamp": 1769710102160,
+        "status": 1,
+        "answer_text": "16:05",
+        "answer_video": null,
+        "answer_video_start_time": null,
+        "answer_video_end_time": null
+    },
+    {
+        "task_id": "89a2292f-3959-493d-9679-8da30861b6c0",
+        "user": "prak1",
+        "timestamp": 1769706606028,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "12204",
+        "answer_video_start_time": 153127,
+        "answer_video_end_time": 153127
+    },
+    {
+        "task_id": "89a2292f-3959-493d-9679-8da30861b6c0",
+        "user": "prak5",
+        "timestamp": 1769706617875,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "19239",
+        "answer_video_start_time": 248529,
+        "answer_video_end_time": 248529
+    },
+    {
+        "task_id": "89a2292f-3959-493d-9679-8da30861b6c0",
+        "user": "exquisitor1",
+        "timestamp": 1769706739881,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "19066",
+        "answer_video_start_time": 391400,
+        "answer_video_end_time": 395120
+    },
+    {
+        "task_id": "89a2292f-3959-493d-9679-8da30861b6c0",
+        "user": "prak4",
+        "timestamp": 1769706832633,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "07483",
+        "answer_video_start_time": 164600,
+        "answer_video_end_time": 164600
+    },
+    {
+        "task_id": "06927ba7-b1d0-40a2-a18b-aa27c0297a66",
+        "user": "prak2",
+        "timestamp": 1769694555214,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "07602",
+        "answer_video_start_time": 227980,
+        "answer_video_end_time": 227980
+    },
+    {
+        "task_id": "06927ba7-b1d0-40a2-a18b-aa27c0297a66",
+        "user": "exquisitor1",
+        "timestamp": 1769694577922,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "07602",
+        "answer_video_start_time": 432198,
+        "answer_video_end_time": 432498
+    },
+    {
+        "task_id": "06927ba7-b1d0-40a2-a18b-aa27c0297a66",
+        "user": "prak1",
+        "timestamp": 1769694580144,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "07602",
+        "answer_video_start_time": 226600,
+        "answer_video_end_time": 226600
+    },
+    {
+        "task_id": "06927ba7-b1d0-40a2-a18b-aa27c0297a66",
+        "user": "prak5",
+        "timestamp": 1769694593295,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "07602",
+        "answer_video_start_time": 226600,
+        "answer_video_end_time": 226600
+    },
+    {
+        "task_id": "06927ba7-b1d0-40a2-a18b-aa27c0297a66",
+        "user": "prak3",
+        "timestamp": 1769694609222,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "07602",
+        "answer_video_start_time": 226816,
+        "answer_video_end_time": 226816
+    },
+    {
+        "task_id": "06927ba7-b1d0-40a2-a18b-aa27c0297a66",
+        "user": "prak4",
+        "timestamp": 1769694612185,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "07602",
+        "answer_video_start_time": 225800,
+        "answer_video_end_time": 225800
+    },
+    {
+        "task_id": "06927ba7-b1d0-40a2-a18b-aa27c0297a66",
+        "user": "exquisitor1",
+        "timestamp": 1769694621159,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "07602",
+        "answer_video_start_time": 227894,
+        "answer_video_end_time": 228127
+    },
+    {
+        "task_id": "7f298c35-b92d-47a9-8aa1-65b3bd12273d",
+        "user": "prak2",
+        "timestamp": 1769693123841,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "07551",
+        "answer_video_start_time": 37556,
+        "answer_video_end_time": 37556
+    },
+    {
+        "task_id": "7f298c35-b92d-47a9-8aa1-65b3bd12273d",
+        "user": "prak4",
+        "timestamp": 1769693163658,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "06437",
+        "answer_video_start_time": 146800,
+        "answer_video_end_time": 146800
+    },
+    {
+        "task_id": "7f298c35-b92d-47a9-8aa1-65b3bd12273d",
+        "user": "prak5",
+        "timestamp": 1769693176712,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "07551",
+        "answer_video_start_time": 39400,
+        "answer_video_end_time": 39400
+    },
+    {
+        "task_id": "7f298c35-b92d-47a9-8aa1-65b3bd12273d",
+        "user": "exquisitor1",
+        "timestamp": 1769693181642,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "07551",
+        "answer_video_start_time": 35333,
+        "answer_video_end_time": 35633
+    },
+    {
+        "task_id": "7f298c35-b92d-47a9-8aa1-65b3bd12273d",
+        "user": "prak4",
+        "timestamp": 1769693195163,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "15837",
+        "answer_video_start_time": 179000,
+        "answer_video_end_time": 179000
+    },
+    {
+        "task_id": "7f298c35-b92d-47a9-8aa1-65b3bd12273d",
+        "user": "prak3",
+        "timestamp": 1769693286771,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "06437",
+        "answer_video_start_time": 146689,
+        "answer_video_end_time": 146689
+    },
+    {
+        "task_id": "7f298c35-b92d-47a9-8aa1-65b3bd12273d",
+        "user": "prak5",
+        "timestamp": 1769693314011,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "06437",
+        "answer_video_start_time": 146800,
+        "answer_video_end_time": 146800
+    },
+    {
+        "task_id": "7f298c35-b92d-47a9-8aa1-65b3bd12273d",
+        "user": "prak1",
+        "timestamp": 1769693389420,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "07551",
+        "answer_video_start_time": 35340,
+        "answer_video_end_time": 35340
+    },
+    {
+        "task_id": "7f298c35-b92d-47a9-8aa1-65b3bd12273d",
+        "user": "prak5",
+        "timestamp": 1769693428519,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "07551",
+        "answer_video_start_time": 38000,
+        "answer_video_end_time": 38000
+    },
+    {
+        "task_id": "7f298c35-b92d-47a9-8aa1-65b3bd12273d",
+        "user": "prak3",
+        "timestamp": 1769693462850,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "24056",
+        "answer_video_start_time": 75000,
+        "answer_video_end_time": 75000
+    },
+    {
+        "task_id": "7f298c35-b92d-47a9-8aa1-65b3bd12273d",
+        "user": "prak4",
+        "timestamp": 1769693476006,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "07551",
+        "answer_video_start_time": 34800,
+        "answer_video_end_time": 34800
+    },
+    {
+        "task_id": "526e6a77-8277-4719-bae2-493e21dd38bd",
+        "user": "exquisitor1",
+        "timestamp": 1769691785134,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "18985",
+        "answer_video_start_time": 190256,
+        "answer_video_end_time": 192256
+    },
+    {
+        "task_id": "526e6a77-8277-4719-bae2-493e21dd38bd",
+        "user": "prak3",
+        "timestamp": 1769691787632,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "18985",
+        "answer_video_start_time": 125733,
+        "answer_video_end_time": 125733
+    },
+    {
+        "task_id": "526e6a77-8277-4719-bae2-493e21dd38bd",
+        "user": "prak2",
+        "timestamp": 1769691789924,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "18985",
+        "answer_video_start_time": 127200,
+        "answer_video_end_time": 127200
+    },
+    {
+        "task_id": "526e6a77-8277-4719-bae2-493e21dd38bd",
+        "user": "prak4",
+        "timestamp": 1769691803693,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "18985",
+        "answer_video_start_time": 137000,
+        "answer_video_end_time": 137000
+    },
+    {
+        "task_id": "526e6a77-8277-4719-bae2-493e21dd38bd",
+        "user": "prak4",
+        "timestamp": 1769691822263,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "18985",
+        "answer_video_start_time": 131600,
+        "answer_video_end_time": 131600
+    },
+    {
+        "task_id": "526e6a77-8277-4719-bae2-493e21dd38bd",
+        "user": "prak5",
+        "timestamp": 1769691827345,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "18985",
+        "answer_video_start_time": 127200,
+        "answer_video_end_time": 127200
+    },
+    {
+        "task_id": "526e6a77-8277-4719-bae2-493e21dd38bd",
+        "user": "exquisitor1",
+        "timestamp": 1769691830358,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "18985",
+        "answer_video_start_time": 126360,
+        "answer_video_end_time": 127800
+    },
+    {
+        "task_id": "526e6a77-8277-4719-bae2-493e21dd38bd",
+        "user": "prak1",
+        "timestamp": 1769691892649,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "18985",
+        "answer_video_start_time": 126580,
+        "answer_video_end_time": 126580
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "exquisitor1",
+        "timestamp": 1769692721455,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "14383",
+        "answer_video_start_time": 223206,
+        "answer_video_end_time": 223206
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak2",
+        "timestamp": 1769692728675,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16432",
+        "answer_video_start_time": 323400,
+        "answer_video_end_time": 323400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692729192,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "03410",
+        "answer_video_start_time": 49533,
+        "answer_video_end_time": 49533
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak2",
+        "timestamp": 1769692732914,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23099",
+        "answer_video_start_time": 200200,
+        "answer_video_end_time": 200200
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak1",
+        "timestamp": 1769692733895,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "03410",
+        "answer_video_start_time": 48800,
+        "answer_video_end_time": 48800
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "exquisitor1",
+        "timestamp": 1769692735171,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "03410",
+        "answer_video_start_time": 47839,
+        "answer_video_end_time": 49549
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak1",
+        "timestamp": 1769692738266,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "17764",
+        "answer_video_start_time": 105600,
+        "answer_video_end_time": 105600
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "exquisitor1",
+        "timestamp": 1769692739779,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05916",
+        "answer_video_start_time": 29129,
+        "answer_video_end_time": 30830
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692742868,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16432",
+        "answer_video_start_time": 323400,
+        "answer_video_end_time": 323400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak4",
+        "timestamp": 1769692744183,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "03410",
+        "answer_video_start_time": 48800,
+        "answer_video_end_time": 48800
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak4",
+        "timestamp": 1769692744288,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16432",
+        "answer_video_start_time": 323400,
+        "answer_video_end_time": 323400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak4",
+        "timestamp": 1769692744402,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "17120",
+        "answer_video_start_time": 57400,
+        "answer_video_end_time": 57400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak2",
+        "timestamp": 1769692748242,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "03410",
+        "answer_video_start_time": 48800,
+        "answer_video_end_time": 48800
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak2",
+        "timestamp": 1769692755616,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16622",
+        "answer_video_start_time": 266000,
+        "answer_video_end_time": 266000
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "exquisitor1",
+        "timestamp": 1769692755969,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "02984",
+        "answer_video_start_time": 63691,
+        "answer_video_end_time": 63691
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692757255,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23099",
+        "answer_video_start_time": 200434,
+        "answer_video_end_time": 200434
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak1",
+        "timestamp": 1769692767273,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16622",
+        "answer_video_start_time": 266000,
+        "answer_video_end_time": 266000
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692767379,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "17764",
+        "answer_video_start_time": 105600,
+        "answer_video_end_time": 105600
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak5",
+        "timestamp": 1769692769058,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23099",
+        "answer_video_start_time": 200200,
+        "answer_video_end_time": 200200
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak1",
+        "timestamp": 1769692769093,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "11403",
+        "answer_video_start_time": 111800,
+        "answer_video_end_time": 111800
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak5",
+        "timestamp": 1769692769187,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16622",
+        "answer_video_start_time": 266000,
+        "answer_video_end_time": 266000
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak5",
+        "timestamp": 1769692769314,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "03410",
+        "answer_video_start_time": 48800,
+        "answer_video_end_time": 48800
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak5",
+        "timestamp": 1769692769439,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "17764",
+        "answer_video_start_time": 105600,
+        "answer_video_end_time": 105600
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak2",
+        "timestamp": 1769692775104,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "11973",
+        "answer_video_start_time": 125200,
+        "answer_video_end_time": 125200
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "exquisitor1",
+        "timestamp": 1769692786835,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16432",
+        "answer_video_start_time": 323581,
+        "answer_video_end_time": 323581
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak1",
+        "timestamp": 1769692788649,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "14346",
+        "answer_video_start_time": 617400,
+        "answer_video_end_time": 617400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak4",
+        "timestamp": 1769692788710,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "14256",
+        "answer_video_start_time": 79800,
+        "answer_video_end_time": 79800
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak4",
+        "timestamp": 1769692788860,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "14346",
+        "answer_video_start_time": 617400,
+        "answer_video_end_time": 617400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak1",
+        "timestamp": 1769692793326,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "27777",
+        "answer_video_start_time": 210800,
+        "answer_video_end_time": 210800
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692800261,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16622",
+        "answer_video_start_time": 266000,
+        "answer_video_end_time": 266000
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692802119,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23099",
+        "answer_video_start_time": 200200,
+        "answer_video_end_time": 200200
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak1",
+        "timestamp": 1769692804035,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05711",
+        "answer_video_start_time": 42800,
+        "answer_video_end_time": 42800
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "exquisitor1",
+        "timestamp": 1769692806987,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "10244",
+        "answer_video_start_time": 61728,
+        "answer_video_end_time": 63855
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692810902,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "27865",
+        "answer_video_start_time": 37400,
+        "answer_video_end_time": 37400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak5",
+        "timestamp": 1769692814793,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "09426",
+        "answer_video_start_time": 318600,
+        "answer_video_end_time": 318600
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak5",
+        "timestamp": 1769692814917,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16432",
+        "answer_video_start_time": 323400,
+        "answer_video_end_time": 323400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692815396,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "04871",
+        "answer_video_start_time": 86800,
+        "answer_video_end_time": 86800
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692823894,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23153",
+        "answer_video_start_time": 188000,
+        "answer_video_end_time": 188000
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak1",
+        "timestamp": 1769692826585,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "19696",
+        "answer_video_start_time": 44400,
+        "answer_video_end_time": 44400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak2",
+        "timestamp": 1769692832838,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "15498",
+        "answer_video_start_time": 148200,
+        "answer_video_end_time": 148200
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak2",
+        "timestamp": 1769692834988,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "17764",
+        "answer_video_start_time": 105600,
+        "answer_video_end_time": 105600
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "exquisitor1",
+        "timestamp": 1769692836021,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23099",
+        "answer_video_start_time": 200594,
+        "answer_video_end_time": 200594
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692837947,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "14346",
+        "answer_video_start_time": 617400,
+        "answer_video_end_time": 617400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak1",
+        "timestamp": 1769692838068,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "22560",
+        "answer_video_start_time": 373400,
+        "answer_video_end_time": 373400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak4",
+        "timestamp": 1769692839526,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "08270",
+        "answer_video_start_time": 183000,
+        "answer_video_end_time": 183000
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak4",
+        "timestamp": 1769692839643,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "09426",
+        "answer_video_start_time": 318600,
+        "answer_video_end_time": 318600
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak4",
+        "timestamp": 1769692839763,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "15498",
+        "answer_video_start_time": 148200,
+        "answer_video_end_time": 148200
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak4",
+        "timestamp": 1769692839901,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "18146",
+        "answer_video_start_time": 27600,
+        "answer_video_end_time": 27600
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak4",
+        "timestamp": 1769692840026,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "27777",
+        "answer_video_start_time": 210800,
+        "answer_video_end_time": 210800
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak4",
+        "timestamp": 1769692840144,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23153",
+        "answer_video_start_time": 188000,
+        "answer_video_end_time": 188000
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak1",
+        "timestamp": 1769692841401,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20476",
+        "answer_video_start_time": 215400,
+        "answer_video_end_time": 215400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692846103,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "11505",
+        "answer_video_start_time": 89600,
+        "answer_video_end_time": 89600
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak5",
+        "timestamp": 1769692852447,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "17864",
+        "answer_video_start_time": 286200,
+        "answer_video_end_time": 286200
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692857822,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13761",
+        "answer_video_start_time": 157198,
+        "answer_video_end_time": 157198
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak5",
+        "timestamp": 1769692860002,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "18146",
+        "answer_video_start_time": 27600,
+        "answer_video_end_time": 27600
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692861249,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16824",
+        "answer_video_start_time": 61000,
+        "answer_video_end_time": 61000
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak5",
+        "timestamp": 1769692863319,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "18146",
+        "answer_video_start_time": 25200,
+        "answer_video_end_time": 25200
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692864622,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "25740",
+        "answer_video_start_time": 178000,
+        "answer_video_end_time": 178000
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "exquisitor1",
+        "timestamp": 1769692869584,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "06861",
+        "answer_video_start_time": 260301,
+        "answer_video_end_time": 262136
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "exquisitor1",
+        "timestamp": 1769692870751,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06861",
+        "answer_video_start_time": 262178,
+        "answer_video_end_time": 262971
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak5",
+        "timestamp": 1769692872264,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "09683",
+        "answer_video_start_time": 23400,
+        "answer_video_end_time": 23400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "exquisitor1",
+        "timestamp": 1769692872545,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "25740",
+        "answer_video_start_time": 156160,
+        "answer_video_end_time": 157240
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692873813,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20476",
+        "answer_video_start_time": 215400,
+        "answer_video_end_time": 215400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak1",
+        "timestamp": 1769692878333,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05916",
+        "answer_video_start_time": 30000,
+        "answer_video_end_time": 30000
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak4",
+        "timestamp": 1769692884755,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "13101",
+        "answer_video_start_time": 213400,
+        "answer_video_end_time": 213400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak4",
+        "timestamp": 1769692884862,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "11505",
+        "answer_video_start_time": 89600,
+        "answer_video_end_time": 89600
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak4",
+        "timestamp": 1769692884973,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "03542",
+        "answer_video_start_time": 1460200,
+        "answer_video_end_time": 1460200
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "exquisitor1",
+        "timestamp": 1769692899301,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20476",
+        "answer_video_start_time": 216174,
+        "answer_video_end_time": 217508
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak5",
+        "timestamp": 1769692899473,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "27777",
+        "answer_video_start_time": 210800,
+        "answer_video_end_time": 210800
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak2",
+        "timestamp": 1769692906110,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20476",
+        "answer_video_start_time": 215400,
+        "answer_video_end_time": 215400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak5",
+        "timestamp": 1769692907367,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05711",
+        "answer_video_start_time": 42800,
+        "answer_video_end_time": 42800
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak1",
+        "timestamp": 1769692917112,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16432",
+        "answer_video_start_time": 323400,
+        "answer_video_end_time": 323400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692917430,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "27777",
+        "answer_video_start_time": 210800,
+        "answer_video_end_time": 210800
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak1",
+        "timestamp": 1769692921367,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23099",
+        "answer_video_start_time": 200200,
+        "answer_video_end_time": 200200
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692922647,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "02429",
+        "answer_video_start_time": 93800,
+        "answer_video_end_time": 93800
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak1",
+        "timestamp": 1769692923114,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "09426",
+        "answer_video_start_time": 318600,
+        "answer_video_end_time": 318600
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak5",
+        "timestamp": 1769692927464,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "02034",
+        "answer_video_start_time": 111000,
+        "answer_video_end_time": 111000
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak1",
+        "timestamp": 1769692930556,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00857",
+        "answer_video_start_time": 50800,
+        "answer_video_end_time": 50800
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak2",
+        "timestamp": 1769692933231,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "25740",
+        "answer_video_start_time": 178000,
+        "answer_video_end_time": 178000
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak2",
+        "timestamp": 1769692943950,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "03253",
+        "answer_video_start_time": 233400,
+        "answer_video_end_time": 233400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak2",
+        "timestamp": 1769692948400,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16824",
+        "answer_video_start_time": 61000,
+        "answer_video_end_time": 61000
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "exquisitor1",
+        "timestamp": 1769692951934,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20476",
+        "answer_video_start_time": 214797,
+        "answer_video_end_time": 216132
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak2",
+        "timestamp": 1769692958073,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05916",
+        "answer_video_start_time": 30000,
+        "answer_video_end_time": 30000
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak4",
+        "timestamp": 1769692962925,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "02034",
+        "answer_video_start_time": 111000,
+        "answer_video_end_time": 111000
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak2",
+        "timestamp": 1769692965500,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13761",
+        "answer_video_start_time": 156400,
+        "answer_video_end_time": 156400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak2",
+        "timestamp": 1769692966974,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "02034",
+        "answer_video_start_time": 111000,
+        "answer_video_end_time": 111000
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak2",
+        "timestamp": 1769692972435,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23422",
+        "answer_video_start_time": 127200,
+        "answer_video_end_time": 127200
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak4",
+        "timestamp": 1769692973692,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "18146",
+        "answer_video_start_time": 30200,
+        "answer_video_end_time": 30200
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692977813,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "14383",
+        "answer_video_start_time": 222800,
+        "answer_video_end_time": 222800
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak3",
+        "timestamp": 1769692981734,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05711",
+        "answer_video_start_time": 42800,
+        "answer_video_end_time": 42800
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak4",
+        "timestamp": 1769692982626,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05711",
+        "answer_video_start_time": 42800,
+        "answer_video_end_time": 42800
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak1",
+        "timestamp": 1769692985180,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "09683",
+        "answer_video_start_time": 23400,
+        "answer_video_end_time": 23400
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak1",
+        "timestamp": 1769692986676,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "25740",
+        "answer_video_start_time": 178000,
+        "answer_video_end_time": 178000
+    },
+    {
+        "task_id": "9e28aa94-cb3e-4985-a2c3-98e31c60ed79",
+        "user": "prak1",
+        "timestamp": 1769692992944,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "02034",
+        "answer_video_start_time": 111000,
+        "answer_video_end_time": 111000
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak1",
+        "timestamp": 1769697246784,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00914",
+        "answer_video_start_time": 118200,
+        "answer_video_end_time": 118200
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak4",
+        "timestamp": 1769697249651,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "17259",
+        "answer_video_start_time": 161000,
+        "answer_video_end_time": 161000
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak1",
+        "timestamp": 1769697255363,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08046",
+        "answer_video_start_time": 861157,
+        "answer_video_end_time": 861157
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "exquisitor1",
+        "timestamp": 1769697256789,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00914",
+        "answer_video_start_time": 114760,
+        "answer_video_end_time": 121440
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak1",
+        "timestamp": 1769697260132,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "17259",
+        "answer_video_start_time": 161000,
+        "answer_video_end_time": 161000
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak1",
+        "timestamp": 1769697263592,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23705",
+        "answer_video_start_time": 26200,
+        "answer_video_end_time": 26200
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak3",
+        "timestamp": 1769697269758,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00914",
+        "answer_video_start_time": 118200,
+        "answer_video_end_time": 118200
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak2",
+        "timestamp": 1769697270071,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00914",
+        "answer_video_start_time": 118200,
+        "answer_video_end_time": 118200
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "exquisitor1",
+        "timestamp": 1769697270317,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "27005",
+        "answer_video_start_time": 100366,
+        "answer_video_end_time": 103703
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak1",
+        "timestamp": 1769697273400,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08298",
+        "answer_video_start_time": 83000,
+        "answer_video_end_time": 83000
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "exquisitor1",
+        "timestamp": 1769697278213,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00914",
+        "answer_video_start_time": 110440,
+        "answer_video_end_time": 114720
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak4",
+        "timestamp": 1769697279306,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "21068",
+        "answer_video_start_time": 753800,
+        "answer_video_end_time": 753800
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak2",
+        "timestamp": 1769697281047,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "27005",
+        "answer_video_start_time": 102000,
+        "answer_video_end_time": 102000
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak3",
+        "timestamp": 1769697283711,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23705",
+        "answer_video_start_time": 26200,
+        "answer_video_end_time": 26200
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak1",
+        "timestamp": 1769697289165,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00884",
+        "answer_video_start_time": 140200,
+        "answer_video_end_time": 140200
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak3",
+        "timestamp": 1769697290675,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "17259",
+        "answer_video_start_time": 161000,
+        "answer_video_end_time": 161000
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak2",
+        "timestamp": 1769697295562,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "27816",
+        "answer_video_start_time": 147000,
+        "answer_video_end_time": 147000
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak2",
+        "timestamp": 1769697300943,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08046",
+        "answer_video_start_time": 859800,
+        "answer_video_end_time": 859800
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak2",
+        "timestamp": 1769697307475,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23705",
+        "answer_video_start_time": 24400,
+        "answer_video_end_time": 24400
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak4",
+        "timestamp": 1769697310866,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "03000",
+        "answer_video_start_time": 32600,
+        "answer_video_end_time": 32600
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak3",
+        "timestamp": 1769697312026,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00884",
+        "answer_video_start_time": 140200,
+        "answer_video_end_time": 140200
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak2",
+        "timestamp": 1769697312392,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08298",
+        "answer_video_start_time": 83000,
+        "answer_video_end_time": 83000
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak1",
+        "timestamp": 1769697314234,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00320",
+        "answer_video_start_time": 56429,
+        "answer_video_end_time": 56429
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak2",
+        "timestamp": 1769697324874,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "17259",
+        "answer_video_start_time": 161000,
+        "answer_video_end_time": 161000
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "exquisitor1",
+        "timestamp": 1769697326587,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00884",
+        "answer_video_start_time": 191900,
+        "answer_video_end_time": 197989
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak5",
+        "timestamp": 1769697334914,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00914",
+        "answer_video_start_time": 63600,
+        "answer_video_end_time": 63600
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak5",
+        "timestamp": 1769697344777,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08298",
+        "answer_video_start_time": 262400,
+        "answer_video_end_time": 262400
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak4",
+        "timestamp": 1769697345030,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00914",
+        "answer_video_start_time": 118200,
+        "answer_video_end_time": 118200
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak5",
+        "timestamp": 1769697354447,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "17259",
+        "answer_video_start_time": 161000,
+        "answer_video_end_time": 161000
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak1",
+        "timestamp": 1769697365023,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "27005",
+        "answer_video_start_time": 102810,
+        "answer_video_end_time": 102810
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak5",
+        "timestamp": 1769697369480,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00914",
+        "answer_video_start_time": 118200,
+        "answer_video_end_time": 118200
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "exquisitor1",
+        "timestamp": 1769697372076,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00914",
+        "answer_video_start_time": 59960,
+        "answer_video_end_time": 81920
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak1",
+        "timestamp": 1769697375156,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "01190",
+        "answer_video_start_time": 229800,
+        "answer_video_end_time": 229800
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak5",
+        "timestamp": 1769697375759,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23705",
+        "answer_video_start_time": 24400,
+        "answer_video_end_time": 24400
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak2",
+        "timestamp": 1769697376329,
+        "status": 0,
+        "answer_text": null,
+        "answer_video": "01944",
+        "answer_video_start_time": 34000,
+        "answer_video_end_time": 34000
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak5",
+        "timestamp": 1769697381297,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23705",
+        "answer_video_start_time": 26200,
+        "answer_video_end_time": 26200
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "exquisitor1",
+        "timestamp": 1769697388037,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00884",
+        "answer_video_start_time": 233608,
+        "answer_video_end_time": 239864
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak5",
+        "timestamp": 1769697390423,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08298",
+        "answer_video_start_time": 83000,
+        "answer_video_end_time": 83000
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak4",
+        "timestamp": 1769697395218,
+        "status": 0,
+        "answer_text": null,
+        "answer_video": "11937",
+        "answer_video_start_time": 141200,
+        "answer_video_end_time": 141200
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak1",
+        "timestamp": 1769697402639,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "04569",
+        "answer_video_start_time": 123327,
+        "answer_video_end_time": 123327
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak5",
+        "timestamp": 1769697405967,
+        "status": 0,
+        "answer_text": null,
+        "answer_video": "08298",
+        "answer_video_start_time": 151000,
+        "answer_video_end_time": 151000
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "exquisitor1",
+        "timestamp": 1769697410228,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "00884",
+        "answer_video_start_time": 287912,
+        "answer_video_end_time": 295712
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak5",
+        "timestamp": 1769697415168,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "00914",
+        "answer_video_start_time": 203400,
+        "answer_video_end_time": 203400
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak3",
+        "timestamp": 1769697421441,
+        "status": 0,
+        "answer_text": null,
+        "answer_video": "11937",
+        "answer_video_start_time": 141200,
+        "answer_video_end_time": 141200
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak2",
+        "timestamp": 1769697431307,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "04569",
+        "answer_video_start_time": 123000,
+        "answer_video_end_time": 123000
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak5",
+        "timestamp": 1769697431317,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00884",
+        "answer_video_start_time": 99200,
+        "answer_video_end_time": 99200
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak2",
+        "timestamp": 1769697436261,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08298",
+        "answer_video_start_time": 115800,
+        "answer_video_end_time": 115800
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "exquisitor1",
+        "timestamp": 1769697437757,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00884",
+        "answer_video_start_time": 198031,
+        "answer_video_end_time": 214088
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak5",
+        "timestamp": 1769697441741,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08298",
+        "answer_video_start_time": 115800,
+        "answer_video_end_time": 115800
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak2",
+        "timestamp": 1769697442535,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "17259",
+        "answer_video_start_time": 156400,
+        "answer_video_end_time": 156400
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak3",
+        "timestamp": 1769697446330,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "14810",
+        "answer_video_start_time": 257800,
+        "answer_video_end_time": 257800
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak5",
+        "timestamp": 1769697467279,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "00914",
+        "answer_video_start_time": 108000,
+        "answer_video_end_time": 108000
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak2",
+        "timestamp": 1769697470047,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "01190",
+        "answer_video_start_time": 229800,
+        "answer_video_end_time": 229800
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak5",
+        "timestamp": 1769697472761,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "00884",
+        "answer_video_start_time": 195000,
+        "answer_video_end_time": 195000
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak5",
+        "timestamp": 1769697478096,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00884",
+        "answer_video_start_time": 198200,
+        "answer_video_end_time": 198200
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak4",
+        "timestamp": 1769697493815,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "26832",
+        "answer_video_start_time": 436200,
+        "answer_video_end_time": 436200
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak3",
+        "timestamp": 1769697496170,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "03000",
+        "answer_video_start_time": 32600,
+        "answer_video_end_time": 32600
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak5",
+        "timestamp": 1769697500017,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00320",
+        "answer_video_start_time": 6350,
+        "answer_video_end_time": 6350
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak4",
+        "timestamp": 1769697514367,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "21867",
+        "answer_video_start_time": 238200,
+        "answer_video_end_time": 238200
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "prak5",
+        "timestamp": 1769697515364,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00884",
+        "answer_video_start_time": 96218,
+        "answer_video_end_time": 96218
+    },
+    {
+        "task_id": "443eb561-30ed-4b3c-a298-6ba9a1528ffa",
+        "user": "exquisitor1",
+        "timestamp": 1769697515533,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00914",
+        "answer_video_start_time": 81960,
+        "answer_video_end_time": 91840
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak2",
+        "timestamp": 1769704628713,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "05331",
+        "answer_video_start_time": 599800,
+        "answer_video_end_time": 599800
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak2",
+        "timestamp": 1769704629795,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "26465",
+        "answer_video_start_time": 5000,
+        "answer_video_end_time": 5000
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak1",
+        "timestamp": 1769704637320,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "09448",
+        "answer_video_start_time": 483000,
+        "answer_video_end_time": 483000
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak1",
+        "timestamp": 1769704638560,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00343",
+        "answer_video_start_time": 7800,
+        "answer_video_end_time": 7800
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak2",
+        "timestamp": 1769704638877,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "17088",
+        "answer_video_start_time": 83200,
+        "answer_video_end_time": 83200
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak2",
+        "timestamp": 1769704642518,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "00268",
+        "answer_video_start_time": 258600,
+        "answer_video_end_time": 258600
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak5",
+        "timestamp": 1769704643470,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "09448",
+        "answer_video_start_time": 483000,
+        "answer_video_end_time": 483000
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak5",
+        "timestamp": 1769704645055,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "26092",
+        "answer_video_start_time": 290400,
+        "answer_video_end_time": 290400
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak5",
+        "timestamp": 1769704649802,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "05236",
+        "answer_video_start_time": 104800,
+        "answer_video_end_time": 104800
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak4",
+        "timestamp": 1769704649839,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "26092",
+        "answer_video_start_time": 290400,
+        "answer_video_end_time": 290400
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak2",
+        "timestamp": 1769704650076,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00343",
+        "answer_video_start_time": 7800,
+        "answer_video_end_time": 7800
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak5",
+        "timestamp": 1769704652031,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16487",
+        "answer_video_start_time": 36000,
+        "answer_video_end_time": 36000
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak2",
+        "timestamp": 1769704652329,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "04594",
+        "answer_video_start_time": 529000,
+        "answer_video_end_time": 529000
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak2",
+        "timestamp": 1769704656186,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06196",
+        "answer_video_start_time": 1732400,
+        "answer_video_end_time": 1732400
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak2",
+        "timestamp": 1769704657995,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "26092",
+        "answer_video_start_time": 290400,
+        "answer_video_end_time": 290400
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak4",
+        "timestamp": 1769704662695,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20325",
+        "answer_video_start_time": 111400,
+        "answer_video_end_time": 111400
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak2",
+        "timestamp": 1769704663379,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "14449",
+        "answer_video_start_time": 185000,
+        "answer_video_end_time": 185000
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak1",
+        "timestamp": 1769704675392,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "05236",
+        "answer_video_start_time": 104800,
+        "answer_video_end_time": 104800
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak4",
+        "timestamp": 1769704677052,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20325",
+        "answer_video_start_time": 114600,
+        "answer_video_end_time": 114600
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak3",
+        "timestamp": 1769704694061,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "09448",
+        "answer_video_start_time": 483000,
+        "answer_video_end_time": 483000
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "exquisitor1",
+        "timestamp": 1769704698363,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00343",
+        "answer_video_start_time": 6706,
+        "answer_video_end_time": 8875
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak5",
+        "timestamp": 1769704702885,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "27884",
+        "answer_video_start_time": 177056,
+        "answer_video_end_time": 177056
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak1",
+        "timestamp": 1769704703655,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "26092",
+        "answer_video_start_time": 290400,
+        "answer_video_end_time": 290400
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak2",
+        "timestamp": 1769704719884,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "02340",
+        "answer_video_start_time": 48800,
+        "answer_video_end_time": 48800
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak3",
+        "timestamp": 1769704724667,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "26092",
+        "answer_video_start_time": 290400,
+        "answer_video_end_time": 290400
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "exquisitor1",
+        "timestamp": 1769704736478,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20325",
+        "answer_video_start_time": 114375,
+        "answer_video_end_time": 115875
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak4",
+        "timestamp": 1769704740599,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "27884",
+        "answer_video_start_time": 177800,
+        "answer_video_end_time": 177800
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak2",
+        "timestamp": 1769704744080,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "21884",
+        "answer_video_start_time": 214600,
+        "answer_video_end_time": 214600
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak3",
+        "timestamp": 1769704768177,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00343",
+        "answer_video_start_time": 7800,
+        "answer_video_end_time": 7800
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak4",
+        "timestamp": 1769704770306,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "26465",
+        "answer_video_start_time": 5600,
+        "answer_video_end_time": 5600
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak1",
+        "timestamp": 1769704772490,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "26979",
+        "answer_video_start_time": 144400,
+        "answer_video_end_time": 144400
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak5",
+        "timestamp": 1769704774466,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20325",
+        "answer_video_start_time": 111400,
+        "answer_video_end_time": 111400
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak1",
+        "timestamp": 1769704778628,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "17271",
+        "answer_video_start_time": 1189800,
+        "answer_video_end_time": 1189800
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak1",
+        "timestamp": 1769704790504,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "25591",
+        "answer_video_start_time": 834000,
+        "answer_video_end_time": 834000
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak2",
+        "timestamp": 1769704794839,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "25609",
+        "answer_video_start_time": 351200,
+        "answer_video_end_time": 351200
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak4",
+        "timestamp": 1769704801976,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "27884",
+        "answer_video_start_time": 206800,
+        "answer_video_end_time": 206800
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak5",
+        "timestamp": 1769704822423,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00343",
+        "answer_video_start_time": 7800,
+        "answer_video_end_time": 7800
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak3",
+        "timestamp": 1769704833966,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "27955",
+        "answer_video_start_time": 219600,
+        "answer_video_end_time": 219600
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak5",
+        "timestamp": 1769704836989,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "04594",
+        "answer_video_start_time": 529000,
+        "answer_video_end_time": 529000
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak3",
+        "timestamp": 1769704845842,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "17756",
+        "answer_video_start_time": 76400,
+        "answer_video_end_time": 76400
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak4",
+        "timestamp": 1769704882951,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "23653",
+        "answer_video_start_time": 242000,
+        "answer_video_end_time": 242000
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak3",
+        "timestamp": 1769704907794,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06196",
+        "answer_video_start_time": 1732400,
+        "answer_video_end_time": 1732400
+    },
+    {
+        "task_id": "8fbe0b55-a7a1-41cd-840c-296c059dc1c3",
+        "user": "prak3",
+        "timestamp": 1769704908673,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "04594",
+        "answer_video_start_time": 529000,
+        "answer_video_end_time": 529000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707037495,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06349",
+        "answer_video_start_time": 62020,
+        "answer_video_end_time": 62729
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707038338,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "06349",
+        "answer_video_start_time": 58975,
+        "answer_video_end_time": 59684
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707039584,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06490",
+        "answer_video_start_time": 9200,
+        "answer_video_end_time": 9200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707041186,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13936",
+        "answer_video_start_time": 717850,
+        "answer_video_end_time": 719919
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707041396,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "04434",
+        "answer_video_start_time": 214400,
+        "answer_video_end_time": 214400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707042901,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "01344",
+        "answer_video_start_time": 75000,
+        "answer_video_end_time": 75000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707044205,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08802",
+        "answer_video_start_time": 145800,
+        "answer_video_end_time": 145800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707046880,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06349",
+        "answer_video_start_time": 62400,
+        "answer_video_end_time": 62400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707047455,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "09873",
+        "answer_video_start_time": 49600,
+        "answer_video_end_time": 49600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707048373,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "04434",
+        "answer_video_start_time": 214400,
+        "answer_video_end_time": 214400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707049355,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "10136",
+        "answer_video_start_time": 893320,
+        "answer_video_end_time": 894960
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707049445,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "10768",
+        "answer_video_start_time": 356000,
+        "answer_video_end_time": 356000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707049681,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13936",
+        "answer_video_start_time": 719800,
+        "answer_video_end_time": 719800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707049902,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13936",
+        "answer_video_start_time": 719800,
+        "answer_video_end_time": 719800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707051124,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08802",
+        "answer_video_start_time": 145800,
+        "answer_video_end_time": 145800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707051489,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08318",
+        "answer_video_start_time": 147000,
+        "answer_video_end_time": 147000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707052167,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16162",
+        "answer_video_start_time": 155200,
+        "answer_video_end_time": 155200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707052416,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "10136",
+        "answer_video_start_time": 894600,
+        "answer_video_end_time": 894600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707053388,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "10768",
+        "answer_video_start_time": 356000,
+        "answer_video_end_time": 356000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707053427,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13126",
+        "answer_video_start_time": 61800,
+        "answer_video_end_time": 61800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707053499,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "04693",
+        "answer_video_start_time": 69600,
+        "answer_video_end_time": 69600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707054363,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08802",
+        "answer_video_start_time": 145800,
+        "answer_video_end_time": 145800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707055397,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06457",
+        "answer_video_start_time": 205000,
+        "answer_video_end_time": 205000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707055908,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "14734",
+        "answer_video_start_time": 63800,
+        "answer_video_end_time": 63800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707057464,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "01604",
+        "answer_video_start_time": 48400,
+        "answer_video_end_time": 48400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707058691,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08318",
+        "answer_video_start_time": 147000,
+        "answer_video_end_time": 147000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707059055,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "25023",
+        "answer_video_start_time": 75800,
+        "answer_video_end_time": 75800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707063359,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "05320",
+        "answer_video_start_time": 121000,
+        "answer_video_end_time": 121000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707063875,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "28175",
+        "answer_video_start_time": 260200,
+        "answer_video_end_time": 260200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707065252,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "22341",
+        "answer_video_start_time": 162800,
+        "answer_video_end_time": 162800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707067934,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "14734",
+        "answer_video_start_time": 63800,
+        "answer_video_end_time": 63800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707068679,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23370",
+        "answer_video_start_time": 40400,
+        "answer_video_end_time": 40400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707069765,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "01991",
+        "answer_video_start_time": 196600,
+        "answer_video_end_time": 196600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707071477,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "28175",
+        "answer_video_start_time": 259968,
+        "answer_video_end_time": 260343
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707072570,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "02847",
+        "answer_video_start_time": 84200,
+        "answer_video_end_time": 84200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707072871,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "12553",
+        "answer_video_start_time": 49800,
+        "answer_video_end_time": 49800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707073895,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "28175",
+        "answer_video_start_time": 263638,
+        "answer_video_end_time": 263805
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707074503,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13126",
+        "answer_video_start_time": 61800,
+        "answer_video_end_time": 61800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707075715,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "10768",
+        "answer_video_start_time": 356000,
+        "answer_video_end_time": 356000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707078050,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23370",
+        "answer_video_start_time": 40400,
+        "answer_video_end_time": 40400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707081616,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06349",
+        "answer_video_start_time": 59400,
+        "answer_video_end_time": 59400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707083502,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13126",
+        "answer_video_start_time": 58920,
+        "answer_video_end_time": 62840
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707087114,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "17626",
+        "answer_video_start_time": 65000,
+        "answer_video_end_time": 65000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707087966,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "17626",
+        "answer_video_start_time": 65000,
+        "answer_video_end_time": 65000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707088036,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "05169",
+        "answer_video_start_time": 310453,
+        "answer_video_end_time": 310453
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707089366,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "17515",
+        "answer_video_start_time": 73800,
+        "answer_video_end_time": 73800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707089515,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23370",
+        "answer_video_start_time": 39120,
+        "answer_video_end_time": 39120
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707090785,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06349",
+        "answer_video_start_time": 59400,
+        "answer_video_end_time": 59400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707092916,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13936",
+        "answer_video_start_time": 719800,
+        "answer_video_end_time": 719800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707093261,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16162",
+        "answer_video_start_time": 155200,
+        "answer_video_end_time": 155200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707093329,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "10136",
+        "answer_video_start_time": 894600,
+        "answer_video_end_time": 894600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707095567,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13126",
+        "answer_video_start_time": 61800,
+        "answer_video_end_time": 61800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707096043,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "10136",
+        "answer_video_start_time": 894600,
+        "answer_video_end_time": 894600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707096465,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "25023",
+        "answer_video_start_time": 75800,
+        "answer_video_end_time": 75800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707098852,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "09685",
+        "answer_video_start_time": 61000,
+        "answer_video_end_time": 61000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707099315,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13126",
+        "answer_video_start_time": 61800,
+        "answer_video_end_time": 61800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707099829,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06349",
+        "answer_video_start_time": 59400,
+        "answer_video_end_time": 59400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707101564,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "09873",
+        "answer_video_start_time": 49600,
+        "answer_video_end_time": 49600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707102908,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "09483",
+        "answer_video_start_time": 135000,
+        "answer_video_end_time": 135000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707103522,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "17224",
+        "answer_video_start_time": 137600,
+        "answer_video_end_time": 137600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707103571,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08802",
+        "answer_video_start_time": 145800,
+        "answer_video_end_time": 145800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707106144,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "14734",
+        "answer_video_start_time": 63800,
+        "answer_video_end_time": 63800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707107923,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "04693",
+        "answer_video_start_time": 69600,
+        "answer_video_end_time": 69600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707112621,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08802",
+        "answer_video_start_time": 146579,
+        "answer_video_end_time": 147147
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707113867,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "10768",
+        "answer_video_start_time": 356000,
+        "answer_video_end_time": 356000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707115303,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23370",
+        "answer_video_start_time": 39120,
+        "answer_video_end_time": 41480
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707115438,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "09685",
+        "answer_video_start_time": 61000,
+        "answer_video_end_time": 61000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707115580,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "17224",
+        "answer_video_start_time": 137600,
+        "answer_video_end_time": 137600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707117514,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08318",
+        "answer_video_start_time": 145480,
+        "answer_video_end_time": 146600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707118822,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06349",
+        "answer_video_start_time": 62400,
+        "answer_video_end_time": 62400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707120420,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06490",
+        "answer_video_start_time": 9200,
+        "answer_video_end_time": 9200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707121761,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "19163",
+        "answer_video_start_time": 204600,
+        "answer_video_end_time": 204600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707123143,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "17224",
+        "answer_video_start_time": 137600,
+        "answer_video_end_time": 137600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707123186,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08318",
+        "answer_video_start_time": 147000,
+        "answer_video_end_time": 147000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707124890,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "01344",
+        "answer_video_start_time": 72200,
+        "answer_video_end_time": 72200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707126448,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "12553",
+        "answer_video_start_time": 49800,
+        "answer_video_end_time": 49800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707127742,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "01344",
+        "answer_video_start_time": 76000,
+        "answer_video_end_time": 76000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707130978,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06457",
+        "answer_video_start_time": 205000,
+        "answer_video_end_time": 205000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707132014,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "14734",
+        "answer_video_start_time": 63800,
+        "answer_video_end_time": 63800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707135260,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06490",
+        "answer_video_start_time": 9200,
+        "answer_video_end_time": 9200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707136126,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "10838",
+        "answer_video_start_time": 115800,
+        "answer_video_end_time": 115800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707136944,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "04434",
+        "answer_video_start_time": 214400,
+        "answer_video_end_time": 214400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707138165,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "01344",
+        "answer_video_start_time": 75000,
+        "answer_video_end_time": 75000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707138521,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "01344",
+        "answer_video_start_time": 75000,
+        "answer_video_end_time": 75000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707139164,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "09873",
+        "answer_video_start_time": 69800,
+        "answer_video_end_time": 69800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707139327,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08802",
+        "answer_video_start_time": 145800,
+        "answer_video_end_time": 145800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707143557,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "14734",
+        "answer_video_start_time": 63800,
+        "answer_video_end_time": 63800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707144694,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20908",
+        "answer_video_start_time": 75800,
+        "answer_video_end_time": 75800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707146723,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "05320",
+        "answer_video_start_time": 121000,
+        "answer_video_end_time": 121000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707146830,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06349",
+        "answer_video_start_time": 62400,
+        "answer_video_end_time": 62400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707147170,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "09685",
+        "answer_video_start_time": 61000,
+        "answer_video_end_time": 61000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707148518,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "22767",
+        "answer_video_start_time": 319800,
+        "answer_video_end_time": 319800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707148680,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "04693",
+        "answer_video_start_time": 69600,
+        "answer_video_end_time": 69600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707148747,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "04693",
+        "answer_video_start_time": 69600,
+        "answer_video_end_time": 69600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707149955,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "09873",
+        "answer_video_start_time": 49600,
+        "answer_video_end_time": 49600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707151937,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "10768",
+        "answer_video_start_time": 356000,
+        "answer_video_end_time": 356000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707152079,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06349",
+        "answer_video_start_time": 62400,
+        "answer_video_end_time": 62400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707152563,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "22341",
+        "answer_video_start_time": 162800,
+        "answer_video_end_time": 162800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707155847,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "00993",
+        "answer_video_start_time": 737000,
+        "answer_video_end_time": 737000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707159917,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "02847",
+        "answer_video_start_time": 84200,
+        "answer_video_end_time": 84200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707160463,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06490",
+        "answer_video_start_time": 9200,
+        "answer_video_end_time": 9200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak5",
+        "timestamp": 1769707162306,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "02847",
+        "answer_video_start_time": 84200,
+        "answer_video_end_time": 84200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707162479,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "12009",
+        "answer_video_start_time": 372596,
+        "answer_video_end_time": 372596
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707163649,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16162",
+        "answer_video_start_time": 155200,
+        "answer_video_end_time": 155200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707165381,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "28175",
+        "answer_video_start_time": 260200,
+        "answer_video_end_time": 260200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707166415,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16162",
+        "answer_video_start_time": 155200,
+        "answer_video_end_time": 155200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707168640,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13126",
+        "answer_video_start_time": 61800,
+        "answer_video_end_time": 61800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707168649,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "02847",
+        "answer_video_start_time": 83600,
+        "answer_video_end_time": 83600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707169092,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "08318",
+        "answer_video_start_time": 146640,
+        "answer_video_end_time": 148000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707171744,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "01344",
+        "answer_video_start_time": 76000,
+        "answer_video_end_time": 76000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707172063,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "18994",
+        "answer_video_start_time": 171800,
+        "answer_video_end_time": 171800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707173050,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13936",
+        "answer_video_start_time": 721800,
+        "answer_video_end_time": 721800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707174089,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "28175",
+        "answer_video_start_time": 260843,
+        "answer_video_end_time": 261386
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707178263,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "10838",
+        "answer_video_start_time": 129800,
+        "answer_video_end_time": 129800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707181880,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "00369",
+        "answer_video_start_time": 942400,
+        "answer_video_end_time": 942400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707187143,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20908",
+        "answer_video_start_time": 13596,
+        "answer_video_end_time": 14264
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707188662,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05321",
+        "answer_video_start_time": 100800,
+        "answer_video_end_time": 100800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707190719,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "10838",
+        "answer_video_start_time": 129421,
+        "answer_video_end_time": 130171
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707190756,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "22767",
+        "answer_video_start_time": 319800,
+        "answer_video_end_time": 319800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707193349,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "04434",
+        "answer_video_start_time": 214400,
+        "answer_video_end_time": 214400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707195512,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20908",
+        "answer_video_start_time": 13600,
+        "answer_video_end_time": 13600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707197390,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13936",
+        "answer_video_start_time": 719800,
+        "answer_video_end_time": 719800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707202262,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "22341",
+        "answer_video_start_time": 164161,
+        "answer_video_end_time": 164161
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707204318,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "28175",
+        "answer_video_start_time": 260200,
+        "answer_video_end_time": 260200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707204375,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "10838",
+        "answer_video_start_time": 133400,
+        "answer_video_end_time": 133400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707205603,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "10722",
+        "answer_video_start_time": 75000,
+        "answer_video_end_time": 75000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707206916,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "26507",
+        "answer_video_start_time": 1063800,
+        "answer_video_end_time": 1063800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707212094,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20908",
+        "answer_video_start_time": 13600,
+        "answer_video_end_time": 13600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707212713,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "28175",
+        "answer_video_start_time": 260200,
+        "answer_video_end_time": 260200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707213609,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "25023",
+        "answer_video_start_time": 75800,
+        "answer_video_end_time": 75800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707217055,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "02847",
+        "answer_video_start_time": 84978,
+        "answer_video_end_time": 84978
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak3",
+        "timestamp": 1769707219541,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20908",
+        "answer_video_start_time": 13600,
+        "answer_video_end_time": 13600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707222295,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16958",
+        "answer_video_start_time": 95400,
+        "answer_video_end_time": 95400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707232266,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06457",
+        "answer_video_start_time": 203200,
+        "answer_video_end_time": 203200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707232640,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "28175",
+        "answer_video_start_time": 99200,
+        "answer_video_end_time": 99200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707234817,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "19163",
+        "answer_video_start_time": 204600,
+        "answer_video_end_time": 204600
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707235249,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "06457",
+        "answer_video_start_time": 202619,
+        "answer_video_end_time": 206414
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707236848,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13125",
+        "answer_video_start_time": 109000,
+        "answer_video_end_time": 109000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707236923,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "16958",
+        "answer_video_start_time": 85800,
+        "answer_video_end_time": 85800
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707242381,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "05320",
+        "answer_video_start_time": 121000,
+        "answer_video_end_time": 121000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707249844,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "01344",
+        "answer_video_start_time": 83400,
+        "answer_video_end_time": 83400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707250692,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "02451",
+        "answer_video_start_time": 135200,
+        "answer_video_end_time": 135200
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707254231,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23370",
+        "answer_video_start_time": 40400,
+        "answer_video_end_time": 40400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707254864,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "02275",
+        "answer_video_start_time": 33360,
+        "answer_video_end_time": 33960
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak2",
+        "timestamp": 1769707259218,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "17626",
+        "answer_video_start_time": 65000,
+        "answer_video_end_time": 65000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707261430,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "01621",
+        "answer_video_start_time": 146480,
+        "answer_video_end_time": 152680
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707263607,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23370",
+        "answer_video_start_time": 40400,
+        "answer_video_end_time": 40400
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707264063,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13936",
+        "answer_video_start_time": 719952,
+        "answer_video_end_time": 723289
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707265353,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "07220",
+        "answer_video_start_time": 218760,
+        "answer_video_end_time": 221429
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707280345,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "17626",
+        "answer_video_start_time": 65000,
+        "answer_video_end_time": 65000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707285720,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "10838",
+        "answer_video_start_time": 113697,
+        "answer_video_end_time": 117701
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak4",
+        "timestamp": 1769707289563,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13936",
+        "answer_video_start_time": 716000,
+        "answer_video_end_time": 716000
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "exquisitor1",
+        "timestamp": 1769707308788,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "28175",
+        "answer_video_start_time": 261427,
+        "answer_video_end_time": 262136
+    },
+    {
+        "task_id": "f81a4c10-db56-4ca9-80c3-8bbcdbb0999c",
+        "user": "prak1",
+        "timestamp": 1769707312119,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "07937",
+        "answer_video_start_time": 275096,
+        "answer_video_end_time": 275096
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak4",
+        "timestamp": 1769708837001,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05437",
+        "answer_video_start_time": 170800,
+        "answer_video_end_time": 170800
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak5",
+        "timestamp": 1769708838180,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05642",
+        "answer_video_start_time": 103200,
+        "answer_video_end_time": 103200
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak1",
+        "timestamp": 1769708840138,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05437",
+        "answer_video_start_time": 170800,
+        "answer_video_end_time": 170800
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak5",
+        "timestamp": 1769708844091,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "08064",
+        "answer_video_start_time": 164400,
+        "answer_video_end_time": 164400
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak1",
+        "timestamp": 1769708844317,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "06984",
+        "answer_video_start_time": 117200,
+        "answer_video_end_time": 117200
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak5",
+        "timestamp": 1769708847266,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20810",
+        "answer_video_start_time": 959800,
+        "answer_video_end_time": 959800
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak1",
+        "timestamp": 1769708847800,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05642",
+        "answer_video_start_time": 103200,
+        "answer_video_end_time": 103200
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak2",
+        "timestamp": 1769708850733,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05437",
+        "answer_video_start_time": 170800,
+        "answer_video_end_time": 170800
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak2",
+        "timestamp": 1769708852771,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "06984",
+        "answer_video_start_time": 117200,
+        "answer_video_end_time": 117200
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak1",
+        "timestamp": 1769708856039,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20810",
+        "answer_video_start_time": 959800,
+        "answer_video_end_time": 959800
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak2",
+        "timestamp": 1769708859811,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20810",
+        "answer_video_start_time": 959800,
+        "answer_video_end_time": 959800
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak4",
+        "timestamp": 1769708860365,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20810",
+        "answer_video_start_time": 961291,
+        "answer_video_end_time": 961291
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak5",
+        "timestamp": 1769708863764,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "09801",
+        "answer_video_start_time": 591400,
+        "answer_video_end_time": 591400
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak2",
+        "timestamp": 1769708872124,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "27602",
+        "answer_video_start_time": 175400,
+        "answer_video_end_time": 175400
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769708872665,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "06984",
+        "answer_video_start_time": 117200,
+        "answer_video_end_time": 117200
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769708874990,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05642",
+        "answer_video_start_time": 232200,
+        "answer_video_end_time": 232200
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak2",
+        "timestamp": 1769708875648,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05620",
+        "answer_video_start_time": 261400,
+        "answer_video_end_time": 261400
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "exquisitor1",
+        "timestamp": 1769708877802,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05437",
+        "answer_video_start_time": 171310,
+        "answer_video_end_time": 171310
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak2",
+        "timestamp": 1769708878996,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "26439",
+        "answer_video_start_time": 17800,
+        "answer_video_end_time": 17800
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak2",
+        "timestamp": 1769708883360,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "09801",
+        "answer_video_start_time": 591400,
+        "answer_video_end_time": 591400
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769708884282,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05437",
+        "answer_video_start_time": 170800,
+        "answer_video_end_time": 170800
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak2",
+        "timestamp": 1769708885316,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "04242",
+        "answer_video_start_time": 194800,
+        "answer_video_end_time": 194800
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak1",
+        "timestamp": 1769708890674,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "26587",
+        "answer_video_start_time": 27400,
+        "answer_video_end_time": 27400
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak2",
+        "timestamp": 1769708891067,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "02727",
+        "answer_video_start_time": 165200,
+        "answer_video_end_time": 165200
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769708891286,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "12256",
+        "answer_video_start_time": 218800,
+        "answer_video_end_time": 218800
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak2",
+        "timestamp": 1769708892453,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "07126",
+        "answer_video_start_time": 176000,
+        "answer_video_end_time": 176000
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak5",
+        "timestamp": 1769708895007,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "26439",
+        "answer_video_start_time": 17800,
+        "answer_video_end_time": 17800
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak2",
+        "timestamp": 1769708899122,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "26587",
+        "answer_video_start_time": 27400,
+        "answer_video_end_time": 27400
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak4",
+        "timestamp": 1769708902479,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05642",
+        "answer_video_start_time": 232200,
+        "answer_video_end_time": 232200
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769708906607,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "26439",
+        "answer_video_start_time": 17800,
+        "answer_video_end_time": 17800
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak5",
+        "timestamp": 1769708908523,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23285",
+        "answer_video_start_time": 39200,
+        "answer_video_end_time": 39200
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769708908646,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13171",
+        "answer_video_start_time": 121800,
+        "answer_video_end_time": 121800
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769708910623,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "26587",
+        "answer_video_start_time": 27400,
+        "answer_video_end_time": 27400
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769708911919,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "07126",
+        "answer_video_start_time": 176000,
+        "answer_video_end_time": 176000
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak5",
+        "timestamp": 1769708915651,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20971",
+        "answer_video_start_time": 200000,
+        "answer_video_end_time": 200000
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak2",
+        "timestamp": 1769708920863,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23285",
+        "answer_video_start_time": 39200,
+        "answer_video_end_time": 39200
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak5",
+        "timestamp": 1769708925499,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "02727",
+        "answer_video_start_time": 165200,
+        "answer_video_end_time": 165200
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769708929952,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "06325",
+        "answer_video_start_time": 62000,
+        "answer_video_end_time": 62000
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak4",
+        "timestamp": 1769708935871,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "18383",
+        "answer_video_start_time": 280500,
+        "answer_video_end_time": 280500
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak2",
+        "timestamp": 1769708936188,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "01338",
+        "answer_video_start_time": 72200,
+        "answer_video_end_time": 72200
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769708942627,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "01338",
+        "answer_video_start_time": 72200,
+        "answer_video_end_time": 72200
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769708949772,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "09616",
+        "answer_video_start_time": 195200,
+        "answer_video_end_time": 195200
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak5",
+        "timestamp": 1769708952436,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "10804",
+        "answer_video_start_time": 137600,
+        "answer_video_end_time": 137600
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak1",
+        "timestamp": 1769708961846,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "26439",
+        "answer_video_start_time": 17800,
+        "answer_video_end_time": 17800
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769708967574,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05509",
+        "answer_video_start_time": 2304600,
+        "answer_video_end_time": 2304600
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak1",
+        "timestamp": 1769708970481,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "27602",
+        "answer_video_start_time": 175400,
+        "answer_video_end_time": 175400
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak1",
+        "timestamp": 1769708972569,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23285",
+        "answer_video_start_time": 39200,
+        "answer_video_end_time": 39200
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "exquisitor1",
+        "timestamp": 1769708986470,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05642",
+        "answer_video_start_time": 35368,
+        "answer_video_end_time": 38079
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "exquisitor1",
+        "timestamp": 1769708987473,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05642",
+        "answer_video_start_time": 44044,
+        "answer_video_end_time": 56222
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "exquisitor1",
+        "timestamp": 1769708988225,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05642",
+        "answer_video_start_time": 39956,
+        "answer_video_end_time": 41875
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769708988496,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "04297",
+        "answer_video_start_time": 120000,
+        "answer_video_end_time": 120000
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "exquisitor1",
+        "timestamp": 1769708988706,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05642",
+        "answer_video_start_time": 230772,
+        "answer_video_end_time": 233691
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "exquisitor1",
+        "timestamp": 1769708989320,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05642",
+        "answer_video_start_time": 199782,
+        "answer_video_end_time": 201159
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak4",
+        "timestamp": 1769708992115,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "07126",
+        "answer_video_start_time": 176000,
+        "answer_video_end_time": 176000
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769709005232,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "27602",
+        "answer_video_start_time": 175400,
+        "answer_video_end_time": 175400
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769709008620,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20971",
+        "answer_video_start_time": 200000,
+        "answer_video_end_time": 200000
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769709015168,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "24117",
+        "answer_video_start_time": 92800,
+        "answer_video_end_time": 92800
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769709020790,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20810",
+        "answer_video_start_time": 959800,
+        "answer_video_end_time": 959800
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "exquisitor1",
+        "timestamp": 1769709029951,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "27132",
+        "answer_video_start_time": 397800,
+        "answer_video_end_time": 401866
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769709033496,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "26432",
+        "answer_video_start_time": 183000,
+        "answer_video_end_time": 183000
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769709050386,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "12437",
+        "answer_video_start_time": 200400,
+        "answer_video_end_time": 200400
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769709058005,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "10804",
+        "answer_video_start_time": 137600,
+        "answer_video_end_time": 137600
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak5",
+        "timestamp": 1769709066739,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "06984",
+        "answer_video_start_time": 117200,
+        "answer_video_end_time": 117200
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak3",
+        "timestamp": 1769709068570,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "03413",
+        "answer_video_start_time": 29600,
+        "answer_video_end_time": 29600
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak5",
+        "timestamp": 1769709086858,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "26587",
+        "answer_video_start_time": 27400,
+        "answer_video_end_time": 27400
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak4",
+        "timestamp": 1769709091749,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "05620",
+        "answer_video_start_time": 269400,
+        "answer_video_end_time": 269400
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak2",
+        "timestamp": 1769709094260,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05509",
+        "answer_video_start_time": 2304600,
+        "answer_video_end_time": 2304600
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak1",
+        "timestamp": 1769709103691,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "05642",
+        "answer_video_start_time": 232200,
+        "answer_video_end_time": 232200
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak5",
+        "timestamp": 1769709105502,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "07126",
+        "answer_video_start_time": 176000,
+        "answer_video_end_time": 176000
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak1",
+        "timestamp": 1769709106064,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "14626",
+        "answer_video_start_time": 23600,
+        "answer_video_end_time": 23600
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak4",
+        "timestamp": 1769709108757,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "20971",
+        "answer_video_start_time": 200000,
+        "answer_video_end_time": 200000
+    },
+    {
+        "task_id": "922c0d04-6704-4cf9-ae5f-4b39810534d2",
+        "user": "prak4",
+        "timestamp": 1769709111731,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "12256",
+        "answer_video_start_time": 218800,
+        "answer_video_end_time": 218800
+    },
+    {
+        "task_id": "aba93f89-b435-4f5e-81aa-4a61a8ae4f48",
+        "user": "prak2",
+        "timestamp": 1769693729196,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "02814",
+        "answer_video_start_time": 64577,
+        "answer_video_end_time": 64577
+    },
+    {
+        "task_id": "aba93f89-b435-4f5e-81aa-4a61a8ae4f48",
+        "user": "prak5",
+        "timestamp": 1769693867149,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "21530",
+        "answer_video_start_time": 567200,
+        "answer_video_end_time": 567200
+    },
+    {
+        "task_id": "aba93f89-b435-4f5e-81aa-4a61a8ae4f48",
+        "user": "prak5",
+        "timestamp": 1769693970890,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "24527",
+        "answer_video_start_time": 1835600,
+        "answer_video_end_time": 1835600
+    },
+    {
+        "task_id": "b18572e0-cb55-4861-9b58-3d1e41b73306",
+        "user": "prak4",
+        "timestamp": 1769696239562,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "28034",
+        "answer_video_start_time": 68000,
+        "answer_video_end_time": 68000
+    },
+    {
+        "task_id": "b18572e0-cb55-4861-9b58-3d1e41b73306",
+        "user": "prak3",
+        "timestamp": 1769696276676,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "28034",
+        "answer_video_start_time": 68000,
+        "answer_video_end_time": 68000
+    },
+    {
+        "task_id": "b18572e0-cb55-4861-9b58-3d1e41b73306",
+        "user": "prak2",
+        "timestamp": 1769696281811,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "28034",
+        "answer_video_start_time": 69158,
+        "answer_video_end_time": 69158
+    },
+    {
+        "task_id": "b18572e0-cb55-4861-9b58-3d1e41b73306",
+        "user": "exquisitor1",
+        "timestamp": 1769696375326,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "28034",
+        "answer_video_start_time": 64440,
+        "answer_video_end_time": 71200
+    },
+    {
+        "task_id": "b18572e0-cb55-4861-9b58-3d1e41b73306",
+        "user": "prak5",
+        "timestamp": 1769696388387,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "10675",
+        "answer_video_start_time": 1474400,
+        "answer_video_end_time": 1474400
+    },
+    {
+        "task_id": "b18572e0-cb55-4861-9b58-3d1e41b73306",
+        "user": "exquisitor1",
+        "timestamp": 1769696419589,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "28034",
+        "answer_video_start_time": 65847,
+        "answer_video_end_time": 65847
+    },
+    {
+        "task_id": "b18572e0-cb55-4861-9b58-3d1e41b73306",
+        "user": "prak1",
+        "timestamp": 1769696423343,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "28034",
+        "answer_video_start_time": 67566,
+        "answer_video_end_time": 67566
+    },
+    {
+        "task_id": "b18572e0-cb55-4861-9b58-3d1e41b73306",
+        "user": "prak5",
+        "timestamp": 1769696443790,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "10675",
+        "answer_video_start_time": 1461200,
+        "answer_video_end_time": 1461200
+    },
+    {
+        "task_id": "b18572e0-cb55-4861-9b58-3d1e41b73306",
+        "user": "prak5",
+        "timestamp": 1769696456333,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "22309",
+        "answer_video_start_time": 222800,
+        "answer_video_end_time": 222800
+    },
+    {
+        "task_id": "b18572e0-cb55-4861-9b58-3d1e41b73306",
+        "user": "prak5",
+        "timestamp": 1769696509580,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "01548",
+        "answer_video_start_time": 463000,
+        "answer_video_end_time": 463000
+    },
+    {
+        "task_id": "5e657078-8153-4faf-9d26-cb9a0a2b9e99",
+        "user": "prak5",
+        "timestamp": 1769698065464,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13761",
+        "answer_video_start_time": 91887,
+        "answer_video_end_time": 91887
+    },
+    {
+        "task_id": "5e657078-8153-4faf-9d26-cb9a0a2b9e99",
+        "user": "prak1",
+        "timestamp": 1769698162370,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13761",
+        "answer_video_start_time": 92614,
+        "answer_video_end_time": 92614
+    },
+    {
+        "task_id": "5e657078-8153-4faf-9d26-cb9a0a2b9e99",
+        "user": "prak4",
+        "timestamp": 1769698173249,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "13761",
+        "answer_video_start_time": 153730,
+        "answer_video_end_time": 153730
+    },
+    {
+        "task_id": "5e657078-8153-4faf-9d26-cb9a0a2b9e99",
+        "user": "prak4",
+        "timestamp": 1769698206117,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13761",
+        "answer_video_start_time": 92138,
+        "answer_video_end_time": 92138
+    },
+    {
+        "task_id": "5e657078-8153-4faf-9d26-cb9a0a2b9e99",
+        "user": "prak2",
+        "timestamp": 1769698272498,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13761",
+        "answer_video_start_time": 91905,
+        "answer_video_end_time": 91905
+    },
+    {
+        "task_id": "5e657078-8153-4faf-9d26-cb9a0a2b9e99",
+        "user": "prak3",
+        "timestamp": 1769698382059,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13761",
+        "answer_video_start_time": 93400,
+        "answer_video_end_time": 93400
+    },
+    {
+        "task_id": "c923493b-f6e4-4dfd-9076-91d0d96e821a",
+        "user": "exquisitor1",
+        "timestamp": 1769700505461,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "23246",
+        "answer_video_start_time": 77786,
+        "answer_video_end_time": 78787
+    },
+    {
+        "task_id": "c923493b-f6e4-4dfd-9076-91d0d96e821a",
+        "user": "exquisitor1",
+        "timestamp": 1769700618490,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23197",
+        "answer_video_start_time": 63063,
+        "answer_video_end_time": 63763
+    },
+    {
+        "task_id": "c923493b-f6e4-4dfd-9076-91d0d96e821a",
+        "user": "prak2",
+        "timestamp": 1769700676410,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "23246",
+        "answer_video_start_time": 78200,
+        "answer_video_end_time": 78200
+    },
+    {
+        "task_id": "c923493b-f6e4-4dfd-9076-91d0d96e821a",
+        "user": "prak5",
+        "timestamp": 1769700690495,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "04871",
+        "answer_video_start_time": 3600,
+        "answer_video_end_time": 3600
+    },
+    {
+        "task_id": "c923493b-f6e4-4dfd-9076-91d0d96e821a",
+        "user": "prak3",
+        "timestamp": 1769700765147,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "23197",
+        "answer_video_start_time": 64008,
+        "answer_video_end_time": 64008
+    },
+    {
+        "task_id": "7edc969d-d729-4c13-b604-6e5390cf934f",
+        "user": "prak4",
+        "timestamp": 1769708421943,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "15118",
+        "answer_video_start_time": 182400,
+        "answer_video_end_time": 182400
+    },
+    {
+        "task_id": "7edc969d-d729-4c13-b604-6e5390cf934f",
+        "user": "prak1",
+        "timestamp": 1769708448025,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "15118",
+        "answer_video_start_time": 182400,
+        "answer_video_end_time": 182400
+    },
+    {
+        "task_id": "7edc969d-d729-4c13-b604-6e5390cf934f",
+        "user": "prak5",
+        "timestamp": 1769708459591,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13292",
+        "answer_video_start_time": 35000,
+        "answer_video_end_time": 35000
+    },
+    {
+        "task_id": "7edc969d-d729-4c13-b604-6e5390cf934f",
+        "user": "prak2",
+        "timestamp": 1769708493403,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13292",
+        "answer_video_start_time": 33400,
+        "answer_video_end_time": 33400
+    },
+    {
+        "task_id": "7edc969d-d729-4c13-b604-6e5390cf934f",
+        "user": "prak1",
+        "timestamp": 1769708528441,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "13292",
+        "answer_video_start_time": 148000,
+        "answer_video_end_time": 148000
+    },
+    {
+        "task_id": "7edc969d-d729-4c13-b604-6e5390cf934f",
+        "user": "prak4",
+        "timestamp": 1769708531160,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "13292",
+        "answer_video_start_time": 148000,
+        "answer_video_end_time": 148000
+    },
+    {
+        "task_id": "7edc969d-d729-4c13-b604-6e5390cf934f",
+        "user": "prak3",
+        "timestamp": 1769708554365,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13292",
+        "answer_video_start_time": 35000,
+        "answer_video_end_time": 35000
+    },
+    {
+        "task_id": "7edc969d-d729-4c13-b604-6e5390cf934f",
+        "user": "prak4",
+        "timestamp": 1769708698965,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "13292",
+        "answer_video_start_time": 35000,
+        "answer_video_end_time": 35000
+    },
+    {
+        "task_id": "7b3c3502-41a4-4f99-9c63-c46b02ecd141",
+        "user": "prak2",
+        "timestamp": 1769691337307,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "18752",
+        "answer_video_start_time": 36200,
+        "answer_video_end_time": 36200
+    },
+    {
+        "task_id": "7b3c3502-41a4-4f99-9c63-c46b02ecd141",
+        "user": "prak1",
+        "timestamp": 1769691342058,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "18752",
+        "answer_video_start_time": 38722,
+        "answer_video_end_time": 38722
+    },
+    {
+        "task_id": "7b3c3502-41a4-4f99-9c63-c46b02ecd141",
+        "user": "prak4",
+        "timestamp": 1769691353128,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "18752",
+        "answer_video_start_time": 36200,
+        "answer_video_end_time": 36200
+    },
+    {
+        "task_id": "7b3c3502-41a4-4f99-9c63-c46b02ecd141",
+        "user": "exquisitor1",
+        "timestamp": 1769691364898,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "18752",
+        "answer_video_start_time": 34600,
+        "answer_video_end_time": 37960
+    },
+    {
+        "task_id": "7b3c3502-41a4-4f99-9c63-c46b02ecd141",
+        "user": "prak3",
+        "timestamp": 1769691373001,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "18752",
+        "answer_video_start_time": 36200,
+        "answer_video_end_time": 36200
+    },
+    {
+        "task_id": "7b3c3502-41a4-4f99-9c63-c46b02ecd141",
+        "user": "prak5",
+        "timestamp": 1769691486200,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "18752",
+        "answer_video_start_time": 36200,
+        "answer_video_end_time": 36200
+    },
+    {
+        "task_id": "168fd0e1-3d14-4037-9c3e-c48f9c1ae78a",
+        "user": "prak1",
+        "timestamp": 1769696774372,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE25",
+        "answer_video_start_time": 1972800,
+        "answer_video_end_time": 1972800
+    },
+    {
+        "task_id": "168fd0e1-3d14-4037-9c3e-c48f9c1ae78a",
+        "user": "prak2",
+        "timestamp": 1769696785958,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE25",
+        "answer_video_start_time": 1972800,
+        "answer_video_end_time": 1972800
+    },
+    {
+        "task_id": "168fd0e1-3d14-4037-9c3e-c48f9c1ae78a",
+        "user": "prak4",
+        "timestamp": 1769696788990,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE25",
+        "answer_video_start_time": 1826600,
+        "answer_video_end_time": 1826600
+    },
+    {
+        "task_id": "168fd0e1-3d14-4037-9c3e-c48f9c1ae78a",
+        "user": "prak2",
+        "timestamp": 1769696828104,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE39",
+        "answer_video_start_time": 2027856,
+        "answer_video_end_time": 2027856
+    },
+    {
+        "task_id": "168fd0e1-3d14-4037-9c3e-c48f9c1ae78a",
+        "user": "prak4",
+        "timestamp": 1769696834445,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE25",
+        "answer_video_start_time": 1969800,
+        "answer_video_end_time": 1969800
+    },
+    {
+        "task_id": "168fd0e1-3d14-4037-9c3e-c48f9c1ae78a",
+        "user": "exquisitor1",
+        "timestamp": 1769696841135,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "LHE25",
+        "answer_video_start_time": 2035000,
+        "answer_video_end_time": 2040000
+    },
+    {
+        "task_id": "168fd0e1-3d14-4037-9c3e-c48f9c1ae78a",
+        "user": "prak4",
+        "timestamp": 1769696868449,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE25",
+        "answer_video_start_time": 2063600,
+        "answer_video_end_time": 2063600
+    },
+    {
+        "task_id": "168fd0e1-3d14-4037-9c3e-c48f9c1ae78a",
+        "user": "prak2",
+        "timestamp": 1769696892711,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE39",
+        "answer_video_start_time": 2002287,
+        "answer_video_end_time": 2002287
+    },
+    {
+        "task_id": "168fd0e1-3d14-4037-9c3e-c48f9c1ae78a",
+        "user": "prak3",
+        "timestamp": 1769696897624,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE39",
+        "answer_video_start_time": 2027953,
+        "answer_video_end_time": 2027953
+    },
+    {
+        "task_id": "168fd0e1-3d14-4037-9c3e-c48f9c1ae78a",
+        "user": "prak4",
+        "timestamp": 1769696904322,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE25",
+        "answer_video_start_time": 1825400,
+        "answer_video_end_time": 1825400
+    },
+    {
+        "task_id": "168fd0e1-3d14-4037-9c3e-c48f9c1ae78a",
+        "user": "prak5",
+        "timestamp": 1769696910675,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE25",
+        "answer_video_start_time": 1975800,
+        "answer_video_end_time": 1975800
+    },
+    {
+        "task_id": "168fd0e1-3d14-4037-9c3e-c48f9c1ae78a",
+        "user": "prak2",
+        "timestamp": 1769696921470,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE25",
+        "answer_video_start_time": 1966800,
+        "answer_video_end_time": 1966800
+    },
+    {
+        "task_id": "168fd0e1-3d14-4037-9c3e-c48f9c1ae78a",
+        "user": "prak1",
+        "timestamp": 1769696923673,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE25",
+        "answer_video_start_time": 1985811,
+        "answer_video_end_time": 1985811
+    },
+    {
+        "task_id": "168fd0e1-3d14-4037-9c3e-c48f9c1ae78a",
+        "user": "prak2",
+        "timestamp": 1769696948581,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE39",
+        "answer_video_start_time": 1966800,
+        "answer_video_end_time": 1966800
+    },
+    {
+        "task_id": "168fd0e1-3d14-4037-9c3e-c48f9c1ae78a",
+        "user": "prak5",
+        "timestamp": 1769696984680,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE25",
+        "answer_video_start_time": 1978800,
+        "answer_video_end_time": 1978800
+    },
+    {
+        "task_id": "168fd0e1-3d14-4037-9c3e-c48f9c1ae78a",
+        "user": "prak5",
+        "timestamp": 1769696990856,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE39",
+        "answer_video_start_time": 1969800,
+        "answer_video_end_time": 1969800
+    },
+    {
+        "task_id": "168fd0e1-3d14-4037-9c3e-c48f9c1ae78a",
+        "user": "prak1",
+        "timestamp": 1769697009338,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "LHE25",
+        "answer_video_start_time": 2025839,
+        "answer_video_end_time": 2025839
+    },
+    {
+        "task_id": "168fd0e1-3d14-4037-9c3e-c48f9c1ae78a",
+        "user": "prak3",
+        "timestamp": 1769697010267,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE39",
+        "answer_video_start_time": 2074800,
+        "answer_video_end_time": 2074800
+    },
+    {
+        "task_id": "097cfe3c-3208-46f4-91dd-0058244b9ade",
+        "user": "prak4",
+        "timestamp": 1769698680262,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "LHE19",
+        "answer_video_start_time": 697886,
+        "answer_video_end_time": 697886
+    },
+    {
+        "task_id": "097cfe3c-3208-46f4-91dd-0058244b9ade",
+        "user": "prak2",
+        "timestamp": 1769698788884,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "LHE19",
+        "answer_video_start_time": 693189,
+        "answer_video_end_time": 693189
+    },
+    {
+        "task_id": "097cfe3c-3208-46f4-91dd-0058244b9ade",
+        "user": "exquisitor1",
+        "timestamp": 1769698896189,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE51",
+        "answer_video_start_time": 2745000,
+        "answer_video_end_time": 2750000
+    },
+    {
+        "task_id": "f3fd2b3b-1093-4b41-bae7-6b15cdcc8dc0",
+        "user": "prak4",
+        "timestamp": 1769700074582,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "LHE08",
+        "answer_video_start_time": 3443969,
+        "answer_video_end_time": 3443969
+    },
+    {
+        "task_id": "f3fd2b3b-1093-4b41-bae7-6b15cdcc8dc0",
+        "user": "prak1",
+        "timestamp": 1769700231923,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE04",
+        "answer_video_start_time": 3709200,
+        "answer_video_end_time": 3709200
+    },
+    {
+        "task_id": "f3fd2b3b-1093-4b41-bae7-6b15cdcc8dc0",
+        "user": "prak5",
+        "timestamp": 1769700258655,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "LHE57",
+        "answer_video_start_time": 2310200,
+        "answer_video_end_time": 2310200
+    },
+    {
+        "task_id": "473c02a4-67b3-4f46-b106-5d9e4f3a87bd",
+        "user": "prak1",
+        "timestamp": 1769697686070,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "BigIsland_Jan2023_0022",
+        "answer_video_start_time": 11738,
+        "answer_video_end_time": 11738
+    },
+    {
+        "task_id": "473c02a4-67b3-4f46-b106-5d9e4f3a87bd",
+        "user": "prak4",
+        "timestamp": 1769697707157,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "BigIsland_Jan2023_0022",
+        "answer_video_start_time": 10289,
+        "answer_video_end_time": 10289
+    },
+    {
+        "task_id": "473c02a4-67b3-4f46-b106-5d9e4f3a87bd",
+        "user": "prak3",
+        "timestamp": 1769697735096,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "BigIsland_Jan2023_0022",
+        "answer_video_start_time": 11802,
+        "answer_video_end_time": 11802
+    },
+    {
+        "task_id": "473c02a4-67b3-4f46-b106-5d9e4f3a87bd",
+        "user": "prak5",
+        "timestamp": 1769697865921,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "BigIsland_Jan2023_0036",
+        "answer_video_start_time": 200,
+        "answer_video_end_time": 200
+    },
+    {
+        "task_id": "473c02a4-67b3-4f46-b106-5d9e4f3a87bd",
+        "user": "prak5",
+        "timestamp": 1769697871231,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "BigIsland_Jan2023_0018",
+        "answer_video_start_time": 21200,
+        "answer_video_end_time": 21200
+    },
+    {
+        "task_id": "473c02a4-67b3-4f46-b106-5d9e4f3a87bd",
+        "user": "prak5",
+        "timestamp": 1769697873249,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "BigIsland_Jan2023_0045",
+        "answer_video_start_time": 7200,
+        "answer_video_end_time": 7200
+    },
+    {
+        "task_id": "473c02a4-67b3-4f46-b106-5d9e4f3a87bd",
+        "user": "prak5",
+        "timestamp": 1769697878605,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "BigIsland_Jan2023_0002",
+        "answer_video_start_time": 9600,
+        "answer_video_end_time": 9600
+    },
+    {
+        "task_id": "473c02a4-67b3-4f46-b106-5d9e4f3a87bd",
+        "user": "prak2",
+        "timestamp": 1769697883297,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "BigIsland_Jan2023_0008",
+        "answer_video_start_time": 1000,
+        "answer_video_end_time": 1000
+    },
+    {
+        "task_id": "473c02a4-67b3-4f46-b106-5d9e4f3a87bd",
+        "user": "prak5",
+        "timestamp": 1769697883528,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "BigIsland_Jan2023_0042",
+        "answer_video_start_time": 18400,
+        "answer_video_end_time": 18400
+    },
+    {
+        "task_id": "596ef13a-881b-4ec2-8999-17d36a48f173",
+        "user": "prak5",
+        "timestamp": 1769699549912,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "HongKong1_Jun2024_0065",
+        "answer_video_start_time": 2000,
+        "answer_video_end_time": 2000
+    },
+    {
+        "task_id": "596ef13a-881b-4ec2-8999-17d36a48f173",
+        "user": "prak2",
+        "timestamp": 1769699574729,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "HongKong1_Jun2024_0065",
+        "answer_video_start_time": 600,
+        "answer_video_end_time": 600
+    },
+    {
+        "task_id": "596ef13a-881b-4ec2-8999-17d36a48f173",
+        "user": "prak3",
+        "timestamp": 1769699583006,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "HongKong1_Jun2024_0065",
+        "answer_video_start_time": 3781,
+        "answer_video_end_time": 3781
+    },
+    {
+        "task_id": "596ef13a-881b-4ec2-8999-17d36a48f173",
+        "user": "exquisitor1",
+        "timestamp": 1769699602564,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "HongKong1_Jun2024_0065",
+        "answer_video_start_time": 0,
+        "answer_video_end_time": 4000
+    },
+    {
+        "task_id": "596ef13a-881b-4ec2-8999-17d36a48f173",
+        "user": "prak4",
+        "timestamp": 1769699610757,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "HongKong1_Jun2024_0065",
+        "answer_video_start_time": 2000,
+        "answer_video_end_time": 2000
+    },
+    {
+        "task_id": "596ef13a-881b-4ec2-8999-17d36a48f173",
+        "user": "prak1",
+        "timestamp": 1769699734861,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "HongKong1_Jun2024_0065",
+        "answer_video_start_time": 3665,
+        "answer_video_end_time": 3665
+    },
+    {
+        "task_id": "0569cdc6-c375-4fee-9ae6-378d065b8233",
+        "user": "prak5",
+        "timestamp": 1769704268556,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "Tulamben2_Jun2022_0017",
+        "answer_video_start_time": 21024,
+        "answer_video_end_time": 21024
+    },
+    {
+        "task_id": "0569cdc6-c375-4fee-9ae6-378d065b8233",
+        "user": "exquisitor1",
+        "timestamp": 1769704269156,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "Tulamben2_Jun2022_0017",
+        "answer_video_start_time": 19000,
+        "answer_video_end_time": 22000
+    },
+    {
+        "task_id": "0569cdc6-c375-4fee-9ae6-378d065b8233",
+        "user": "prak4",
+        "timestamp": 1769704271500,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "Tulamben2_Jun2022_0017",
+        "answer_video_start_time": 15800,
+        "answer_video_end_time": 15800
+    },
+    {
+        "task_id": "0569cdc6-c375-4fee-9ae6-378d065b8233",
+        "user": "prak1",
+        "timestamp": 1769704281850,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "Tulamben2_Jun2022_0017",
+        "answer_video_start_time": 26600,
+        "answer_video_end_time": 26600
+    },
+    {
+        "task_id": "0569cdc6-c375-4fee-9ae6-378d065b8233",
+        "user": "prak2",
+        "timestamp": 1769704282715,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "Tulamben2_Jun2022_0017",
+        "answer_video_start_time": 15800,
+        "answer_video_end_time": 15800
+    },
+    {
+        "task_id": "0569cdc6-c375-4fee-9ae6-378d065b8233",
+        "user": "prak3",
+        "timestamp": 1769704286726,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "Tulamben2_Jun2022_0017",
+        "answer_video_start_time": 13664,
+        "answer_video_end_time": 13664
+    },
+    {
+        "task_id": "2e799163-ba30-440f-ba81-876cc7b26149",
+        "user": "prak2",
+        "timestamp": 1769705411734,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "Sipadan_Jan2015_0009",
+        "answer_video_start_time": 19200,
+        "answer_video_end_time": 19200
+    },
+    {
+        "task_id": "2e799163-ba30-440f-ba81-876cc7b26149",
+        "user": "prak1",
+        "timestamp": 1769705416435,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "Sipadan_Jan2015_0009",
+        "answer_video_start_time": 19200,
+        "answer_video_end_time": 19200
+    },
+    {
+        "task_id": "2e799163-ba30-440f-ba81-876cc7b26149",
+        "user": "prak5",
+        "timestamp": 1769705419933,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "Sipadan_Jan2015_0009",
+        "answer_video_start_time": 21377,
+        "answer_video_end_time": 21377
+    },
+    {
+        "task_id": "2e799163-ba30-440f-ba81-876cc7b26149",
+        "user": "prak4",
+        "timestamp": 1769705429585,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "Sipadan_Jan2015_0009",
+        "answer_video_start_time": 11000,
+        "answer_video_end_time": 11000
+    },
+    {
+        "task_id": "2e799163-ba30-440f-ba81-876cc7b26149",
+        "user": "exquisitor1",
+        "timestamp": 1769705433864,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "Sipadan_Jan2015_0009",
+        "answer_video_start_time": 19000,
+        "answer_video_end_time": 22000
+    },
+    {
+        "task_id": "2e799163-ba30-440f-ba81-876cc7b26149",
+        "user": "prak3",
+        "timestamp": 1769705449150,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "Sipadan_Jan2015_0009",
+        "answer_video_start_time": 23389,
+        "answer_video_end_time": 23389
+    },
+    {
+        "task_id": "29dbf3d0-4d40-4e63-815e-ec1a15358250",
+        "user": "prak2",
+        "timestamp": 1769707544722,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "WestPalm_May2023_0149",
+        "answer_video_start_time": 0,
+        "answer_video_end_time": 0
+    },
+    {
+        "task_id": "29dbf3d0-4d40-4e63-815e-ec1a15358250",
+        "user": "prak4",
+        "timestamp": 1769707553302,
+        "status": -1,
+        "answer_text": null,
+        "answer_video": "WestPalm_May2023_0056",
+        "answer_video_start_time": 12600,
+        "answer_video_end_time": 12600
+    },
+    {
+        "task_id": "29dbf3d0-4d40-4e63-815e-ec1a15358250",
+        "user": "prak2",
+        "timestamp": 1769707566517,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "WestPalm_May2023_0056",
+        "answer_video_start_time": 26600,
+        "answer_video_end_time": 26600
+    },
+    {
+        "task_id": "29dbf3d0-4d40-4e63-815e-ec1a15358250",
+        "user": "prak5",
+        "timestamp": 1769707572347,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "WestPalm_May2023_0056",
+        "answer_video_start_time": 24617,
+        "answer_video_end_time": 24617
+    },
+    {
+        "task_id": "29dbf3d0-4d40-4e63-815e-ec1a15358250",
+        "user": "prak4",
+        "timestamp": 1769707584368,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "WestPalm_May2023_0056",
+        "answer_video_start_time": 14632,
+        "answer_video_end_time": 14632
+    },
+    {
+        "task_id": "29dbf3d0-4d40-4e63-815e-ec1a15358250",
+        "user": "prak1",
+        "timestamp": 1769707634160,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "WestPalm_May2023_0056",
+        "answer_video_start_time": 26600,
+        "answer_video_end_time": 26600
+    },
+    {
+        "task_id": "29dbf3d0-4d40-4e63-815e-ec1a15358250",
+        "user": "exquisitor1",
+        "timestamp": 1769707668088,
+        "status": 1,
+        "answer_text": null,
+        "answer_video": "WestPalm_May2023_0056",
+        "answer_video_start_time": 16000,
+        "answer_video_end_time": 19000
+    }
+]

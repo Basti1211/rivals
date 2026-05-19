@@ -1,0 +1,215 @@
+.data-manipulator {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+}
+
+.data-manipulator-toolbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.data-manipulator-toolbar h2 {
+  margin: 0;
+  font-size: 0.98rem;
+  letter-spacing: 0;
+}
+
+.data-manipulator-meta {
+  margin-top: 0.22rem;
+  color: var(--color-text-muted);
+  font-size: 0.74rem;
+}
+
+.data-manipulator-actions,
+.data-manipulator-system-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.data-manipulator-actions {
+  justify-content: flex-end;
+}
+
+.data-manipulator-actions .ant-btn,
+.data-manipulator-system-row .ant-btn {
+  height: 26px;
+  padding-inline: 0.5rem;
+  font-size: 0.72rem;
+}
+
+.data-manipulator-actions .ant-btn > span,
+.data-manipulator-system-row .ant-btn > span,
+.data-manipulator-task-button > span,
+.data-manipulator-user-button > span,
+.data-manipulator-hierarchy-button > span {
+  font-size: inherit;
+}
+
+.data-manipulator-scope-group,
+.data-manipulator-user-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.data-manipulator-scope-group {
+  padding: 0.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-soft);
+}
+
+.data-manipulator-hierarchy-button {
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  padding-inline: 0;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.data-manipulator-alert {
+  width: 100%;
+}
+
+.data-manipulator-matrix-wrap {
+  overflow: auto;
+  max-height: min(62vh, 720px);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.data-manipulator-matrix {
+  width: max-content;
+  min-width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--color-surface);
+}
+
+.data-manipulator-matrix th,
+.data-manipulator-matrix td {
+  min-width: 40px;
+  height: 24px;
+  padding: 0;
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.data-manipulator-matrix thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--color-surface-soft);
+}
+
+.data-manipulator-matrix tbody th {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  min-width: 142px;
+  background: var(--color-surface-soft);
+  text-align: left;
+}
+
+.data-manipulator-matrix thead .data-manipulator-corner {
+  left: 0;
+  z-index: 3;
+  min-width: 142px;
+  text-align: left;
+}
+
+.data-manipulator-matrix tr:last-child th,
+.data-manipulator-matrix tr:last-child td {
+  border-bottom: 0;
+}
+
+.data-manipulator-matrix th:last-child,
+.data-manipulator-matrix td:last-child {
+  border-right: 0;
+}
+
+.data-manipulator-task-button,
+.data-manipulator-user-button {
+  max-width: 104px;
+  height: 22px;
+  padding-inline: 0.35rem;
+  font-size: 0.66rem;
+}
+
+.data-manipulator-task-button span,
+.data-manipulator-user-button span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.data-manipulator-user-button {
+  display: flex;
+}
+
+.data-manipulator-matrix tbody th > span {
+  display: block;
+  margin-top: 0.08rem;
+  color: var(--color-text-muted);
+  font-size: 0.58rem;
+}
+
+.data-manipulator-cell-toggle {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  background: #d1d5db;
+  color: #374151;
+  cursor: pointer;
+  font: 700 0.5rem var(--font-main);
+  line-height: 1;
+}
+
+.data-manipulator-cell-toggle.is-selected {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.data-manipulator-cell-toggle:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.data-manipulator-empty {
+  display: grid;
+  min-height: 160px;
+  place-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+  background: var(--color-surface-soft);
+}
+
+@media (max-width: 760px) {
+  .data-manipulator-toolbar {
+    flex-direction: column;
+  }
+
+  .data-manipulator-actions {
+    justify-content: flex-start;
+  }
+
+  .data-manipulator-matrix tbody th,
+  .data-manipulator-matrix thead .data-manipulator-corner {
+    min-width: 124px;
+  }
+}

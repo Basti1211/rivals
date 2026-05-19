@@ -1,0 +1,19 @@
+app:
+  ingress:
+    enabled: false
+
+  #health: "/health"
+  # health checks off
+  readinessProbe: "null"
+  livenessProbe: "null"
+
+  port: 8080 # this is the port for the pod
+
+  extraEnv:
+    PORT: "8080" # this is the port fastapi listens to and needs to match as our setup has no pod-internal forwarding
+    ROOT_PATH: "/api"
+
+  pvc:
+    enabled: true
+    storage: 400M
+    mountPath: "/usr/src/mount-data"
