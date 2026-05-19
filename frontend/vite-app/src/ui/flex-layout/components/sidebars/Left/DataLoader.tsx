@@ -3,6 +3,7 @@ import { Alert, Button, notification } from "antd";
 import "../../../../style/general.css";
 import "./dataLoader.css";
 import { LoadDataResponse, ValidJsonFile } from "../../../../../types/dataTypes";
+import { useDataRefresh } from "../../../flex-layout-context/DataRefreshContext";
 import JsonUploadBox from "./JsonUploadBox";
 
 type LoadTarget = "demo" | "tasks" | "answers" | "interactionLogs";
@@ -81,6 +82,7 @@ const readLoadDataResponse = async (res: Response): Promise<LoadDataResponse> =>
 };
 
 const DataLoader: React.FC = () => {
+  const { notifyDataChanged } = useDataRefresh();
   const [loadResponse, setLoadResponse] = useState<LoadDataResponse>(emptyLoadDataResponse());
   const [activeLoadTarget, setActiveLoadTarget] = useState<LoadTarget | null>(null);
   const [deletingSourceFileIds, setDeletingSourceFileIds] = useState<Set<number>>(() => new Set());
@@ -121,6 +123,9 @@ const DataLoader: React.FC = () => {
       const data = await readLoadDataResponse(res);
 
       setLoadResponse(data);
+      if (res.ok) {
+        notifyDataChanged();
+      }
     } catch (error) {
       setLoadResponse(
         emptyLoadDataResponse(
@@ -153,6 +158,9 @@ const DataLoader: React.FC = () => {
       const data = await readLoadDataResponse(res);
 
       setLoadResponse(data);
+      if (res.ok) {
+        notifyDataChanged();
+      }
     } catch (error) {
       setLoadResponse(
         emptyLoadDataResponse(
@@ -191,6 +199,9 @@ const DataLoader: React.FC = () => {
       const data = await readLoadDataResponse(res);
 
       setLoadResponse(data);
+      if (res.ok) {
+        notifyDataChanged();
+      }
     } catch (error) {
       setLoadResponse((currentResponse) => ({
         ...currentResponse,

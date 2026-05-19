@@ -1,6 +1,7 @@
 import axios from "axios";
 import type {
     FetchInteractionDataResponse,
+    FetchTasksAndAnswers,
     FetchUsersAndTasks,
     InteractionRequest,
 } from "../types/dataTypes";
@@ -35,6 +36,21 @@ export const fetchUsersAndTasks = async (): Promise<FetchUsersAndTasks> => {
     }
 
     return await response.json() as FetchUsersAndTasks;
+};
+
+export const fetchTasksAndAnswers = async (
+    signal?: AbortSignal,
+): Promise<FetchTasksAndAnswers> => {
+    const response = await fetch("/api/data/get-tasks-and-answers", {
+        method: "GET",
+        signal,
+    });
+
+    if (!response.ok) {
+        throw new Error(`Failed to fetch tasks and answers: ${response.status}`);
+    }
+
+    return await response.json() as FetchTasksAndAnswers;
 };
 
 export const fetchInteractions = async (

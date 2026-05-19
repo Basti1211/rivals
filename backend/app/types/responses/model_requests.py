@@ -33,6 +33,11 @@ class TaskRow(BaseModel):
         description="Optional video ID used as a hint for the task; null if no hint video is provided",
     )
 
+    hint_video_path: Optional[str] = Field(
+        default=None,
+        description="Optional path or URL for the hint video; null if not provided",
+    )
+
     hint_video_start_time: Optional[int] = Field(
         default=None,
         description="Optional start time of the hint video segment, usually in milliseconds; null if not provided",
@@ -56,6 +61,11 @@ class TaskRow(BaseModel):
     target_video: Optional[str] = Field(
         default=None,
         description="Optional target video ID; null if not provided",
+    )
+
+    target_video_path: Optional[str] = Field(
+        default=None,
+        description="Optional path or URL for the target video; null if not provided",
     )
 
     target_video_start_time: Optional[int] = Field(

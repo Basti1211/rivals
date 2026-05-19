@@ -162,6 +162,16 @@ class FetchInteractionDataResponse(BaseModel):
         description="List of users and their interaction hierarchies",
     )
 
+
+class FetchTasksAndAnswers(BaseModel):
+    tasks: TaskList = Field(
+        description="List of task entries",
+    )
+    submissions: SubmissionList = Field(
+        description="List of submitted answers",
+    )
+
+
 class FetchUsersAndTasks(BaseModel):
     tasks: TaskList = Field(
         description="List of task entries",

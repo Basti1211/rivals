@@ -2,8 +2,14 @@ from fastapi import APIRouter
 
 from app.dataManager.fetchData.fetch_interaction_data import fetch_interaction_data
 from app.dataManager.fetchData.fetch_load_summary import fetch_load_summary
+from app.dataManager.fetchData.fetch_tasks_and_answers import fetch_tasks_and_answers
 from app.dataManager.fetchData.fetch_users_and_tasks import fetch_users_and_tasks
-from app.types.responses.model_responses import FetchUsersAndTasks, FetchInteractionDataResponse, LoadDataResponse
+from app.types.responses.model_responses import (
+    FetchInteractionDataResponse,
+    FetchTasksAndAnswers,
+    FetchUsersAndTasks,
+    LoadDataResponse,
+)
 from app.types.responses.model_requests import InteractionRequest
 
 get_data_router = APIRouter(prefix="/data", tags=["data"])
@@ -27,6 +33,16 @@ def get_user_and_tasks() -> FetchUsersAndTasks:
 )
 def get_load_summary() -> LoadDataResponse:
     return fetch_load_summary()
+
+
+@get_data_router.get(
+    "/get-tasks-and-answers",
+    response_model=FetchTasksAndAnswers,
+    summary="Send all available tasks and answers in the database",
+    description="Send all available task rows and submitted answer rows in the database.",
+)
+def get_tasks_and_answers() -> FetchTasksAndAnswers:
+    return fetch_tasks_and_answers()
 
 
 @get_data_router.post(

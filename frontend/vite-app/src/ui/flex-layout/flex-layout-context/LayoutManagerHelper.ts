@@ -89,6 +89,23 @@ export const initialLayout: IJsonModel = {
         },
       ],
     },
+    {
+      type: "border",
+      location: "right",
+      size: 500,          // width when open
+      selected: -1,       // 0=open first tab; -1=collapsed
+      show: true,
+      children: [
+        {
+          type: "tab",
+          id: "RIGHT_SIDEBAR_TAB",
+          name: "Task Visualization",
+          component: "task-visualization",
+          enableClose: false, // cannot be deleted
+          enableDrag: false,  // cannot be dragged out
+        },
+      ],
+    }
   ],
 
     layout: {

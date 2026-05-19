@@ -1,5 +1,6 @@
 import {TabNode} from 'flexlayout-react';
 import DataLoader from "./components/sidebars/Left/DataLoader.js";
+import TaskVisualization from "./components/sidebars/Right/TaskAndAnswers.js";
 import CountBarchart from './components/visualizations/CountBarchart/CountBarchart.tsx';
 import DurationBarchart from './components/visualizations/DurationBarchart/DurationBarchart.tsx';
 import SearchLines2 from './components/visualizations/SearchLines2/SearchLines2.tsx';
@@ -25,6 +26,8 @@ export const factory = (node: TabNode) => {
     switch (component) {
         case 'data-loader':
             return <DataLoader/>;
+        case 'task-visualization':
+            return <TaskVisualization/>;
         case "countBarchart":
             return <CountBarchart visualizationId={node.getId()} initialData={getInitialData(node)}/>
         case "durationBarchart":

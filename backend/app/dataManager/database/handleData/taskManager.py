@@ -20,15 +20,17 @@ def insert(task_list: TaskList, from_file: int | None = None) -> int:
             dataset,
             hint_text,
             hint_video,
+            hint_video_path,
             hint_video_start_time,
             hint_video_end_time,
             target_text,
             target_video,
+            target_video_path,
             target_video_start_time,
             target_video_end_time,
             from_file
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
     """
 
     inserted_count = 0
@@ -46,10 +48,12 @@ def insert(task_list: TaskList, from_file: int | None = None) -> int:
                 task.dataset,
                 task.hint_text,
                 task.hint_video,
+                task.hint_video_path,
                 task.hint_video_start_time,
                 task.hint_video_end_time,
                 task.target_text,
                 task.target_video,
+                task.target_video_path,
                 task.target_video_start_time,
                 task.target_video_end_time,
                 from_file,

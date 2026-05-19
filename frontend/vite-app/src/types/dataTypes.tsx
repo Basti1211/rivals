@@ -35,11 +35,13 @@ export type TaskRow = {
   taskGroup: string;
   finished_after_correct_answer: boolean;
   hint_video: string | null;
+  hint_video_path: string | null;
   hint_video_start_time: number | null;
   hint_video_end_time: number | null;
   hint_text: string | null;
   target_text: string | null;
   target_video: string | null;
+  target_video_path: string | null;
   target_video_start_time: number | null;
   target_video_end_time: number | null;
   started: number | null;
@@ -114,6 +116,11 @@ export type UserList = {
 export type FetchUsersAndTasks = {
   tasks: TaskList;
   users: UserList;
+};
+
+export type FetchTasksAndAnswers = {
+  tasks: TaskList;
+  submissions: SubmissionList;
 };
 
 export type FetchInteractionDataResponse = {
