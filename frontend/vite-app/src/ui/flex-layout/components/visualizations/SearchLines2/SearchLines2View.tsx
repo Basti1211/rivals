@@ -1657,7 +1657,7 @@ const SearchLines2View: React.FC<SearchLines2ViewProps> = ({
   return (
     <div className="task-barchart">
       <div className="task-barchart-header">
-        <h1>Search Lines 2</h1>
+        <h1>Search Lines</h1>
         <div className="task-barchart-actions">
           <Button type="primary" onClick={onOpenDataManipulator}>
             Data

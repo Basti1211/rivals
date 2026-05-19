@@ -16,7 +16,7 @@ const HeaderMenu: React.FC = () => {
         addTabToActiveTabSet("Duration Barchart", "durationBarchart");
     };
      const handleSearchLines2 = () => {
-        addTabToActiveTabSet("Search Lines 2", "searchLines2");
+        addTabToActiveTabSet("Search Lines", "searchLines2");
     };
 
     return (
