@@ -39,19 +39,35 @@
 .search-lines-2-columns {
   display: flex;
   align-items: stretch;
-  width: max-content;
+  width: 100%;
   min-width: 100%;
 }
 
 .search-lines-2-column {
-  flex: 0 0 420px;
+  flex: 1 0 420px;
   min-width: 420px;
   border-right: 1px solid var(--color-border);
   background: var(--color-surface);
 }
 
+.search-lines-2-columns.is-stacked {
+  flex-direction: column;
+}
+
+.search-lines-2-columns.is-stacked .search-lines-2-column {
+  flex: 0 0 auto;
+  width: 100%;
+  min-width: 0;
+  border-right: 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
 .search-lines-2-column:last-child {
   border-right: 0;
+}
+
+.search-lines-2-columns.is-stacked .search-lines-2-column:last-child {
+  border-bottom: 0;
 }
 
 .search-lines-2-column-header {

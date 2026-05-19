@@ -1559,6 +1559,7 @@ const SearchLines2View: React.FC<SearchLines2ViewProps> = ({
 }) => {
   const [rankField, setRankField] = useState<RankField>("frameRank");
   const [columnMode, setColumnMode] = useState<ColumnMode>("task");
+  const [stackColumns, setStackColumns] = useState(false);
   const [includeDescendantMarkers, setIncludeDescendantMarkers] = useState(true);
   const [overlaySelections, setOverlaySelections] = useState<OverlaySelection[]>([]);
   const [selectedBandId, setSelectedBandId] = useState<string | null>(null);
@@ -1710,6 +1711,16 @@ const SearchLines2View: React.FC<SearchLines2ViewProps> = ({
 
       <section className="task-barchart-options">
         <div className="search-lines-rank-switch">
+          <span>Columns</span>
+          <Switch
+            checked={stackColumns}
+            checkedChildren="Rows"
+            unCheckedChildren="Columns"
+            onChange={setStackColumns}
+          />
+          <span>Rows</span>
+        </div>
+        <div className="search-lines-rank-switch">
           <span>Exact symbols</span>
           <Switch
             checked={includeDescendantMarkers}
@@ -1738,7 +1749,7 @@ const SearchLines2View: React.FC<SearchLines2ViewProps> = ({
       ) : (
         <div className={`search-lines-2-workspace ${selectedBand ? "has-zoom" : ""}`}>
           <div className="search-lines-2-columns-wrap">
-            <div className="search-lines-2-columns">
+            <div className={`search-lines-2-columns ${stackColumns ? "is-stacked" : ""}`}>
               {columns.map((column) => (
                 <SearchLines2Column
                   key={column.id}
