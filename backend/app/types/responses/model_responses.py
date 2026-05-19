@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 from typing import List, Optional
 
 from app.types.responses.model_requests import (
@@ -27,6 +27,9 @@ class LoadDataResponse(BaseModel):
     """
     Response model for data loading operations.
     """
+
+    model_config = ConfigDict(validate_assignment=True)
+
     loadedTasks: int = Field(
         default=0,
         description="Number of task rows newly added by this load operation",
