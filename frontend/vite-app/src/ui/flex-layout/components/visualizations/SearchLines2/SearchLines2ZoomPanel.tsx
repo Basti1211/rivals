@@ -31,8 +31,10 @@ type SearchLines2ZoomPanelProps = {
   rankField: RankField;
   overlaySelections: OverlaySelection[];
   overlayOptionById: Map<string, OverlayOption>;
+  cancelledOverlayGroupIds: Set<string>;
   includeDescendantMarkers: boolean;
   topLevelColorsByUser: Map<string, Map<string, string>>;
+  topLevelGroupIdsByUser: Map<string, Map<string, string>>;
   onClose: () => void;
 };
 
@@ -227,10 +229,7 @@ const getMarkerConfigs = (
       return [];
     }
 
-    const isMatch = includeDescendants
-      ? option.descendantNames.includes(interaction.action)
-        || option.descendantNames.includes(interaction.abstract_type)
-      : interaction.abstract_type === option.name;
+    const isMatch = interactionMatchesOverlayOption(interaction, option, includeDescendants);
 
     if (!isMatch) {
       return [];
@@ -255,6 +254,42 @@ const getMarkerConfigs = (
         selection.useLeafSymbols ? leafSymbolName : option.name,
       ),
     }];
+  });
+};
+
+const interactionMatchesOverlayOption = (
+  interaction: FetchInteractionLogRow,
+  option: OverlayOption,
+  includeDescendants: boolean,
+): boolean => {
+  return includeDescendants
+    ? option.descendantNames.includes(interaction.action)
+      || option.descendantNames.includes(interaction.abstract_type)
+    : interaction.abstract_type === option.name;
+};
+
+const shouldDrawInteractionSymbol = (
+  interaction: FetchInteractionLogRow,
+  user: string,
+  cancelledOverlayGroupIds: Set<string>,
+  overlaySelections: OverlaySelection[],
+  overlayOptionById: Map<string, OverlayOption>,
+  includeDescendantMarkers: boolean,
+  topLevelGroupIdsByUser: Map<string, Map<string, string>>,
+): boolean => {
+  const topLevelGroupIds = topLevelGroupIdsByUser.get(user);
+  const groupId = topLevelGroupIds?.get(interaction.action)
+    ?? topLevelGroupIds?.get(interaction.abstract_type);
+
+  if (!groupId || !cancelledOverlayGroupIds.has(groupId)) {
+    return true;
+  }
+
+  return overlaySelections.some((selection) => {
+    const option = overlayOptionById.get(selection.optionId);
+
+    return option?.groupId === groupId
+      && interactionMatchesOverlayOption(interaction, option, includeDescendantMarkers);
   });
 };
 
@@ -322,8 +357,10 @@ const SearchLines2ZoomPanel: React.FC<SearchLines2ZoomPanelProps> = ({
   rankField,
   overlaySelections,
   overlayOptionById,
+  cancelledOverlayGroupIds,
   includeDescendantMarkers,
   topLevelColorsByUser,
+  topLevelGroupIdsByUser,
   onClose,
 }) => {
   const [lassoSelection, setLassoSelection] = useState<LassoSelection | null>(null);
@@ -541,6 +578,19 @@ const SearchLines2ZoomPanel: React.FC<SearchLines2ZoomPanelProps> = ({
             bounds.start,
           );
           const y = yScale(interaction.timestamp);
+          const shouldDrawSymbol = shouldDrawInteractionSymbol(
+            interaction,
+            band.user,
+            cancelledOverlayGroupIds,
+            overlaySelections,
+            overlayOptionById,
+            includeDescendantMarkers,
+            topLevelGroupIdsByUser,
+          );
+
+          if (!shouldDrawSymbol) {
+            return null;
+          }
 
           if (markerConfigs.length) {
             return (

@@ -1,4 +1,4 @@
-import {useMemo, useState} from "react";
+import {useEffect, useMemo, useState} from "react";
 import type React from "react";
 import {Button, Dropdown, Select, Switch} from "antd";
 import type {MenuProps} from "antd";
@@ -387,10 +387,7 @@ const getMarkerConfigs = (
       return [];
     }
 
-    const isMatch = includeDescendants
-      ? option.descendantNames.includes(interaction.action)
-        || option.descendantNames.includes(interaction.abstract_type)
-      : interaction.abstract_type === option.name;
+    const isMatch = interactionMatchesOverlayOption(interaction, option, includeDescendants);
 
     if (!isMatch) {
       return [];
@@ -416,6 +413,17 @@ const getMarkerConfigs = (
       ),
     }];
   });
+};
+
+const interactionMatchesOverlayOption = (
+  interaction: FetchInteractionLogRow,
+  option: OverlayOption,
+  includeDescendants: boolean,
+): boolean => {
+  return includeDescendants
+    ? option.descendantNames.includes(interaction.action)
+      || option.descendantNames.includes(interaction.abstract_type)
+    : interaction.abstract_type === option.name;
 };
 
 const MarkerSymbol: React.FC<{
@@ -881,6 +889,31 @@ const getTopLevelActionColors = (
   }));
 };
 
+const getTopLevelActionGroupIds = (
+  users: UserRow[],
+  overlayGroups: OverlayGroup[],
+): Map<string, Map<string, string>> => {
+  const groupIdByGroupName = new Map(overlayGroups.map((group) => [group.name, group.id]));
+
+  return new Map(users.map((user) => {
+    const groupIdByAction = new Map<string, string>();
+
+    const visit = (node: InteractionHierarchyNode, rootName: string): void => {
+      const groupId = groupIdByGroupName.get(rootName);
+
+      if (groupId) {
+        groupIdByAction.set(node.Name, groupId);
+      }
+
+      (node.Children ?? []).forEach((child) => visit(child, rootName));
+    };
+
+    user.hierarchy.forEach((rootNode) => visit(rootNode, rootNode.Name));
+
+    return [user.user, groupIdByAction];
+  }));
+};
+
 const getInteractionColor = (
   interaction: FetchInteractionLogRow,
   user: string,
@@ -891,6 +924,31 @@ const getInteractionColor = (
   return topLevelColors?.get(interaction.action)
     ?? topLevelColors?.get(interaction.abstract_type)
     ?? "#4b5563";
+};
+
+const shouldDrawInteractionSymbol = (
+  interaction: FetchInteractionLogRow,
+  user: string,
+  cancelledOverlayGroupIds: Set<string>,
+  overlaySelections: OverlaySelection[],
+  overlayOptionById: Map<string, OverlayOption>,
+  includeDescendantMarkers: boolean,
+  topLevelGroupIdsByUser: Map<string, Map<string, string>>,
+): boolean => {
+  const topLevelGroupIds = topLevelGroupIdsByUser.get(user);
+  const groupId = topLevelGroupIds?.get(interaction.action)
+    ?? topLevelGroupIds?.get(interaction.abstract_type);
+
+  if (!groupId || !cancelledOverlayGroupIds.has(groupId)) {
+    return true;
+  }
+
+  return overlaySelections.some((selection) => {
+    const option = overlayOptionById.get(selection.optionId);
+
+    return option?.groupId === groupId
+      && interactionMatchesOverlayOption(interaction, option, includeDescendantMarkers);
+  });
 };
 
 const getColumnBands = (
@@ -993,8 +1051,10 @@ const SearchLines2Column: React.FC<{
   rankField: RankField;
   overlaySelections: OverlaySelection[];
   overlayOptionById: Map<string, OverlayOption>;
+  cancelledOverlayGroupIds: Set<string>;
   includeDescendantMarkers: boolean;
   topLevelColorsByUser: Map<string, Map<string, string>>;
+  topLevelGroupIdsByUser: Map<string, Map<string, string>>;
   selectedBandId: string | null;
   timeRangeSelections: TimeRangeSelection[];
   onSelectBand: (bandId: string) => void;
@@ -1005,8 +1065,10 @@ const SearchLines2Column: React.FC<{
   rankField,
   overlaySelections,
   overlayOptionById,
+  cancelledOverlayGroupIds,
   includeDescendantMarkers,
   topLevelColorsByUser,
+  topLevelGroupIdsByUser,
   selectedBandId,
   timeRangeSelections,
   onSelectBand,
@@ -1395,6 +1457,19 @@ const SearchLines2Column: React.FC<{
                   bandBounds.start,
                 );
                 const x = xScale(interaction.timestamp - bandBounds.start);
+                const shouldDrawSymbol = shouldDrawInteractionSymbol(
+                  interaction,
+                  band.user,
+                  cancelledOverlayGroupIds,
+                  overlaySelections,
+                  overlayOptionById,
+                  includeDescendantMarkers,
+                  topLevelGroupIdsByUser,
+                );
+
+                if (!shouldDrawSymbol) {
+                  return null;
+                }
 
                 if (markerConfigs.length) {
                   return (
@@ -1454,16 +1529,20 @@ const OverlayControls: React.FC<{
   overlayGroups: OverlayGroup[];
   overlaySelections: OverlaySelection[];
   overlayOptionById: Map<string, OverlayOption>;
+  cancelledOverlayGroupIds: Set<string>;
   onAddSelection: (optionId: string) => void;
   onRemoveSelection: (optionId: string) => void;
   onToggleLeafSymbols: (optionId: string, useLeafSymbols: boolean) => void;
+  onToggleCancelledGroup: (groupId: string) => void;
 }> = ({
   overlayGroups,
   overlaySelections,
   overlayOptionById,
+  cancelledOverlayGroupIds,
   onAddSelection,
   onRemoveSelection,
   onToggleLeafSymbols,
+  onToggleCancelledGroup,
 }) => {
   if (!overlayGroups.length) {
     return null;
@@ -1479,6 +1558,7 @@ const OverlayControls: React.FC<{
 
           return option?.groupId === group.id;
         });
+        const groupCancelled = cancelledOverlayGroupIds.has(group.id);
 
         return (
           <div className="search-lines-overlay-group" key={group.id}>
@@ -1489,22 +1569,45 @@ const OverlayControls: React.FC<{
               />
               <span>{group.name}</span>
             </div>
-            <Select
-              className="search-lines-overlay-select"
-              value={undefined}
-              placeholder="Draw symbols for event type"
-              popupMatchSelectWidth={false}
-              options={group.options.map((option) => ({
-                value: option.id,
-                disabled: selectedOptionIds.has(option.id),
-                label: `${"  ".repeat(Math.max(0, option.depth - 1))}${option.name}`,
-              }))}
-              onSelect={(optionId) => {
-                if (typeof optionId === "string") {
-                  onAddSelection(optionId);
+            <div className="search-lines-overlay-select-row">
+              <Select
+                className="search-lines-overlay-select"
+                value={undefined}
+                placeholder="Draw symbols for event type"
+                popupMatchSelectWidth={false}
+                options={group.options.map((option) => ({
+                  value: option.id,
+                  disabled: selectedOptionIds.has(option.id),
+                  label: `${"  ".repeat(Math.max(0, option.depth - 1))}${option.name}`,
+                }))}
+                onSelect={(optionId) => {
+                  if (typeof optionId === "string") {
+                    onAddSelection(optionId);
+                  }
+                }}
+              />
+              <button
+                className={[
+                  "search-lines-overlay-cancel-group",
+                  groupCancelled ? "is-active" : "",
+                ].join(" ")}
+                type="button"
+                aria-pressed={groupCancelled}
+                aria-label={
+                  groupCancelled
+                    ? `Draw all symbols in ${group.name}`
+                    : `Hide unselected symbols in ${group.name}`
                 }
-              }}
-            />
+                title={
+                  groupCancelled
+                    ? `Draw all symbols in ${group.name}`
+                    : `Hide unselected symbols in ${group.name}`
+                }
+                onClick={() => onToggleCancelledGroup(group.id)}
+              >
+                x
+              </button>
+            </div>
             <div className="search-lines-overlay-chips">
               {groupSelections.map((selection) => {
                 const option = overlayOptionById.get(selection.optionId);
@@ -1562,6 +1665,7 @@ const SearchLines2View: React.FC<SearchLines2ViewProps> = ({
   const [stackColumns, setStackColumns] = useState(false);
   const [includeDescendantMarkers, setIncludeDescendantMarkers] = useState(true);
   const [overlaySelections, setOverlaySelections] = useState<OverlaySelection[]>([]);
+  const [cancelledOverlayGroupIds, setCancelledOverlayGroupIds] = useState<Set<string>>(() => new Set());
   const [selectedBandId, setSelectedBandId] = useState<string | null>(null);
   const [timeRangeSelections, setTimeRangeSelections] = useState<TimeRangeSelection[]>([]);
   const model = useMemo(() => buildModel(data), [data]);
@@ -1579,6 +1683,10 @@ const SearchLines2View: React.FC<SearchLines2ViewProps> = ({
   );
   const topLevelColorsByUser = useMemo(
     () => getTopLevelActionColors(data?.users.users ?? [], overlayGroups),
+    [data, overlayGroups],
+  );
+  const topLevelGroupIdsByUser = useMemo(
+    () => getTopLevelActionGroupIds(data?.users.users ?? [], overlayGroups),
     [data, overlayGroups],
   );
   const selectedPairCount = data?.interactions.length ?? 0;
@@ -1644,6 +1752,32 @@ const SearchLines2View: React.FC<SearchLines2ViewProps> = ({
       ),
     );
   };
+
+  const handleToggleCancelledOverlayGroup = (groupId: string): void => {
+    setCancelledOverlayGroupIds((currentGroupIds) => {
+      const nextGroupIds = new Set(currentGroupIds);
+
+      if (nextGroupIds.has(groupId)) {
+        nextGroupIds.delete(groupId);
+      } else {
+        nextGroupIds.add(groupId);
+      }
+
+      return nextGroupIds;
+    });
+  };
+
+  useEffect(() => {
+    const validGroupIds = new Set(overlayGroups.map((group) => group.id));
+
+    setCancelledOverlayGroupIds((currentGroupIds) => {
+      const nextGroupIds = new Set(
+        Array.from(currentGroupIds).filter((groupId) => validGroupIds.has(groupId)),
+      );
+
+      return nextGroupIds.size === currentGroupIds.size ? currentGroupIds : nextGroupIds;
+    });
+  }, [overlayGroups]);
 
   const handleAddTimeRangeSelection = (selection: TimeRangeSelection): void => {
     setTimeRangeSelections((currentSelections) => [...currentSelections, selection]);
@@ -1739,9 +1873,11 @@ const SearchLines2View: React.FC<SearchLines2ViewProps> = ({
         overlayGroups={overlayGroups}
         overlaySelections={validOverlaySelections}
         overlayOptionById={overlayOptionById}
+        cancelledOverlayGroupIds={cancelledOverlayGroupIds}
         onAddSelection={handleAddOverlaySelection}
         onRemoveSelection={handleRemoveOverlaySelection}
         onToggleLeafSymbols={handleToggleLeafSymbols}
+        onToggleCancelledGroup={handleToggleCancelledOverlayGroup}
       />
 
       {!data || !columns.length ? (
@@ -1757,8 +1893,10 @@ const SearchLines2View: React.FC<SearchLines2ViewProps> = ({
                   rankField={rankField}
                   overlaySelections={validOverlaySelections}
                   overlayOptionById={overlayOptionById}
+                  cancelledOverlayGroupIds={cancelledOverlayGroupIds}
                   includeDescendantMarkers={includeDescendantMarkers}
                   topLevelColorsByUser={topLevelColorsByUser}
+                  topLevelGroupIdsByUser={topLevelGroupIdsByUser}
                   selectedBandId={selectedBandId}
                   timeRangeSelections={timeRangeSelections}
                   onSelectBand={setSelectedBandId}
@@ -1775,8 +1913,10 @@ const SearchLines2View: React.FC<SearchLines2ViewProps> = ({
               rankField={rankField}
               overlaySelections={validOverlaySelections}
               overlayOptionById={overlayOptionById}
+              cancelledOverlayGroupIds={cancelledOverlayGroupIds}
               includeDescendantMarkers={includeDescendantMarkers}
               topLevelColorsByUser={topLevelColorsByUser}
+              topLevelGroupIdsByUser={topLevelGroupIdsByUser}
               onClose={() => setSelectedBandId(null)}
             />
           )}

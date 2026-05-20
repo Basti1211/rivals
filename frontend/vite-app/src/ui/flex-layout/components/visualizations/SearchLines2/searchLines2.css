@@ -455,6 +455,36 @@
   width: 100%;
 }
 
+.search-lines-overlay-select-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.search-lines-overlay-cancel-group {
+  display: inline-grid;
+  flex: 0 0 auto;
+  width: 1.6rem;
+  height: 1.6rem;
+  place-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-soft);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.search-lines-overlay-cancel-group:hover,
+.search-lines-overlay-cancel-group.is-active {
+  border-color: #dc2626;
+  background: color-mix(in srgb, #dc2626 12%, var(--color-surface));
+  color: #dc2626;
+}
+
 .search-lines-overlay-chips {
   display: flex;
   flex-wrap: wrap;
