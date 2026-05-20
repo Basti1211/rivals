@@ -146,9 +146,9 @@ const MotifPlot: React.FC<{ result: MotifResponse }> = ({ result }) => {
 };
 
 const BoxPlotChart: React.FC<{ title: string, dataFalse: number[], dataTrue: number[], yLabel: string }> = ({ title, dataFalse, dataTrue, yLabel }) => {
-    const width = 320;
-    const height = 380;
-    const margin = { top: 40, right: 20, bottom: 40, left: 60 };
+    const width = 280;
+    const height = 320;
+    const margin = { top: 40, right: 20, bottom: 40, left: 50 };
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
 
@@ -162,12 +162,12 @@ const BoxPlotChart: React.FC<{ title: string, dataFalse: number[], dataTrue: num
     const domainMax = Math.min(actualMax, Math.max(robustMax, quantile(allData, 0.95) ?? 1));
 
     const yScale = scaleLinear().domain([0, domainMax]).range([innerHeight, 0]).clamp(true).nice();
-    const xScale = scaleBand().domain(["False", "True"]).range([0, innerWidth]).padding(0.35);
+    const xScale = scaleBand().domain(["Failed", "Success"]).range([0, innerWidth]).padding(0.4);
 
     const statsFalse = computeBoxStats(dataFalse);
     const statsTrue = computeBoxStats(dataTrue);
 
-    const renderBox = (stats: ReturnType<typeof computeBoxStats>, successLabel: string, fill: string) => {
+    const renderBox = (stats: ReturnType<typeof computeBoxStats>, successLabel: string, baseColor: string) => {
         if (!stats) return null;
         const x = xScale(successLabel) ?? 0;
         const bw = xScale.bandwidth();
@@ -175,44 +175,39 @@ const BoxPlotChart: React.FC<{ title: string, dataFalse: number[], dataTrue: num
         
         return (
             <g key={successLabel}>
-                <line x1={center} x2={center} y1={yScale(stats.minVal)} y2={yScale(stats.maxVal)} stroke="#666" strokeWidth={1} />
-                <line x1={center - bw / 4} x2={center + bw / 4} y1={yScale(stats.minVal)} y2={yScale(stats.minVal)} stroke="#666" strokeWidth={1} />
-                <line x1={center - bw / 4} x2={center + bw / 4} y1={yScale(stats.maxVal)} y2={yScale(stats.maxVal)} stroke="#666" strokeWidth={1} />
+                <line x1={center} x2={center} y1={yScale(stats.minVal)} y2={yScale(stats.maxVal)} stroke={baseColor} strokeWidth={2} opacity={0.4} strokeDasharray="4 4" />
                 
-                <rect x={x} y={yScale(stats.q3)} width={bw} height={Math.max(1, Math.abs(yScale(stats.q1) - yScale(stats.q3)))} fill={fill} stroke="#444" strokeWidth={1} />
-                <line x1={x} x2={x + bw} y1={yScale(stats.med)} y2={yScale(stats.med)} stroke="#444" strokeWidth={1} />
+                <rect x={x} y={yScale(stats.q3)} width={bw} height={Math.max(1, Math.abs(yScale(stats.q1) - yScale(stats.q3)))} fill={baseColor} fillOpacity={0.15} stroke={baseColor} strokeWidth={1.5} rx={6} />
                 
-                {/* Outliers */}
+                <rect x={x + bw * 0.15} y={yScale(stats.med) - 2} width={bw * 0.7} height={4} fill={baseColor} rx={2} />
+                
                 {stats.outliers.map((val, i) => (
-                    <circle key={i} cx={center} cy={yScale(val)} r={3} fill="none" stroke={val > domainMax ? "#e15759" : "#888"} strokeWidth={1} opacity={0.6} />
+                    <circle key={i} cx={center} cy={yScale(val)} r={3.5} fill={val > domainMax ? "#ef4444" : baseColor} opacity={0.5} />
                 ))}
             </g>
         );
     };
 
     return (
-        <svg viewBox={`0 0 ${width} ${height}`} width="100%" height={height} style={{ background: '#fff', borderRadius: '8px', border: '1px solid #eaeaea' }}>
-            <text x={width / 2} y={25} textAnchor="middle" style={{ fontSize: '15px', fontWeight: 600, fill: '#333' }}>{title}</text>
+        <svg viewBox={`0 0 ${width} ${height}`} width="100%" height="100%" style={{ overflow: 'visible', fontFamily: 'system-ui, sans-serif' }}>
+            <text x={width / 2} y={15} textAnchor="middle" style={{ fontSize: '14px', fontWeight: 600, fill: '#334155' }}>{title}</text>
             <g transform={`translate(${margin.left},${margin.top})`}>
-                {yScale.ticks(6).map(tick => (
+                
+                {yScale.ticks(5).map(tick => (
                     <g key={tick} transform={`translate(0, ${yScale(tick)})`}>
-                        <line x2={innerWidth} stroke="#f0f0f0" strokeDasharray="4,4" />
-                        <text x={-10} alignmentBaseline="middle" textAnchor="end" style={{ fontSize: '12px', fill: '#666' }}>{tick}</text>
+                        <line x2={innerWidth} stroke="#e2e8f0" strokeDasharray="3,3" />
+                        <text x={-12} alignmentBaseline="middle" textAnchor="end" style={{ fontSize: '12px', fill: '#94a3b8' }}>{tick}</text>
                     </g>
                 ))}
                 
-                <line x1={0} x2={0} y1={0} y2={innerHeight} stroke="#333" strokeWidth={1} />
-                <line x1={0} x2={innerWidth} y1={innerHeight} y2={innerHeight} stroke="#333" strokeWidth={1} />
-                
-                <text x={-innerHeight / 2} y={-45} transform="rotate(-90)" textAnchor="middle" style={{ fontSize: '13px', fill: '#444' }}>{yLabel}</text>
+                <text x={-innerHeight / 2} y={-35} transform="rotate(-90)" textAnchor="middle" style={{ fontSize: '12px', fill: '#64748b', fontWeight: 500, letterSpacing: '0.5px' }}>{yLabel}</text>
                 
                 {xScale.domain().map(d => (
-                    <text key={d} x={(xScale(d) ?? 0) + xScale.bandwidth() / 2} y={innerHeight + 20} textAnchor="middle" style={{ fontSize: '13px', fill: '#444' }}>{d}</text>
+                    <text key={d} x={(xScale(d) ?? 0) + xScale.bandwidth() / 2} y={innerHeight + 24} textAnchor="middle" style={{ fontSize: '13px', fill: '#475569', fontWeight: 500 }}>{d}</text>
                 ))}
-                <text x={innerWidth / 2} y={innerHeight + 35} textAnchor="middle" style={{ fontSize: '13px', fill: '#444' }}>Success</text>
 
-                {renderBox(statsFalse, "False", "#cfd5da")}
-                {renderBox(statsTrue, "True", "#2b8b98")}
+                {renderBox(statsFalse, "Failed", "#64748b")}
+                {renderBox(statsTrue, "Success", "#0ea5e9")}
             </g>
         </svg>
     );
@@ -249,7 +244,7 @@ const extractUniqueActions = (data: FetchInteractionDataResponse | null): string
 };
 
 const StrategyAnalysisView: React.FC<StrategyAnalysisViewProps> = ({ data, onOpenDataManipulator }) => {
-    const [use2Grams, setUse2Grams] = useState<boolean>(true);
+    const [use2Grams, setUse2Grams] = useState<boolean>(false);
     const [actionsToAggregate, setActionsToAggregate] = useState<string[]>([]);
     const [restartActions, setRestartActions] = useState<string[]>([]);
     const [refineActions, setRefineActions] = useState<string[]>([]);
@@ -292,7 +287,12 @@ const StrategyAnalysisView: React.FC<StrategyAnalysisViewProps> = ({ data, onOpe
             if (type === 'motif') setMotifResult(await fetchMotifAnalysis(req));
             if (type === 'efficiency') setEfficiencyResult(await fetchEfficiencyAnalysis(req));
         } catch (err) {
-            setError(getErrorMessage(err));
+            const msg = getErrorMessage(err);
+            if (msg.includes('400')) {
+                setError("Analysis requires sessions from both outcomes (Success and Failure) to compare. Please adjust your data selection.");
+            } else {
+                setError(msg);
+            }
         } finally {
             setIsLoading(false);
         }
