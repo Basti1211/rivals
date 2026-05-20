@@ -22,9 +22,134 @@
   border-color: #fecaca;
 }
 
+.performance-heatmap-wrap {
+  margin-bottom: 2rem;
+  overflow: auto;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.performance-heatmap {
+  min-width: max-content;
+}
+
+.performance-heatmap-row {
+  display: grid;
+}
+
+.performance-heatmap-row > * {
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.performance-heatmap-row > *:last-child {
+  border-right: 0;
+}
+
+.performance-heatmap-row:last-child > * {
+  border-bottom: 0;
+}
+
+.performance-user-heading,
+.performance-user-label {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  min-width: 0;
+  padding: 0.25rem 0.35rem;
+  overflow: hidden;
+  color: var(--color-text);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: var(--color-surface);
+}
+
+.performance-user-heading {
+  z-index: 3;
+  display: flex;
+  align-items: flex-end;
+  min-height: 88px;
+}
+
+.performance-task-heading {
+  position: relative;
+  width: 28px;
+  min-width: 28px;
+  height: 88px;
+  background: var(--color-surface-soft);
+}
+
+.performance-task-button {
+  position: absolute;
+  bottom: 0.3rem;
+  left: 0.25rem;
+  display: block;
+  width: 78px;
+  padding: 0;
+  overflow: hidden;
+  color: var(--color-text);
+  font: inherit;
+  font-size: 0.58rem;
+  font-weight: 700;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  transform: rotate(-55deg);
+  transform-origin: left bottom;
+}
+
+.performance-task-button:hover {
+  color: var(--color-primary);
+}
+
+.performance-cell {
+  position: relative;
+  width: 28px;
+  min-width: 28px;
+  height: 22px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.performance-cell-value {
+  position: relative;
+  z-index: 1;
+  display: block;
+  color: var(--color-text);
+  font-size: 0.55rem;
+  font-weight: 800;
+  line-height: 22px;
+}
+
+.performance-wrong-marks {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: block;
+  width: 28px;
+  height: 22px;
+  pointer-events: none;
+}
+
+.task-list-heading {
+  margin-top: 2rem;
+}
+
 .task-visualization-list {
   display: grid;
   gap: 1rem;
+}
+
+.task-visualization-anchor {
+  scroll-margin-top: 1rem;
 }
 
 .task-visualization-card {
