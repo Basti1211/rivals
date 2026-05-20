@@ -38,7 +38,6 @@ const computeBoxStats = (data: number[]) => {
 
 const ClassifierPlot: React.FC<{ result: ClassifierResponse }> = ({ result }) => {
     const width = 550;
-    const height = Math.max(200, result.feature_keys.length * 28);
     const margin = { top: 30, right: 30, bottom: 40, left: 160 };
     const innerWidth = width - margin.left - margin.right;
     
@@ -47,8 +46,12 @@ const ClassifierPlot: React.FC<{ result: ClassifierResponse }> = ({ result }) =>
         return result.feature_keys.map((key, i) => {
             const meanShap = result.shap_values.reduce((sum, row) => sum + row[i], 0) / result.shap_values.length;
             return { key, name: result.feature_names[key] || key, meanShap };
-        }).sort((a, b) => Math.abs(b.meanShap) - Math.abs(a.meanShap)); // Sort by absolute magnitude descending
+        })
+        .sort((a, b) => Math.abs(b.meanShap) - Math.abs(a.meanShap))
+        .slice(0, 15);
     }, [result]);
+
+    const height = Math.max(200, shapStats.length * 30);
 
     const maxAbsShap = max(shapStats, d => Math.abs(d.meanShap)) ?? 0.1;
     const xScale = scaleLinear().domain([-maxAbsShap, maxAbsShap]).range([0, innerWidth]).nice();
@@ -90,14 +93,16 @@ const ClassifierPlot: React.FC<{ result: ClassifierResponse }> = ({ result }) =>
 
 const MotifPlot: React.FC<{ result: MotifResponse }> = ({ result }) => {
     const width = 550;
-    const height = Math.max(200, result.motifs.length * 30);
     const margin = { top: 30, right: 30, bottom: 40, left: 160 };
     const innerWidth = width - margin.left - margin.right;
     
-    // Sort by absolute magnitude descending to match SHAP style
     const sortedMotifs = useMemo(() => {
-        return [...result.motifs].sort((a, b) => Math.abs(b.difference ?? 0) - Math.abs(a.difference ?? 0));
+        return [...result.motifs]
+            .sort((a, b) => Math.abs(b.difference ?? 0) - Math.abs(a.difference ?? 0))
+            .slice(0, 15);
     }, [result.motifs]);
+
+    const height = Math.max(200, sortedMotifs.length * 30);
 
     const minDiff = min(sortedMotifs, d => d.difference ?? 0) ?? 0;
     const maxDiff = max(sortedMotifs, d => d.difference ?? 0) ?? 0;
@@ -141,8 +146,8 @@ const MotifPlot: React.FC<{ result: MotifResponse }> = ({ result }) => {
 };
 
 const BoxPlotChart: React.FC<{ title: string, dataFalse: number[], dataTrue: number[], yLabel: string }> = ({ title, dataFalse, dataTrue, yLabel }) => {
-    const width = 300;
-    const height = 350;
+    const width = 320;
+    const height = 380;
     const margin = { top: 40, right: 20, bottom: 40, left: 60 };
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
@@ -152,14 +157,12 @@ const BoxPlotChart: React.FC<{ title: string, dataFalse: number[], dataTrue: num
     const globalQ3 = quantile(allData, 0.75) ?? 0;
     const globalIQR = globalQ3 - globalQ1;
     
-    // Robust upper bound to prevent extreme outliers from squishing the boxplot
     const robustMax = globalQ3 + 3 * globalIQR;
     const actualMax = max(allData) ?? 1;
     const domainMax = Math.min(actualMax, Math.max(robustMax, quantile(allData, 0.95) ?? 1));
 
-    // Clamp scales extreme outliers to the top edge (y=0)
     const yScale = scaleLinear().domain([0, domainMax]).range([innerHeight, 0]).clamp(true).nice();
-    const xScale = scaleBand().domain(["False", "True"]).range([0, innerWidth]).padding(0.4);
+    const xScale = scaleBand().domain(["False", "True"]).range([0, innerWidth]).padding(0.35);
 
     const statsFalse = computeBoxStats(dataFalse);
     const statsTrue = computeBoxStats(dataTrue);
@@ -172,42 +175,44 @@ const BoxPlotChart: React.FC<{ title: string, dataFalse: number[], dataTrue: num
         
         return (
             <g key={successLabel}>
-                <line x1={center} x2={center} y1={yScale(stats.minVal)} y2={yScale(stats.q1)} stroke="#333" />
-                <line x1={center} x2={center} y1={yScale(stats.maxVal)} y2={yScale(stats.q3)} stroke="#333" />
-                <line x1={center - bw / 4} x2={center + bw / 4} y1={yScale(stats.minVal)} y2={yScale(stats.minVal)} stroke="#333" />
-                <line x1={center - bw / 4} x2={center + bw / 4} y1={yScale(stats.maxVal)} y2={yScale(stats.maxVal)} stroke="#333" />
+                <line x1={center} x2={center} y1={yScale(stats.minVal)} y2={yScale(stats.maxVal)} stroke="#666" strokeWidth={1} />
+                <line x1={center - bw / 4} x2={center + bw / 4} y1={yScale(stats.minVal)} y2={yScale(stats.minVal)} stroke="#666" strokeWidth={1} />
+                <line x1={center - bw / 4} x2={center + bw / 4} y1={yScale(stats.maxVal)} y2={yScale(stats.maxVal)} stroke="#666" strokeWidth={1} />
                 
-                <rect x={x} y={yScale(stats.q3)} width={bw} height={Math.abs(yScale(stats.q1) - yScale(stats.q3))} fill={fill} stroke="#333" />
-                <line x1={x} x2={x + bw} y1={yScale(stats.med)} y2={yScale(stats.med)} stroke="#333" />
+                <rect x={x} y={yScale(stats.q3)} width={bw} height={Math.max(1, Math.abs(yScale(stats.q1) - yScale(stats.q3)))} fill={fill} stroke="#444" strokeWidth={1} />
+                <line x1={x} x2={x + bw} y1={yScale(stats.med)} y2={yScale(stats.med)} stroke="#444" strokeWidth={1} />
                 
+                {/* Outliers */}
                 {stats.outliers.map((val, i) => (
-                    <circle key={i} cx={center} cy={yScale(val)} r={3} fill="none" stroke={val > domainMax ? "#e15759" : "#666"} />
+                    <circle key={i} cx={center} cy={yScale(val)} r={3} fill="none" stroke={val > domainMax ? "#e15759" : "#888"} strokeWidth={1} opacity={0.6} />
                 ))}
             </g>
         );
     };
 
     return (
-        <svg viewBox={`0 0 ${width} ${height}`} width="100%" height={height}>
-            <text x={width / 2} y={margin.top / 2} textAnchor="middle" style={{ fontSize: '14px', fontWeight: 500 }}>{title}</text>
+        <svg viewBox={`0 0 ${width} ${height}`} width="100%" height={height} style={{ background: '#fff', borderRadius: '8px', border: '1px solid #eaeaea' }}>
+            <text x={width / 2} y={25} textAnchor="middle" style={{ fontSize: '15px', fontWeight: 600, fill: '#333' }}>{title}</text>
             <g transform={`translate(${margin.left},${margin.top})`}>
                 {yScale.ticks(6).map(tick => (
                     <g key={tick} transform={`translate(0, ${yScale(tick)})`}>
-                        <line x2={innerWidth} stroke="#e0e0e0" strokeDasharray="3,3" />
-                        <text x={-10} alignmentBaseline="middle" textAnchor="end" className="plot-label">{tick}</text>
+                        <line x2={innerWidth} stroke="#f0f0f0" strokeDasharray="4,4" />
+                        <text x={-10} alignmentBaseline="middle" textAnchor="end" style={{ fontSize: '12px', fill: '#666' }}>{tick}</text>
                     </g>
                 ))}
-                <line x1={0} x2={0} y1={0} y2={innerHeight} stroke="#333" />
-                <text x={-innerHeight / 2} y={-40} transform="rotate(-90)" textAnchor="middle" className="plot-label">{yLabel}</text>
                 
-                <line x1={0} x2={innerWidth} y1={innerHeight} y2={innerHeight} stroke="#333" />
+                <line x1={0} x2={0} y1={0} y2={innerHeight} stroke="#333" strokeWidth={1} />
+                <line x1={0} x2={innerWidth} y1={innerHeight} y2={innerHeight} stroke="#333" strokeWidth={1} />
+                
+                <text x={-innerHeight / 2} y={-45} transform="rotate(-90)" textAnchor="middle" style={{ fontSize: '13px', fill: '#444' }}>{yLabel}</text>
+                
                 {xScale.domain().map(d => (
-                    <text key={d} x={(xScale(d) ?? 0) + xScale.bandwidth() / 2} y={innerHeight + 20} textAnchor="middle" className="plot-label">{d}</text>
+                    <text key={d} x={(xScale(d) ?? 0) + xScale.bandwidth() / 2} y={innerHeight + 20} textAnchor="middle" style={{ fontSize: '13px', fill: '#444' }}>{d}</text>
                 ))}
-                <text x={innerWidth / 2} y={innerHeight + 35} textAnchor="middle" className="plot-label">Success</text>
+                <text x={innerWidth / 2} y={innerHeight + 35} textAnchor="middle" style={{ fontSize: '13px', fill: '#444' }}>Success</text>
 
-                {renderBox(statsFalse, "False", "#d4d8dd")}
-                {renderBox(statsTrue, "True", "#278d9b")}
+                {renderBox(statsFalse, "False", "#cfd5da")}
+                {renderBox(statsTrue, "True", "#2b8b98")}
             </g>
         </svg>
     );
@@ -220,9 +225,12 @@ const EfficiencyPlot: React.FC<{ result: EfficiencyResponse }> = ({ result }) =>
     const persistenceTrue = result.metrics.filter(d => d.success).map(d => d.persistence);
 
     return (
-        <div className="analysis-plot-container" style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
-            <BoxPlotChart title="Iteration Intensity" yLabel="Intensity" dataFalse={intensityFalse} dataTrue={intensityTrue} />
-            <BoxPlotChart title="Persistence Depth" yLabel="Persistence" dataFalse={persistenceFalse} dataTrue={persistenceTrue} />
+        <div className="analysis-plot-container">
+            <h4 style={{ marginTop: 0, marginBottom: '20px', fontWeight: 600 }}>Efficiency Metrics</h4>
+            <div className="efficiency-plot-wrapper">
+                <BoxPlotChart title="Iteration Intensity" yLabel="Intensity" dataFalse={intensityFalse} dataTrue={intensityTrue} />
+                <BoxPlotChart title="Persistence Depth" yLabel="Persistence" dataFalse={persistenceFalse} dataTrue={persistenceTrue} />
+            </div>
         </div>
     );
 };
