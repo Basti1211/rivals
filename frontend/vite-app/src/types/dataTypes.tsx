@@ -129,3 +129,50 @@ export type FetchInteractionDataResponse = {
   interactions: InteractionTaskUser[];
   users: UserList;
 };
+
+export type AnalysisRequest = {
+  interactions: InteractionRequestRow[];
+  actions_to_aggregate: string[];
+  use_2grams: boolean;
+  restart_actions: string[];
+  refine_actions: string[];
+};
+
+export type FeatureImportance = {
+  feature_key: string;
+  feature_name: string;
+  importance: number;
+};
+
+export type ClassifierResponse = {
+  accuracy: number;
+  f1: number;
+  auc: number | null;
+  importances: FeatureImportance[];
+  shap_values: number[][];
+  shap_expected_value: number | number[] | null;
+  feature_keys: string[];
+  feature_names: Record<string, string>;
+};
+
+export type MotifDifference = {
+  feature_key: string;
+  feature_name: string;
+  success_mean: number | null;
+  failure_mean: number | null;
+  difference: number | null;
+};
+
+export type MotifResponse = {
+  motifs: MotifDifference[];
+};
+
+export type EfficiencyMetric = {
+  intensity: number;
+  persistence: number;
+  success: boolean;
+};
+
+export type EfficiencyResponse = {
+  metrics: EfficiencyMetric[];
+};

@@ -4,6 +4,7 @@ import TaskVisualization from "./components/sidebars/Right/TaskAndAnswers.js";
 import CountBarchart from './components/visualizations/CountBarchart/CountBarchart.tsx';
 import DurationBarchart from './components/visualizations/DurationBarchart/DurationBarchart.tsx';
 import SearchLines2 from './components/visualizations/SearchLines2/SearchLines2.tsx';
+import StrategyAnalysis from './components/visualizations/StrategyAnalysis/StrategyAnalysis.tsx';
 import type {FetchInteractionDataResponse} from "../../types/dataTypes.tsx";
 
 type VisualizationTabConfig = {
@@ -34,6 +35,8 @@ export const factory = (node: TabNode) => {
             return <DurationBarchart visualizationId={node.getId()} initialData={getInitialData(node)}/>
         case "searchLines2":
             return <SearchLines2 visualizationId={node.getId()} initialData={getInitialData(node)}/>
+        case "strategyAnalysis":
+            return <StrategyAnalysis visualizationId={node.getId()} initialData={getInitialData(node)}/>;
         default:
             return null;
 

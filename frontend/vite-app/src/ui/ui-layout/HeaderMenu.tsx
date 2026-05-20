@@ -18,6 +18,9 @@ const HeaderMenu: React.FC = () => {
      const handleSearchLines2 = () => {
         addTabToActiveTabSet("Search Lines", "searchLines2");
     };
+    const handleStrategyAnalysis = () => {
+        addTabToActiveTabSet("Strategy Analysis", "strategyAnalysis");
+    };
 
     return (
         <Header className="app-header">
@@ -50,6 +53,13 @@ const HeaderMenu: React.FC = () => {
                     onClick={handleSearchLines2}
                 >
                     Search Lines
+                </Button>
+                <Button
+                    className="app-header__summary-button"
+                    type="primary"
+                    onClick={handleStrategyAnalysis}
+                >
+                    Strategy Analysis
                 </Button>
             
             </div>
