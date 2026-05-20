@@ -114,19 +114,23 @@
   position: relative;
   width: 28px;
   min-width: 28px;
-  height: 22px;
+  height: 30px;
   overflow: hidden;
   text-align: center;
 }
 
 .performance-cell-value {
-  position: relative;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 1;
   display: block;
   color: var(--color-text);
   font-size: 0.55rem;
   font-weight: 800;
-  line-height: 22px;
+  line-height: 1;
+  padding-bottom: 1px;
 }
 
 .performance-wrong-marks {
@@ -135,7 +139,7 @@
   z-index: 2;
   display: block;
   width: 28px;
-  height: 22px;
+  height: 30px;
   pointer-events: none;
 }
 

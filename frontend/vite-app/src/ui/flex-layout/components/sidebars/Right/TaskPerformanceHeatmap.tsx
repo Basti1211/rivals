@@ -191,7 +191,7 @@ const getCrossCenter = (index: number): { x: number; y: number } => {
 
   return {
     x: 7 + (column * 7),
-    y: 7 + ((row % 2) * 8),
+    y: 7 + ((row % 3) * 8),
   };
 };
 
@@ -201,7 +201,7 @@ const WrongAnswerMarks: React.FC<{ count: number }> = ({ count }) => {
   }
 
   return (
-    <svg className="performance-wrong-marks" viewBox="0 0 28 22" aria-hidden="true">
+    <svg className="performance-wrong-marks" viewBox="0 0 28 30" aria-hidden="true">
       {Array.from({ length: count }, (_, index) => {
         const { x, y } = getCrossCenter(index);
 
