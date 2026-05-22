@@ -310,7 +310,7 @@ const StrategyAnalysisView: React.FC<StrategyAnalysisViewProps> = ({ data, onOpe
             {error && <Alert type="error" message={error} style={{ marginBottom: 16 }} closable onClose={() => setError(null)} />}
 
             <div className="analysis-configuration">
-                <Divider orientation="left">Configuration</Divider>
+                <Divider titlePlacement="left">Configuration</Divider>
                 
                 <div style={{ marginBottom: 16 }}>
                     <strong>Include 2-Grams: </strong>
@@ -332,7 +332,7 @@ const StrategyAnalysisView: React.FC<StrategyAnalysisViewProps> = ({ data, onOpe
                     </div>
                 </div>
 
-                <Divider orientation="left">Execution</Divider>
+                <Divider titlePlacement="left">Execution</Divider>
                 <div className="execution-actions">
                     <Button onClick={() => executeAnalysis('classifier')} disabled={!data || isLoading}>Run Classifier</Button>
                     <Button onClick={() => executeAnalysis('motif')} disabled={!data || isLoading}>Run Motif</Button>
@@ -341,7 +341,7 @@ const StrategyAnalysisView: React.FC<StrategyAnalysisViewProps> = ({ data, onOpe
                 </div>
             </div>
 
-            <Divider orientation="left">Results</Divider>
+            <Divider titlePlacement="left">Results</Divider>
             <div className="analysis-results-grid">
                 {classifierResult && <ClassifierPlot result={classifierResult} />}
                 {motifResult && <MotifPlot result={motifResult} />}

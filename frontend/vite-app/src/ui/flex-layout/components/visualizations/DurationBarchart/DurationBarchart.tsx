@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import type React from "react";
 import {fetchInteractions, fetchUsersAndTasks} from "../../../../../api-handler/Requests";
 import type {
@@ -31,28 +31,27 @@ const DurationBarchart: React.FC<DurationBarchartProps> = ({
     cloneInteractionData(initialData),
   );
   const [availableData, setAvailableData] = useState<FetchUsersAndTasks | null>(null);
-  const [isManipulatorOpen, setIsManipulatorOpen] = useState(false);
+  const [isManipulatorOpen, setIsManipulatorOpen] = useState(() => !initialData);
   const [isLoadingAvailableData, setIsLoadingAvailableData] = useState(false);
   const [isUpdatingData, setIsUpdatingData] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
-  const handleOpenDataManipulator = async () => {
-    setIsManipulatorOpen(true);
-    await handleFetchAvailableData();
-  };
+  useEffect(() => {
+    if (isManipulatorOpen && !availableData && !isLoadingAvailableData) {
+      setIsLoadingAvailableData(true);
+      setErrorMessage(null);
 
-  const handleFetchAvailableData = async () => {
-    setIsLoadingAvailableData(true);
-    setErrorMessage(null);
-
-    try {
-      const fetchedData = await fetchUsersAndTasks();
-      setAvailableData(structuredClone(fetchedData));
-    } catch (error) {
-      setErrorMessage(error instanceof Error ? error.message : "Failed to fetch available data.");
-    } finally {
-      setIsLoadingAvailableData(false);
+      fetchUsersAndTasks()
+        .then((fetchedData) => setAvailableData(structuredClone(fetchedData)))
+        .catch((error) => {
+          setErrorMessage(error instanceof Error ? error.message : "Failed to fetch available data.");
+        })
+        .finally(() => setIsLoadingAvailableData(false));
     }
+  }, [isManipulatorOpen, availableData, isLoadingAvailableData]);
+
+  const handleOpenDataManipulator = () => {
+    setIsManipulatorOpen(true);
   };
 
   const handleUpdateData = async (interactions: InteractionRequestRow[]) => {
@@ -83,7 +82,7 @@ const DurationBarchart: React.FC<DurationBarchartProps> = ({
             isUpdatingData={isUpdatingData}
             hierarchyOptions={{allowCancel: false}}
             onUpdateData={handleUpdateData}
-            onClose={() => setIsManipulatorOpen(false)}
+            onClose={displayedData ? () => setIsManipulatorOpen(false) : undefined}
           />
         ) : null}
         onOpenDataManipulator={handleOpenDataManipulator}

@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import type React from "react";
 import {fetchInteractions, fetchUsersAndTasks} from "../../../../../api-handler/Requests";
 import type {
@@ -36,36 +36,27 @@ const CountBarchart: React.FC<CountBarchartProps> = ({
   // This is metadata about data that exists in the backend and could be displayed.
   // It is fetched when the user opens the DataManipulator.
   const [availableData, setAvailableData] = useState<FetchUsersAndTasks | null>(null);
-  const [isManipulatorOpen, setIsManipulatorOpen] = useState(false);
+  const [isManipulatorOpen, setIsManipulatorOpen] = useState(() => !initialData);
   const [isLoadingAvailableData, setIsLoadingAvailableData] = useState(false);
   const [isUpdatingData, setIsUpdatingData] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
-  /**
-   * Opens the manipulator and immediately fetches the backend metadata for this chart.
-   * The fetched FetchUsersAndTasks object is stored locally in this CountBarchart instance.
-   */
-  const handleOpenDataManipulator = async () => {
-    setIsManipulatorOpen(true);
-    await handleFetchAvailableData();
-  };
+  useEffect(() => {
+    if (isManipulatorOpen && !availableData && !isLoadingAvailableData) {
+      setIsLoadingAvailableData(true);
+      setErrorMessage(null);
 
-  /**
-   * Fetches the available tasks/users from the backend.
-   * This does not change displayedData; it only updates the choices shown by DataManipulator.
-   */
-  const handleFetchAvailableData = async () => {
-    setIsLoadingAvailableData(true);
-    setErrorMessage(null);
-
-    try {
-      const fetchedData = await fetchUsersAndTasks();
-      setAvailableData(structuredClone(fetchedData));
-    } catch (error) {
-      setErrorMessage(error instanceof Error ? error.message : "Failed to fetch available data.");
-    } finally {
-      setIsLoadingAvailableData(false);
+      fetchUsersAndTasks()
+        .then((fetchedData) => setAvailableData(structuredClone(fetchedData)))
+        .catch((error) => {
+          setErrorMessage(error instanceof Error ? error.message : "Failed to fetch available data.");
+        })
+        .finally(() => setIsLoadingAvailableData(false));
     }
+  }, [isManipulatorOpen, availableData, isLoadingAvailableData]);
+
+  const handleOpenDataManipulator = () => {
+    setIsManipulatorOpen(true);
   };
 
   const handleUpdateData = async (interactions: InteractionRequestRow[]) => {
@@ -96,7 +87,7 @@ const CountBarchart: React.FC<CountBarchartProps> = ({
             isUpdatingData={isUpdatingData}
             hierarchyOptions={{allowCancel: true}}
             onUpdateData={handleUpdateData}
-            onClose={() => setIsManipulatorOpen(false)}
+            onClose={displayedData ? () => setIsManipulatorOpen(false) : undefined}
           />
         ) : null}
         onOpenDataManipulator={handleOpenDataManipulator}
