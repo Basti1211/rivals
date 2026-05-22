@@ -5,6 +5,7 @@ from app.api.routers.add_data_routes import add_data_router
 from app.api.routers.get_data_routes import get_data_router
 
 from app.api.routers.k8s_routes import k8s_router
+from app.api.routers.analysis_routes import analysis_router
 
 
 # use function to avoid import time side effects
@@ -15,6 +16,7 @@ def build_router() -> APIRouter:
     # mount imported routers
     combined_router.include_router(add_data_router)
     combined_router.include_router(get_data_router)
+    combined_router.include_router(analysis_router)
     combined_router.include_router(k8s_router)
 
     # add core defaults

@@ -4,6 +4,9 @@ pydantic==2.12.5
 
 # Scientific Python
 numpy==2.4.2
+pandas
+scikit-learn
+shap
 
 # API Request Handling
 fastapi==0.129.0

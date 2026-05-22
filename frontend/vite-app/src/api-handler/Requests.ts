@@ -4,6 +4,10 @@ import type {
     FetchTasksAndAnswers,
     FetchUsersAndTasks,
     InteractionRequest,
+    AnalysisRequest,
+    ClassifierResponse,
+    MotifResponse,
+    EfficiencyResponse
 } from "../types/dataTypes";
 
 const selectAllFetchedInteractions = (
@@ -84,4 +88,35 @@ export const getErrorMessage = (error: unknown): string => {
         return error.message;
     }
     return 'An unknown error occurred.';
+};
+
+
+export const fetchClassifierAnalysis = async (request: AnalysisRequest): Promise<ClassifierResponse> => {
+    const response = await fetch("/api/data/analysis/classifier", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(request),
+    });
+    if (!response.ok) throw new Error(`Classifier analysis failed: ${response.status}`);
+    return await response.json() as ClassifierResponse;
+};
+
+export const fetchMotifAnalysis = async (request: AnalysisRequest): Promise<MotifResponse> => {
+    const response = await fetch("/api/data/analysis/motif", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(request),
+    });
+    if (!response.ok) throw new Error(`Motif analysis failed: ${response.status}`);
+    return await response.json() as MotifResponse;
+};
+
+export const fetchEfficiencyAnalysis = async (request: AnalysisRequest): Promise<EfficiencyResponse> => {
+    const response = await fetch("/api/data/analysis/efficiency", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(request),
+    });
+    if (!response.ok) throw new Error(`Efficiency analysis failed: ${response.status}`);
+    return await response.json() as EfficiencyResponse;
 };
