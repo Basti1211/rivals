@@ -23,6 +23,9 @@ type HeatmapModel = {
   maxCorrectCountByTask: Map<string, number>;
 };
 
+const DEFAULT_CELL_COLOR = "#cbd5e1";
+const CELL_WIDTH_PX = 42;
+
 const cellKey = (user: string, taskName: string): string => `${user}::${taskName}`;
 
 const makeTaskNameLookup = (tasks: TaskRow[]): Map<string, string> => {
@@ -137,7 +140,7 @@ const buildHeatmapModel = (tasks: TaskRow[], submissions: SubmissionRow[]): Heat
 
 const getTimeColor = (cell: HeatmapCell, maxTimeToCorrectMs: number): string => {
   if (cell.timeToCorrectMs === null) {
-    return cell.submissions.length > 0 ? "#cbd5e1" : "#ffffff";
+    return DEFAULT_CELL_COLOR;
   }
 
   if (maxTimeToCorrectMs <= 0) {
@@ -152,7 +155,7 @@ const getTimeColor = (cell: HeatmapCell, maxTimeToCorrectMs: number): string => 
 
 const getCorrectCountColor = (cell: HeatmapCell, maxCorrectCount: number): string => {
   if (cell.correctCount <= 0 || maxCorrectCount <= 0) {
-    return cell.submissions.length > 0 ? "#cbd5e1" : "#ffffff";
+    return DEFAULT_CELL_COLOR;
   }
 
   const ratio = cell.correctCount / maxCorrectCount;
@@ -190,7 +193,7 @@ const getCrossCenter = (index: number): { x: number; y: number } => {
   const row = Math.floor(index / columns);
 
   return {
-    x: 7 + (column * 7),
+    x: 10 + (column * 11),
     y: 7 + ((row % 3) * 8),
   };
 };
@@ -201,7 +204,7 @@ const WrongAnswerMarks: React.FC<{ count: number }> = ({ count }) => {
   }
 
   return (
-    <svg className="performance-wrong-marks" viewBox="0 0 28 30" aria-hidden="true">
+    <svg className="performance-wrong-marks" viewBox={`0 0 ${CELL_WIDTH_PX} 30`} aria-hidden="true">
       {Array.from({ length: count }, (_, index) => {
         const { x, y } = getCrossCenter(index);
 
@@ -226,7 +229,7 @@ const TaskPerformanceHeatmap: React.FC<TaskPerformanceHeatmapProps> = ({
     [tasks, submissions],
   );
   const gridStyle = {
-    gridTemplateColumns: `88px repeat(${tasks.length}, 28px)`,
+    gridTemplateColumns: `88px repeat(${tasks.length}, ${CELL_WIDTH_PX}px)`,
   };
 
   if (model.users.length === 0) {
