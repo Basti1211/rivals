@@ -1,0 +1,35 @@
+.summary-view {
+  height: 100%;
+  overflow: auto;
+  padding: 16px;
+}
+
+.summary-view-header {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.summary-view-header h1 {
+  margin: 0;
+}
+
+.summary-view-loading {
+  align-items: center;
+  color: #4b5563;
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.summary-view-alert {
+  margin-bottom: 12px;
+}
+
+.summary-view-charts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

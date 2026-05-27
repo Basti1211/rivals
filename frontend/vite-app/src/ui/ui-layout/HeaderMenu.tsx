@@ -21,6 +21,9 @@ const HeaderMenu: React.FC = () => {
     const handleStrategyAnalysis = () => {
         addTabToActiveTabSet("Strategy Analysis", "strategyAnalysis");
     };
+    const handleSummary = () => {
+        addTabToActiveTabSet("Summary", "summary");
+    };
 
     return (
         <Header className="app-header">
@@ -32,7 +35,6 @@ const HeaderMenu: React.FC = () => {
             </div>
 
             <div className="app-header__actions">
-
                 <Button
                     className="app-header__summary-button"
                     type="primary"
@@ -61,7 +63,13 @@ const HeaderMenu: React.FC = () => {
                 >
                     Strategy Analysis
                 </Button>
-            
+                <Button
+                    className="app-header__summary-button"
+                    type="primary"
+                    onClick={handleSummary}
+                >
+                    Summary
+                </Button>
             </div>
         </Header>
     );

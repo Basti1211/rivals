@@ -118,8 +118,8 @@ export const initialLayout: IJsonModel = {
                 children: [
                     {
                         type: "tab",
-                        name: "Default",
-                        component: "default",
+                        name: "Summary",
+                        component: "summary",
                     }
                 ],
             },

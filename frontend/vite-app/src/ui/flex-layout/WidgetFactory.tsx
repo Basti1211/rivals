@@ -5,6 +5,7 @@ import CountBarchart from './components/visualizations/CountBarchart/CountBarcha
 import DurationBarchart from './components/visualizations/DurationBarchart/DurationBarchart.tsx';
 import SearchLines2 from './components/visualizations/SearchLines2/SearchLines2.tsx';
 import StrategyAnalysis from './components/visualizations/StrategyAnalysis/StrategyAnalysis.tsx';
+import Summary from './components/visualizations/summary/Summary.tsx';
 import type {FetchInteractionDataResponse} from "../../types/dataTypes.tsx";
 
 type VisualizationTabConfig = {
@@ -37,6 +38,8 @@ export const factory = (node: TabNode) => {
             return <SearchLines2 visualizationId={node.getId()} initialData={getInitialData(node)}/>
         case "strategyAnalysis":
             return <StrategyAnalysis visualizationId={node.getId()} initialData={getInitialData(node)}/>;
+        case "summary":
+            return <Summary/>;
         default:
             return null;
 

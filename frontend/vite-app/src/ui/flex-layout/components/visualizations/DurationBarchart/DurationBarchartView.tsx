@@ -14,7 +14,7 @@ type GroupMode = "pair" | "user" | "system" | "task" | "taskGroup" | "all";
 type DurationBarchartViewProps = {
   data: FetchInteractionDataResponse | null;
   dataSelector?: React.ReactNode;
-  onOpenDataManipulator: () => void;
+  onOpenDataManipulator?: () => void;
   snapshotActions?: React.ReactNode;
 };
 
@@ -512,9 +512,11 @@ const DurationBarchartView: React.FC<DurationBarchartViewProps> = ({
       <div className="task-barchart-header">
         <h1>Duration Barchart</h1>
         <div className="task-barchart-actions">
-          <Button type="primary" onClick={onOpenDataManipulator}>
-            Data
-          </Button>
+          {onOpenDataManipulator && (
+            <Button type="primary" onClick={onOpenDataManipulator}>
+              Data
+            </Button>
+          )}
           {snapshotActions}
         </div>
       </div>

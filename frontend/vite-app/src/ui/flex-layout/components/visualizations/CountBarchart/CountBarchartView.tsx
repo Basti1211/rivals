@@ -9,7 +9,7 @@ type GroupMode = "pair" | "user" | "system" | "task" | "taskGroup" | "all";
 type CountBarchartViewProps = {
   data: FetchInteractionDataResponse | null;
   dataSelector?: React.ReactNode;
-  onOpenDataManipulator: () => void;
+  onOpenDataManipulator?: () => void;
   snapshotActions?: React.ReactNode;
 };
 
@@ -315,9 +315,11 @@ const CountBarchartView: React.FC<CountBarchartViewProps> = ({
       <div className="task-barchart-header">
         <h1>Count Barchart</h1>
         <div className="task-barchart-actions">
-          <Button type="primary" onClick={onOpenDataManipulator}>
-            Data
-          </Button>
+          {onOpenDataManipulator && (
+            <Button type="primary" onClick={onOpenDataManipulator}>
+              Data
+            </Button>
+          )}
           {snapshotActions}
         </div>
       </div>
