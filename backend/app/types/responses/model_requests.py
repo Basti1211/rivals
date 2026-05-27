@@ -78,14 +78,12 @@ class TaskRow(BaseModel):
         description="Optional end time of the target video segment, usually in milliseconds; null if not provided",
     )
 
-    started: Optional[int] = Field(
-        default=None,
-        description="Optional Unix timestamp in milliseconds indicating when the task started",
+    started: int = Field(
+        description="Unix timestamp in milliseconds indicating when the task started",
     )
 
-    ended: Optional[int] = Field(
-        default=None,
-        description="Optional Unix timestamp in milliseconds indicating when the task ended",
+    ended: int = Field(
+        description="Unix timestamp in milliseconds indicating when the task ended",
     )
 
     from_file: Optional[int] = Field(
@@ -174,8 +172,9 @@ class InteractionHierarchyNode(BaseModel):
     )
 
     visualize: bool = Field(
+        default=False,
         alias="Visualize",
-        description="Whether this hierarchy node should be visualized",
+        description="Whether this hierarchy node should be visualized; defaults to false",
     )
 
     cancelled: bool = Field(
