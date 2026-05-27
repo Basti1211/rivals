@@ -112,7 +112,7 @@ Task answers describe submitted answers for each task and user. The upload can b
 Required fields:
 
 - `task_id`: Identifier of the task this answer belongs to. This should match the `task_id` from the task metadata.
-- `user`: Name of the user or system that submitted the answer.
+- `user`: Name of the user or system that submitted the answer. This must match the corresponding user name used in the interaction logs.
 - `timestamp`: Unix timestamp in milliseconds when the answer was submitted.
 - `status`: Submission status. Use `1` for correct, `0` for undecided, and `-1` for wrong.
 
@@ -178,7 +178,7 @@ Required fields for each system export:
 
 - `Name`: Name of the retrieval system or logging source.
 - `Hierarchy`: Interaction abstraction hierarchy for this system. See [Interaction Abstraction Hierarchy](#interaction-abstraction-hierarchy).
-- `Logs`: Object mapping user names to arrays of interaction events.
+- `Logs`: Object mapping user names to arrays of interaction events. These user names, for example `prak1`, must match the `user` values in the task answers.
 
 Required fields for each interaction event:
 
