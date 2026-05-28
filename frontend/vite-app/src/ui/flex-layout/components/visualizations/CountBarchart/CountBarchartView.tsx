@@ -315,7 +315,7 @@ const CountBarchartView: React.FC<CountBarchartViewProps> = ({
   return (
     <div className="task-barchart">
       <div className="task-barchart-header">
-        <h1>Count Barchart</h1>
+        <h1>Count Bar Chart</h1>
         <div className="task-barchart-actions">
           {informationAction}
           {onOpenDataManipulator && (

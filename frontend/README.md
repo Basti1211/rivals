@@ -15,7 +15,7 @@ Current visualization components include:
 
 - `Summary`: Combined overview of loaded interaction data.
 - `Count Barchart`: Action frequency analysis.
-- `Duration Barchart`: Estimated task-time distribution by action.
+- `Duration Bar Chart`: Estimated task-time distribution by action.
 - `Search Lines`: Timeline-style interaction visualization.
 - `Strategy Analysis`: Analysis views for classifier, motif, and efficiency workflows.
 

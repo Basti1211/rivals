@@ -76,7 +76,7 @@ export const initialLayout: IJsonModel = {
       type: "border",
       location: "left",
       size: 500,          // width when open
-      selected: -1,       // 0=open first tab; -1=collapsed
+      selected: 0,       // 0=open first tab; -1=collapsed
       show: true,
       children: [
         {
