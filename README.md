@@ -36,7 +36,6 @@ If you experience any problems, contact [bastian.jaeckl@uni-konstanz.de](mailto:
 
 - [Frontend documentation](frontend/README.md)
 - [Backend documentation](backend/README.md)
-- [Kubernetes deployment documentation](k8s/README.md)
 
 ## Input Formats
 
