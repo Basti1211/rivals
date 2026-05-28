@@ -10,6 +10,7 @@ import type {
   UserRow,
 } from "../../../../../types/dataTypes";
 import {useDataRefresh} from "../../../flex-layout-context/DataRefreshContext";
+import Information from "../common/Information";
 import CountBarchartView from "../CountBarchart/CountBarchartView";
 import DurationBarchartView from "../DurationBarchart/DurationBarchartView";
 import "../../../../style/general.css";
@@ -39,6 +40,10 @@ const buildAllInteractionRequests = (
     })),
   );
 };
+
+const summaryInformation = "This visualization summarizes all loaded interaction data across all users and tasks. It combines a count bar chart and a duration bar chart so the overall action distribution and measured time distribution can be compared at a glance.";
+const summaryCountInformation = "This chart summarizes how often each action occurs across all loaded user-task pairs. Use the grouping control to compare counts by pair, user, system, task, task category, or all data.";
+const summaryDurationInformation = "This chart summarizes the measured task time associated with each action across all loaded user-task pairs. Use the grouping control to compare durations by pair, user, system, task, task category, or all data.";
 
 const Summary: React.FC = () => {
   const {dataRevision} = useDataRefresh();
@@ -102,12 +107,15 @@ const Summary: React.FC = () => {
     <div className="summary-view">
       <div className="summary-view-header">
         <h1>Summary</h1>
-        {isLoading && (
-          <div className="summary-view-loading">
-            <Spin size="small" />
-            <span>Loading all interaction data</span>
-          </div>
-        )}
+        <div className="summary-view-actions">
+          <Information information={summaryInformation} />
+          {isLoading && (
+            <div className="summary-view-loading">
+              <Spin size="small" />
+              <span>Loading all interaction data</span>
+            </div>
+          )}
+        </div>
       </div>
 
       {errorMessage && (
@@ -120,8 +128,14 @@ const Summary: React.FC = () => {
       )}
 
       <div className="summary-view-charts">
-        <CountBarchartView data={displayedData} />
-        <DurationBarchartView data={displayedData} />
+        <CountBarchartView
+          data={displayedData}
+          informationAction={<Information information={summaryCountInformation} />}
+        />
+        <DurationBarchartView
+          data={displayedData}
+          informationAction={<Information information={summaryDurationInformation} />}
+        />
       </div>
     </div>
   );

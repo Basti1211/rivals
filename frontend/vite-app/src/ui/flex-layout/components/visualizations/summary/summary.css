@@ -16,6 +16,14 @@
   margin: 0;
 }
 
+.summary-view-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
 .summary-view-loading {
   align-items: center;
   color: #4b5563;

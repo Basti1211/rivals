@@ -10,6 +10,7 @@ type CountBarchartViewProps = {
   data: FetchInteractionDataResponse | null;
   dataSelector?: React.ReactNode;
   onOpenDataManipulator?: () => void;
+  informationAction?: React.ReactNode;
   snapshotActions?: React.ReactNode;
 };
 
@@ -247,6 +248,7 @@ const CountBarchartView: React.FC<CountBarchartViewProps> = ({
   data,
   dataSelector,
   onOpenDataManipulator,
+  informationAction,
   snapshotActions,
 }) => {
   const [groupMode, setGroupMode] = useState<GroupMode>("pair");
@@ -315,6 +317,7 @@ const CountBarchartView: React.FC<CountBarchartViewProps> = ({
       <div className="task-barchart-header">
         <h1>Count Barchart</h1>
         <div className="task-barchart-actions">
+          {informationAction}
           {onOpenDataManipulator && (
             <Button type="primary" onClick={onOpenDataManipulator}>
               Data

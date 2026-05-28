@@ -3,11 +3,14 @@ import type { FetchInteractionDataResponse, FetchUsersAndTasks, InteractionReque
 import { fetchInteractions, fetchUsersAndTasks, getErrorMessage } from "../../../../../api-handler/Requests";
 import StrategyAnalysisView from "./StrategyAnalysisView";
 import DataManipulator from "../common/DataManipulator";
+import Information from "../common/Information";
 
 type StrategyAnalysisProps = {
     visualizationId: string;
     initialData: FetchInteractionDataResponse | null;
 };
+
+const strategyAnalysisInformation = "This analysis explores search strategies from user action sequences. It can train a Random Forest classifier on action frequencies and optional 2-grams to predict task success, then shows model accuracy and the most indicative features. It also compares action-frequency differences between successful and unsuccessful queries to help explain user behavior and support search tool design decisions.";
 
 const StrategyAnalysis: React.FC<StrategyAnalysisProps> = ({ initialData }) => {
     const [data, setData] = useState<FetchInteractionDataResponse | null>(initialData);
@@ -43,17 +46,10 @@ const StrategyAnalysis: React.FC<StrategyAnalysisProps> = ({ initialData }) => {
     };
 
     return (
-        <div style={{ height: "100%", position: "relative", overflow: "auto" }}>
+        <div style={{ height: "100%", overflow: "auto" }}>
             <StrategyAnalysisView
                 data={data}
-                onOpenDataManipulator={() => setIsManipulatorOpen(true)}
-            />
-
-            {isManipulatorOpen && (
-                <div style={{
-                    position: "absolute", top: 0, left: 0, right: 0, zIndex: 10,
-                    background: "var(--bg-color, #fff)", borderBottom: "1px solid #ccc", padding: "16px"
-                }}>
+                dataSelector={isManipulatorOpen ? (
                     <DataManipulator
                         displayedData={data}
                         availableData={availableData}
@@ -63,8 +59,10 @@ const StrategyAnalysis: React.FC<StrategyAnalysisProps> = ({ initialData }) => {
                         onUpdateData={handleUpdateData}
                         onClose={data ? () => setIsManipulatorOpen(false) : undefined}
                     />
-                </div>
-            )}
+                ) : null}
+                onOpenDataManipulator={() => setIsManipulatorOpen(true)}
+                informationAction={<Information information={strategyAnalysisInformation} />}
+            />
         </div>
     );
 };

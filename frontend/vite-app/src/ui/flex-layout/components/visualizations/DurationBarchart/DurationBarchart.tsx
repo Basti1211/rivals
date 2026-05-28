@@ -7,6 +7,7 @@ import type {
   InteractionRequestRow,
 } from "../../../../../types/dataTypes";
 import DataManipulator from "../common/DataManipulator";
+import Information from "../common/Information";
 import VisualizationSnapshotMenu from "../common/VisualizationSnapshotMenu";
 import DurationBarchartView from "./DurationBarchartView";
 import "../../../../style/general.css";
@@ -22,6 +23,8 @@ const cloneInteractionData = (
 ): FetchInteractionDataResponse | null => {
   return data ? structuredClone(data) : null;
 };
+
+const durationBarchartInformation = "This visualization estimates how much task time is spent on each interaction action. Durations are computed from the ordered task timeline, including submissions and task ends where available, and can be grouped by user-task pair, user, system, task, task category, or all selected data.";
 
 const DurationBarchart: React.FC<DurationBarchartProps> = ({
   visualizationId,
@@ -86,6 +89,7 @@ const DurationBarchart: React.FC<DurationBarchartProps> = ({
           />
         ) : null}
         onOpenDataManipulator={handleOpenDataManipulator}
+        informationAction={<Information information={durationBarchartInformation} />}
         snapshotActions={(
           <VisualizationSnapshotMenu
             currentData={displayedData}

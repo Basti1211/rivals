@@ -7,6 +7,7 @@ import type {
   InteractionRequestRow,
 } from "../../../../../types/dataTypes";
 import DataManipulator from "../common/DataManipulator";
+import Information from "../common/Information";
 import VisualizationSnapshotMenu from "../common/VisualizationSnapshotMenu";
 import CountBarchartView from "./CountBarchartView";
 import "../../../../style/general.css";
@@ -22,6 +23,8 @@ const cloneInteractionData = (
 ): FetchInteractionDataResponse | null => {
   return data ? structuredClone(data) : null;
 };
+
+const countBarchartInformation = "This visualization shows how often selected interaction actions occur. Use the Data panel to choose users, tasks, hierarchy levels, and cancelled actions, then group the bars by user-task pair, user, system, task, task category, or all selected data.";
 
 const CountBarchart: React.FC<CountBarchartProps> = ({
   visualizationId,
@@ -91,6 +94,7 @@ const CountBarchart: React.FC<CountBarchartProps> = ({
           />
         ) : null}
         onOpenDataManipulator={handleOpenDataManipulator}
+        informationAction={<Information information={countBarchartInformation} />}
         snapshotActions={(
           <VisualizationSnapshotMenu
             currentData={displayedData}

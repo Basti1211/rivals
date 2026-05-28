@@ -13,7 +13,9 @@ import "./strategyAnalysis.css";
 
 type StrategyAnalysisViewProps = {
     data: FetchInteractionDataResponse | null;
+    dataSelector?: React.ReactNode;
     onOpenDataManipulator: () => void;
+    informationAction?: React.ReactNode;
 };
 
 // --- Helper Functions ---
@@ -243,7 +245,12 @@ const extractUniqueActions = (data: FetchInteractionDataResponse | null): string
     return Array.from(actions).sort();
 };
 
-const StrategyAnalysisView: React.FC<StrategyAnalysisViewProps> = ({ data, onOpenDataManipulator }) => {
+const StrategyAnalysisView: React.FC<StrategyAnalysisViewProps> = ({
+    data,
+    dataSelector,
+    onOpenDataManipulator,
+    informationAction,
+}) => {
     const [use2Grams, setUse2Grams] = useState<boolean>(false);
     const [actionsToAggregate, setActionsToAggregate] = useState<string[]>([]);
     const [restartActions, setRestartActions] = useState<string[]>([]);
@@ -302,10 +309,15 @@ const StrategyAnalysisView: React.FC<StrategyAnalysisViewProps> = ({ data, onOpe
         <div className="strategy-analysis-view">
             <div className="strategy-analysis-header">
                 <h1>Strategy Analysis</h1>
-                <Button type="primary" onClick={onOpenDataManipulator}>
-                    Select Data ({requestInteractions.length} pairs loaded)
-                </Button>
+                <div className="strategy-analysis-actions">
+                    {informationAction}
+                    <Button type="primary" onClick={onOpenDataManipulator}>
+                        Select Data ({requestInteractions.length} pairs loaded)
+                    </Button>
+                </div>
             </div>
+
+            {dataSelector}
 
             {error && <Alert type="error" message={error} style={{ marginBottom: 16 }} closable onClose={() => setError(null)} />}
 

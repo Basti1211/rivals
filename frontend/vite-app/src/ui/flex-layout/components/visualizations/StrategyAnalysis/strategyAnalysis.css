@@ -17,6 +17,13 @@
     font-size: 24px;
 }
 
+.strategy-analysis-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
 .configuration-lists {
     display: flex;
     gap: 32px;

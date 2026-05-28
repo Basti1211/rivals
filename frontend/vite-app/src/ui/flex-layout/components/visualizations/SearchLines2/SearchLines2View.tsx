@@ -22,6 +22,7 @@ type SearchLines2ViewProps = {
   data: FetchInteractionDataResponse | null;
   dataSelector?: React.ReactNode;
   onOpenDataManipulator: () => void;
+  informationAction?: React.ReactNode;
   snapshotActions?: React.ReactNode;
 };
 
@@ -1658,6 +1659,7 @@ const SearchLines2View: React.FC<SearchLines2ViewProps> = ({
   data,
   dataSelector,
   onOpenDataManipulator,
+  informationAction,
   snapshotActions,
 }) => {
   const [rankField, setRankField] = useState<RankField>("frameRank");
@@ -1794,6 +1796,7 @@ const SearchLines2View: React.FC<SearchLines2ViewProps> = ({
       <div className="task-barchart-header">
         <h1>Search Lines</h1>
         <div className="task-barchart-actions">
+          {informationAction}
           <Button type="primary" onClick={onOpenDataManipulator}>
             Data
           </Button>

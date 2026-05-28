@@ -7,6 +7,7 @@ import type {
   InteractionRequestRow,
 } from "../../../../../types/dataTypes";
 import DataManipulator from "../common/DataManipulator";
+import Information from "../common/Information";
 import VisualizationSnapshotMenu from "../common/VisualizationSnapshotMenu";
 import SearchLines2View from "./SearchLines2View";
 import "../../../../style/general.css";
@@ -23,6 +24,8 @@ const cloneInteractionData = (
 ): FetchInteractionDataResponse | null => {
   return data ? structuredClone(data) : null;
 };
+
+const searchLinesInformation = "This visualization shows each selected user-task interaction sequence as a timeline. You can arrange columns by task, user, or task group, switch between frame and video rank opacity, add hierarchy overlays, zoom into a band, and select time ranges to open as count or duration bar charts.";
 
 const SearchLines2: React.FC<SearchLines2Props> = ({
   visualizationId,
@@ -87,6 +90,7 @@ const SearchLines2: React.FC<SearchLines2Props> = ({
           />
         ) : null}
         onOpenDataManipulator={handleOpenDataManipulator}
+        informationAction={<Information information={searchLinesInformation} />}
         snapshotActions={(
           <VisualizationSnapshotMenu
             currentData={displayedData}
