@@ -16,6 +16,10 @@ After the containers are running, open the visual interface at:
 
 <http://localhost:3000/>
 
+## Demo Data
+
+RIVALS includes demo data from the Video Browser Showdown 2026. The demo contains interaction logs from the PraK system with five users and Exquisitor with one user. After starting the application, use **Load Demo Data** in the interface to import the bundled tasks, answers, and logs.
+
 ## Requirements
 
 - Docker
