@@ -34,9 +34,11 @@ RIVALS requires four types of input data:
 
 The expected formats are described below.
 
+Task metadata and task answers can also be uploaded together in the official DRES JSON export format. Use **Load DRES Logs** for these files; RIVALS inspects the DRES export, asks for the dataset assigned to each DRES task group and the video root for each dataset, and then converts the export into the internal task and answer records described below.
+
 ### Task Metadata
 
-Task metadata describes the retrieval tasks that should be available in RIVALS. The upload can be either a JSON array of task objects or an object with a top-level `tasks` array.
+Task metadata describes the retrieval tasks that should be available in RIVALS. The upload can be either a JSON array of task objects, an object with a top-level `tasks` array, or part of an official DRES JSON export uploaded via **Load DRES Logs**.
 
 ```json
 {
@@ -89,7 +91,7 @@ Optional fields can be set to `null` when they are not available:
 
 ### Task Answers
 
-Task answers describe submitted answers for each task and user. The upload can be either a JSON array of answer objects or an object with a top-level `submissions` array.
+Task answers describe submitted answers for each task and user. The upload can be either a JSON array of answer objects, an object with a top-level `submissions` array, or part of an official DRES JSON export uploaded via **Load DRES Logs**.
 
 ```json
 {
@@ -236,4 +238,3 @@ Optional fields:
 
 - [Frontend](frontend/README.md)
 - [Backend](backend/README.md)
-- [Kubernetes deployment](k8s/README.md)

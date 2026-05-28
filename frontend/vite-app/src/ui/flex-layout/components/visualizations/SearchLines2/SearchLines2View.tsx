@@ -123,6 +123,9 @@ const COLUMN_HEADER_HEIGHT = 18;
 const COLUMN_FOOTER_HEIGHT = 12;
 const RANK_MAX = 1000;
 const RANK_BACKGROUND_COLOR = "rgb(22, 163, 74)";
+const SUBMISSION_CORRECT_COLOR = "#16a34a";
+const SUBMISSION_UNEVALUATED_COLOR = "#9ca3af";
+const SUBMISSION_WRONG_COLOR = "#dc2626";
 const MISSING_GROUP_LABEL = "No task group";
 const MIN_MAIN_SELECTION_WIDTH = 10;
 const OVERLAY_COLORS = [
@@ -239,6 +242,43 @@ const getMarkerTooltip = (
     `Metadata: ${formatMetadata(interaction.metadata)}`,
     `Frame rank: ${formatRank(interaction.frameRank ?? null)}`,
     `Video rank: ${formatRank(interaction.videoRank ?? null)}`,
+  ].join("\n");
+};
+
+const getSubmissionStatusLabel = (status: SubmissionRow["status"]): string => {
+  if (status === 1) {
+    return "Correct";
+  }
+
+  if (status === -1) {
+    return "Wrong";
+  }
+
+  return "Not evaluated";
+};
+
+const getSubmissionColor = (status: SubmissionRow["status"]): string => {
+  if (status === 1) {
+    return SUBMISSION_CORRECT_COLOR;
+  }
+
+  if (status === -1) {
+    return SUBMISSION_WRONG_COLOR;
+  }
+
+  return SUBMISSION_UNEVALUATED_COLOR;
+};
+
+const getSubmissionTooltip = (
+  submission: SubmissionRow,
+  taskStartTimestamp: number,
+): string => {
+  return [
+    "Submission",
+    `Status: ${getSubmissionStatusLabel(submission.status)}`,
+    `Time: ${formatElapsedSeconds(submission.timestamp, taskStartTimestamp)}`,
+    `Answer text: ${submission.answer_text ?? "null"}`,
+    `Answer video: ${submission.answer_video ?? "null"}`,
   ].join("\n");
 };
 
@@ -473,6 +513,41 @@ const MarkerSymbol: React.FC<{
     </g>
   );
 };
+
+const SubmissionStar: React.FC<{
+  submission: SubmissionRow;
+  taskStartTimestamp: number;
+  x: number;
+  y: number;
+}> = ({submission, taskStartTimestamp, x, y}) => {
+  const size = 4;
+
+  return (
+    <g
+      className="search-lines-2-submission-star"
+      transform={`translate(${x} ${y}) scale(${size})`}
+    >
+      <title>{getSubmissionTooltip(submission, taskStartTimestamp)}</title>
+      <path
+        d="M0 -1 L0.225 -0.309 L0.951 -0.309 L0.363 0.118 L0.588 0.809 L0 0.382 L-0.588 0.809 L-0.363 0.118 L-0.951 -0.309 L-0.225 -0.309 Z"
+        fill={getSubmissionColor(submission.status)}
+      />
+    </g>
+  );
+};
+
+const getVisibleSubmissions = (
+  submissions: SubmissionRow[],
+  start: number,
+  end: number,
+): SubmissionRow[] => (
+  [...submissions]
+    .sort((first, second) => first.timestamp - second.timestamp)
+    .filter((submission) =>
+      submission.timestamp >= start
+      && submission.timestamp <= end,
+    )
+);
 
 const ShapeIcon: React.FC<{
   shape: MarkerShape;
@@ -1356,6 +1431,11 @@ const SearchLines2Column: React.FC<{
             && interaction.timestamp >= bandBounds.start
             && interaction.timestamp <= timelineEnd,
           );
+          const visibleSubmissions = getVisibleSubmissions(
+            band.submissions,
+            bandBounds.start,
+            timelineEnd,
+          );
           const points = [
             bandBounds.start,
             ...visibleInteractions.map((interaction) => interaction.timestamp),
@@ -1500,6 +1580,15 @@ const SearchLines2Column: React.FC<{
                   </circle>
                 );
               })}
+              {visibleSubmissions.map((submission, submissionIndex) => (
+                <SubmissionStar
+                  key={`${band.id}-${submission.timestamp}-${submission.status}-${submissionIndex}`}
+                  submission={submission}
+                  taskStartTimestamp={bandBounds.start}
+                  x={xScale(submission.timestamp - bandBounds.start)}
+                  y={centerY - 5}
+                />
+              ))}
             </g>
           );
         })}

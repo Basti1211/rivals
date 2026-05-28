@@ -203,8 +203,16 @@
 }
 
 .search-lines-2-dot,
-.search-lines-2-marker {
+.search-lines-2-marker,
+.search-lines-2-submission-star {
   cursor: default;
+  vector-effect: non-scaling-stroke;
+}
+
+.search-lines-2-submission-star path,
+.search-lines-2-zoom-submission-star path {
+  stroke: #ffffff;
+  stroke-width: 0.8;
   vector-effect: non-scaling-stroke;
 }
 
@@ -355,7 +363,8 @@
 }
 
 .search-lines-2-zoom-dot,
-.search-lines-2-zoom-marker {
+.search-lines-2-zoom-marker,
+.search-lines-2-zoom-submission-star {
   cursor: default;
   vector-effect: non-scaling-stroke;
 }
