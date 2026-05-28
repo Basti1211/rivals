@@ -23,6 +23,12 @@ After the containers are running, open the visual interface at:
 
 If you experience any problems, contact [bastian.jaeckl@uni-konstanz.de](mailto:bastian.jaeckl@uni-konstanz.de) or create an issue on GitHub.
 
+## Component Documentation
+
+- [Frontend documentation](frontend/README.md)
+- [Backend documentation](backend/README.md)
+- [Kubernetes deployment documentation](k8s/README.md)
+
 ## Input Formats
 
 RIVALS requires four types of input data:
@@ -236,5 +242,6 @@ Optional fields:
 
 ## Project Structure
 
-- [Frontend](frontend/README.md)
-- [Backend](backend/README.md)
+- `frontend/`: React/Vite frontend. See [frontend/README.md](frontend/README.md).
+- `backend/`: FastAPI backend. See [backend/README.md](backend/README.md).
+- `k8s/`: Kubernetes deployment files. See [k8s/README.md](k8s/README.md).
