@@ -4,19 +4,15 @@
         "Hierarchy": [
             {
                 "Name": "Querying",
-                "Visualize": false,
                 "Children": [
                     {
                         "Name": "State-Based Querying",
-                        "Visualize": false,
                         "Children": [
                             {
                                 "Name": "Relevance Updates",
-                                "Visualize": false,
                                 "Children": [
                                     {
                                         "Name": "svmUpdate",
-                                        "Visualize": false,
                                         "Children": []
                                     }
                                 ]
@@ -25,84 +21,68 @@
                     },
                     {
                         "Name": "Textually-Constrained Visual Queries",
-                        "Visualize": false,
                         "Children": [
                             {
                                 "Name": "textQuery",
-                                "Visualize": false,
                                 "Children": []
                             }
                         ]
                     },
                     {
                         "Name": "loadVideoSummary",
-                        "Visualize": false,
                         "Children": []
                     }
                 ]
             },
             {
                 "Name": "Browsing",
-                "Visualize": false,
                 "Children": [
                     {
                         "Name": "Browsing Candidates",
-                        "Visualize": false,
                         "Children": [
                             {
                                 "Name": "Mouse Movement",
-                                "Visualize": false,
                                 "Children": [
                                     {
                                         "Name": "imgHoverEnter",
-                                        "Visualize": false,
                                         "Children": []
                                     },
                                     {
                                         "Name": "selectImage",
-                                        "Visualize": false,
                                         "Children": []
                                     }
                                 ]
                             },
                             {
                                 "Name": "scroll",
-                                "Visualize": false,
                                 "Children": []
                             },
                             {
                                 "Name": "clickLoadMore",
-                                "Visualize": false,
                                 "Children": []
                             }
                         ]
                     },
                     {
                         "Name": "Video Browse",
-                        "Visualize": false,
                         "Children": [
                             {
                                 "Name": "Video Player",
-                                "Visualize": false,
                                 "Children": [
                                     {
                                         "Name": "keypressPlayer",
-                                        "Visualize": false,
                                         "Children": []
                                     },
                                     {
                                         "Name": "videoInteraction",
-                                        "Visualize": false,
                                         "Children": []
                                     },
                                     {
                                         "Name": "videoSegmentLoaded",
-                                        "Visualize": false,
                                         "Children": []
                                     },
                                     {
                                         "Name": "closePlayer",
-                                        "Visualize": false,
                                         "Children": []
                                     }
                                 ]
@@ -113,36 +93,29 @@
             },
             {
                 "Name": "DRES",
-                "Visualize": false,
                 "Children": [
                     {
                         "Name": "START",
-                        "Visualize": false,
                         "Children": []
                     },
                     {
                         "Name": "ANSWER",
-                        "Visualize": false,
                         "Children": []
                     },
                     {
                         "Name": "END",
-                        "Visualize": false,
                         "Children": []
                     }
                 ]
             },
             {
                 "Name": "Formulation",
-                "Visualize": false,
                 "Children": [
                     {
                         "Name": "Text Input",
-                        "Visualize": false,
                         "Children": [
                             {
                                 "Name": "keypressTextQuery",
-                                "Visualize": false,
                                 "Children": []
                             }
                         ]

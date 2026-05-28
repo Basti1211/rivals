@@ -209,18 +209,12 @@ Each hierarchy is an array of recursive hierarchy nodes:
 [
   {
     "Name": "Querying",
-    "Visualize": true,
-    "Cancelled": false,
     "Children": [
       {
         "Name": "Textually-Constrained Visual Queries",
-        "Visualize": false,
-        "Cancelled": false,
         "Children": [
           {
             "Name": "textQuery",
-            "Visualize": false,
-            "Cancelled": false,
             "Children": []
           }
         ]

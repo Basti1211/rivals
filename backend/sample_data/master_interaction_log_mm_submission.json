@@ -4,103 +4,83 @@
         "Hierarchy": [
             {
                 "Name": "User Interface",
-                "Visualize": false,
                 "Children": [
                     {
                         "Name": "switchTask",
-                        "Visualize": false,
                         "Children": []
                     },
                     {
                         "Name": "switchDataset",
-                        "Visualize": false,
                         "Children": []
                     }
                 ]
             },
             {
                 "Name": "Formulation",
-                "Visualize": false,
                 "Children": [
                     {
                         "Name": "Text Input",
-                        "Visualize": false,
                         "Children": [
                             {
                                 "Name": "keypressTextQuery",
-                                "Visualize": false,
                                 "Children": []
                             },
                             {
                                 "Name": "keypressTemporalQuery",
-                                "Visualize": false,
                                 "Children": []
                             },
                             {
                                 "Name": "keypressIntraVideoQuery",
-                                "Visualize": false,
                                 "Children": []
                             },
                             {
                                 "Name": "keypressAnswer",
-                                "Visualize": false,
                                 "Children": []
                             }
                         ]
                     },
                     {
                         "Name": "Sketch Input",
-                        "Visualize": false,
                         "Children": [
                             {
                                 "Name": "cancelRectTool",
-                                "Visualize": false,
                                 "Children": []
                             },
                             {
                                 "Name": "openRectTool",
-                                "Visualize": false,
                                 "Children": []
                             },
                             {
                                 "Name": "acceptRectTool",
-                                "Visualize": false,
                                 "Children": []
                             },
                             {
                                 "Name": "insertLocalizationIntoTextQuery",
-                                "Visualize": false,
                                 "Children": []
                             },
                             {
                                 "Name": "insertLocalizationIntoTemporalQuery",
-                                "Visualize": false,
                                 "Children": []
                             },
                             {
                                 "Name": "insertLocalizationIntoIntraVideoQuery",
-                                "Visualize": false,
                                 "Children": []
                             }
                         ]
                     },
                     {
                         "Name": "State Based Query Formulation",
-                        "Visualize": false,
                         "Children": [
                             {
                                 "Name": "resetRocchioSelection",
-                                "Visualize": false,
                                 "Children": []
                             },
                             {
                                 "Name": "usedLabel",
-                                "Visualize": false,
                                 "Children": []
                             },
                             {
                                 "Name": "selectImage",
-                                "Visualize": false,
                                 "Children": []
                             }
                         ]
@@ -109,209 +89,169 @@
             },
             {
                 "Name": "Answer Submission",
-                "Visualize": false,
                 "Children": [
                     {
                         "Name": "sendResultsMultiple",
-                        "Visualize": false,
                         "Children": []
                     },
                     {
                         "Name": "sendResultsSingleFrame",
-                        "Visualize": false,
                         "Children": []
                     },
                     {
                         "Name": "sendResultsSingle",
-                        "Visualize": false,
                         "Children": []
                     },
                     {
                         "Name": "sendResultsCustom",
-                        "Visualize": false,
                         "Children": []
                     },
                     {
                         "Name": "clickSubmit",
-                        "Visualize": false,
                         "Children": []
                     }
                 ]
             },
             {
                 "Name": "Loading Time",
-                "Visualize": false,
                 "Children": [
                     {
                         "Name": "videoDataLoaded",
-                        "Visualize": false,
                         "Children": []
                     },
                     {
                         "Name": "serverRequest",
-                        "Visualize": false,
                         "Children": []
                     },
                     {
                         "Name": "serverResponse",
-                        "Visualize": false,
                         "Children": []
                     },
                     {
                         "Name": "rocchioUpdateResponse",
-                        "Visualize": false,
                         "Children": []
                     },
                     {
                         "Name": "bayesUpdateResponse",
-                        "Visualize": false,
                         "Children": []
                     }
                 ]
             },
             {
                 "Name": "Traversing",
-                "Visualize": false,
                 "Children": [
                     {
                         "Name": "traversingBackwards",
-                        "Visualize": false,
                         "Children": []
                     },
                     {
                         "Name": "traversingForwards",
-                        "Visualize": false,
                         "Children": []
                     }
                 ]
             },
             {
                 "Name": "Querying",
-                "Visualize": false,
                 "Children": [
                     {
                         "Name": "State-Based Querying",
-                        "Visualize": false,
                         "Children": [
                             {
                                 "Name": "Relevance Updates",
-                                "Visualize": false,
                                 "Children": [
                                     {
                                         "Name": "bayesUpdate",
-                                        "Visualize": false,
                                         "Children": []
                                     },
                                     {
                                         "Name": "rocchioUpdate",
-                                        "Visualize": false,
                                         "Children": []
                                     }
                                 ]
                             },
                             {
                                 "Name": "intraVideoQuery",
-                                "Visualize": false,
                                 "Children": []
                             },
                             {
                                 "Name": "imageQueryByID",
-                                "Visualize": false,
                                 "Children": []
                             },
                             {
                                 "Name": "loadVideoSummary",
-                                "Visualize": false,
                                 "Children": []
                             }
                         ]
                     },
                     {
                         "Name": "Textually-Constrained Visual Queries",
-                        "Visualize": false,
                         "Children": [
                             {
                                 "Name": "textQuery",
-                                "Visualize": false,
                                 "Children": []
                             },
                             {
                                 "Name": "temporalQuery",
-                                "Visualize": false,
                                 "Children": []
                             }
                         ]
                     },
                     {
                         "Name": "reset",
-                        "Visualize": false,
                         "Children": []
                     }
                 ]
             },
             {
                 "Name": "Browsing",
-                "Visualize": false,
                 "Children": [
                     {
                         "Name": "Browsing Candidates",
-                        "Visualize": false,
                         "Children": [
                             {
                                 "Name": "Browsing Images",
-                                "Visualize": false,
                                 "Children": [
                                     {
                                         "Name": "Image Inspection Inter",
-                                        "Visualize": false,
                                         "Children": [
                                             {
                                                 "Name": "interEnlargeImage",
-                                                "Visualize": false,
                                                 "Children": []
                                             },
                                             {
                                                 "Name": "interCloseEnlargeImage",
-                                                "Visualize": false,
                                                 "Children": []
                                             }
                                         ]
                                     },
                                     {
                                         "Name": "Mouse Movement",
-                                        "Visualize": false,
                                         "Children": [
                                             {
                                                 "Name": "interHover",
-                                                "Visualize": false,
                                                 "Children": []
                                             }
                                         ]
                                     },
                                     {
                                         "Name": "interScroll",
-                                        "Visualize": false,
                                         "Children": []
                                     }
                                 ]
                             },
                             {
                                 "Name": "Filtering",
-                                "Visualize": false,
                                 "Children": [
                                     {
                                         "Name": "uniqueVideoFrames",
-                                        "Visualize": false,
                                         "Children": []
                                     },
                                     {
                                         "Name": "imageVideoOnLine",
-                                        "Visualize": false,
                                         "Children": []
                                     },
                                     {
                                         "Name": "frameSorting",
-                                        "Visualize": false,
                                         "Children": []
                                     }
                                 ]
@@ -320,74 +260,60 @@
                     },
                     {
                         "Name": "Video Browse",
-                        "Visualize": false,
                         "Children": [
                             {
                                 "Name": "Video Player",
-                                "Visualize": false,
                                 "Children": [
                                     {
                                         "Name": "videoPause",
-                                        "Visualize": false,
                                         "Children": []
                                     },
                                     {
                                         "Name": "videoBrowse",
-                                        "Visualize": false,
                                         "Children": []
                                     },
                                     {
                                         "Name": "videoSkippedTo",
-                                        "Visualize": false,
                                         "Children": []
                                     },
                                     {
                                         "Name": "videoStartPlay",
-                                        "Visualize": false,
                                         "Children": []
                                     },
                                     {
                                         "Name": "closePlayerWithMouse",
-                                        "Visualize": false,
                                         "Children": []
                                     },
                                     {
                                         "Name": "closePlayerWithKey",
-                                        "Visualize": false,
                                         "Children": []
                                     }
                                 ]
                             },
                             {
                                 "Name": "Image Inspection Intra",
-                                "Visualize": false,
                                 "Children": [
                                     {
                                         "Name": "intraEnlargeImage",
-                                        "Visualize": false,
                                         "Children": []
                                     },
                                     {
                                         "Name": "intraCloseEnlargeImage",
-                                        "Visualize": false,
                                         "Children": []
                                     }
                                 ]
                             },
                             {
                                 "Name": "Mouse Movement Video",
-                                "Visualize": false,
                                 "Children": [
                                     {
                                         "Name": "intraHover",
-                                        "Visualize": false,
                                         "Children": []
                                     }
                                 ]
                             },
                             {
                                 "Name": "intraScroll",
-                                "Visualize": false,
                                 "Children": []
                             }
                         ]
@@ -396,21 +322,17 @@
             },
             {
                 "Name": "DRES",
-                "Visualize": false,
                 "Children": [
                     {
                         "Name": "START",
-                        "Visualize": false,
                         "Children": []
                     },
                     {
                         "Name": "ANSWER",
-                        "Visualize": false,
                         "Children": []
                     },
                     {
                         "Name": "END",
-                        "Visualize": false,
                         "Children": []
                     }
                 ]
