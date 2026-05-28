@@ -1,19 +1,24 @@
 import React, { useEffect, useState } from "react";
-import { Alert, Button, notification } from "antd";
+import { Alert, Button, Input, notification } from "antd";
 import "../../../../style/general.css";
 import "./dataLoader.css";
-import { LoadDataResponse, ValidJsonFile } from "../../../../../types/dataTypes";
+import {
+  InspectDresLogsResponse,
+  LoadDataResponse,
+  ValidJsonFile,
+} from "../../../../../types/dataTypes";
 import { useDataRefresh } from "../../../flex-layout-context/DataRefreshContext";
 import JsonUploadBox from "./JsonUploadBox";
 
-type LoadTarget = "demo" | "tasks" | "answers" | "interactionLogs";
+type LoadTarget = "demo" | "tasks" | "answers" | "interactionLogs" | "dresLogs";
+type RealDataTarget = "tasks" | "answers" | "interactionLogs";
 
 type UploadPayload = {
   filename: string;
   data: unknown;
 };
 
-const REAL_DATA_ENDPOINTS: Record<Exclude<LoadTarget, "demo">, string> = {
+const REAL_DATA_ENDPOINTS: Record<RealDataTarget, string> = {
   tasks: "/api/data/load-tasks",
   answers: "/api/data/load-answers",
   interactionLogs: "/api/data/load-interaction-logs",
@@ -81,11 +86,28 @@ const readLoadDataResponse = async (res: Response): Promise<LoadDataResponse> =>
   };
 };
 
+const readInspectDresLogsResponse = async (res: Response): Promise<InspectDresLogsResponse> => {
+  const data = await res.json() as Partial<InspectDresLogsResponse>;
+
+  return {
+    taskGroups: [],
+    users: [],
+    taskCount: 0,
+    submissionCount: 0,
+    errorMessage: res.ok ? null : `Request failed with ${res.status}`,
+    ...data,
+  };
+};
+
 const DataLoader: React.FC = () => {
   const { notifyDataChanged } = useDataRefresh();
   const [loadResponse, setLoadResponse] = useState<LoadDataResponse>(emptyLoadDataResponse());
   const [activeLoadTarget, setActiveLoadTarget] = useState<LoadTarget | null>(null);
   const [deletingSourceFileIds, setDeletingSourceFileIds] = useState<Set<number>>(() => new Set());
+  const [dresUpload, setDresUpload] = useState<UploadPayload | null>(null);
+  const [dresInspect, setDresInspect] = useState<InspectDresLogsResponse | null>(null);
+  const [dresTaskGroupDatasets, setDresTaskGroupDatasets] = useState<Record<string, string>>({});
+  const [dresDatasetRoots, setDresDatasetRoots] = useState<Record<string, string>>({});
 
   const showInvalidJsonNotification = (): void => {
     notification.error({
@@ -139,7 +161,7 @@ const DataLoader: React.FC = () => {
 
   const handleRealDataUpload = async (
     validJsonFiles: ValidJsonFile[],
-    target: Exclude<LoadTarget, "demo">,
+    target: RealDataTarget,
   ): Promise<void> => {
     setActiveLoadTarget(target);
 
@@ -181,12 +203,120 @@ const DataLoader: React.FC = () => {
     void handleRealDataUpload(validJsonFiles, "interactionLogs");
   };
 
+  const handleDresLogsUpload = async (validJsonFiles: ValidJsonFile[]): Promise<void> => {
+    const dresFile = validJsonFiles[0];
+    if (!dresFile) {
+      return;
+    }
+
+    if (validJsonFiles.length > 1) {
+      notification.warning({
+        message: "Only one DRES file selected",
+        description: "Using the first JSON file for this import.",
+      });
+    }
+
+    setActiveLoadTarget("dresLogs");
+
+    try {
+      const payload = toUploadPayload(dresFile);
+      const res = await fetch("/api/data/inspect-dres-logs", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+      const data = await readInspectDresLogsResponse(res);
+      const nextTaskGroupDatasets = data.taskGroups.reduce<Record<string, string>>(
+        (datasets, taskGroup) => ({
+          ...datasets,
+          [taskGroup.taskGroup]: dresTaskGroupDatasets[taskGroup.taskGroup] ?? "",
+        }),
+        {},
+      );
+
+      setDresUpload(payload);
+      setDresInspect(data);
+      setDresTaskGroupDatasets(nextTaskGroupDatasets);
+
+      if (data.errorMessage) {
+        setLoadResponse(emptyLoadDataResponse(data.errorMessage));
+      }
+    } catch (error) {
+      setDresUpload(null);
+      setDresInspect(null);
+      setLoadResponse(
+        emptyLoadDataResponse(
+          error instanceof Error ? error.message : "Failed to inspect DRES logs.",
+        ),
+      );
+    } finally {
+      setActiveLoadTarget(null);
+    }
+  };
+
   const handleAnswersUpload = (validJsonFiles: ValidJsonFile[]): void => {
     void handleRealDataUpload(validJsonFiles, "answers");
   };
 
   const handleTasksUpload = (validJsonFiles: ValidJsonFile[]): void => {
     void handleRealDataUpload(validJsonFiles, "tasks");
+  };
+
+  const handleDresTaskGroupDatasetChange = (taskGroup: string, dataset: string): void => {
+    setDresTaskGroupDatasets((currentMappings) => ({
+      ...currentMappings,
+      [taskGroup]: dataset,
+    }));
+  };
+
+  const handleDresDatasetRootChange = (dataset: string, root: string): void => {
+    setDresDatasetRoots((currentRoots) => ({
+      ...currentRoots,
+      [dataset]: root,
+    }));
+  };
+
+  const handleLoadDresLogs = async (): Promise<void> => {
+    if (!dresUpload) {
+      return;
+    }
+
+    setActiveLoadTarget("dresLogs");
+
+    try {
+      const res = await fetch("/api/data/load-dres-logs", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          filename: dresUpload.filename,
+          data: dresUpload.data,
+          taskGroupDatasets: dresTaskGroupDatasets,
+          datasetRoots: dresDatasetRoots,
+        }),
+      });
+      const data = await readLoadDataResponse(res);
+
+      setLoadResponse(data);
+      if (res.ok && !data.errorMessage) {
+        setDresUpload(null);
+        setDresInspect(null);
+        setDresTaskGroupDatasets({});
+        setDresDatasetRoots({});
+        notifyDataChanged();
+      }
+    } catch (error) {
+      setLoadResponse(
+        emptyLoadDataResponse(
+          error instanceof Error ? error.message : "Failed to load DRES logs.",
+        ),
+      );
+    } finally {
+      setActiveLoadTarget(null);
+    }
   };
 
   const handleDeleteSourceFile = async (sourceFileId: number): Promise<void> => {
@@ -220,6 +350,21 @@ const DataLoader: React.FC = () => {
     + loadResponse.loadedUsers
     + loadResponse.loadedLogs
     + loadResponse.loadedAnswers > 0;
+  const dresSelectedDatasets = Array.from(
+    new Set(
+      Object.values(dresTaskGroupDatasets)
+        .map((dataset) => dataset.trim())
+        .filter(Boolean),
+    ),
+  ).sort();
+  const isDresImportReady = Boolean(
+    dresUpload
+    && dresInspect
+    && !dresInspect.errorMessage
+    && dresInspect.taskGroups.length > 0
+    && dresInspect.taskGroups.every(({ taskGroup }) => dresTaskGroupDatasets[taskGroup]?.trim())
+    && dresSelectedDatasets.every((dataset) => dresDatasetRoots[dataset]?.trim()),
+  );
 
   return (
     <div className="data-loader">
@@ -331,6 +476,89 @@ const DataLoader: React.FC = () => {
             onValidJsonFiles={handleInteractionsUpload}
             onInvalidJson={showInvalidJsonNotification}
           />
+        </div>
+
+        <div className="upload-group dres-logs-upload">
+          <h3>Load DRES Logs</h3>
+
+          <JsonUploadBox
+            label="Load DRES Logs"
+            onValidJsonFiles={(files) => void handleDresLogsUpload(files)}
+            onInvalidJson={showInvalidJsonNotification}
+          />
+
+          {dresInspect ? (
+            <div className="dres-import-config">
+              {dresInspect.errorMessage ? (
+                <Alert
+                  type="error"
+                  showIcon
+                  title="DRES inspection failed"
+                  description={dresInspect.errorMessage}
+                />
+              ) : (
+                <>
+                  <div className="dres-import-summary">
+                    <span>{formatSummaryNumber(dresInspect.taskCount)} tasks</span>
+                    <span>{formatSummaryNumber(dresInspect.submissionCount)} submissions</span>
+                    <span>{formatSummaryNumber(dresInspect.users.length)} users</span>
+                  </div>
+
+                  <div className="dres-config-section">
+                    <h4>Task Groups</h4>
+
+                    {dresInspect.taskGroups.map((taskGroup) => (
+                      <label className="dres-config-row" key={taskGroup.taskGroup}>
+                        <span>
+                          <strong>{taskGroup.taskGroup}</strong>
+                          <small>{formatSummaryNumber(taskGroup.taskCount)} tasks</small>
+                        </span>
+                        <Input
+                          value={dresTaskGroupDatasets[taskGroup.taskGroup] ?? ""}
+                          placeholder="Dataset"
+                          onChange={(event) => handleDresTaskGroupDatasetChange(
+                            taskGroup.taskGroup,
+                            event.target.value,
+                          )}
+                        />
+                      </label>
+                    ))}
+                  </div>
+
+                  {dresSelectedDatasets.length ? (
+                    <div className="dres-config-section">
+                      <h4>Video Roots</h4>
+
+                      {dresSelectedDatasets.map((dataset) => (
+                        <label className="dres-config-row" key={dataset}>
+                          <span>
+                            <strong>{dataset}</strong>
+                          </span>
+                          <Input
+                            value={dresDatasetRoots[dataset] ?? ""}
+                            placeholder="Video root"
+                            onChange={(event) => handleDresDatasetRootChange(
+                              dataset,
+                              event.target.value,
+                            )}
+                          />
+                        </label>
+                      ))}
+                    </div>
+                  ) : null}
+
+                  <Button
+                    type="primary"
+                    disabled={!isDresImportReady}
+                    loading={activeLoadTarget === "dresLogs"}
+                    onClick={() => void handleLoadDresLogs()}
+                  >
+                    Import DRES Logs
+                  </Button>
+                </>
+              )}
+            </div>
+          ) : null}
         </div>
       </section>
     </div>

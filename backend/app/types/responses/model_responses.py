@@ -72,6 +72,50 @@ class LoadDataResponse(BaseModel):
     )
 
 
+class DresTaskGroupSummary(BaseModel):
+    """
+    Response model for task-group metadata extracted from a DRES export.
+    """
+
+    taskGroup: str = Field(
+        description="Normalized DRES task group name",
+    )
+    taskCount: int = Field(
+        description="Number of template tasks in this task group",
+    )
+    sampleTasks: List[str] = Field(
+        default_factory=list,
+        description="Example task names from this task group",
+    )
+
+
+class InspectDresLogsResponse(BaseModel):
+    """
+    Response model for previewing a raw DRES export before importing it.
+    """
+
+    taskGroups: List[DresTaskGroupSummary] = Field(
+        default_factory=list,
+        description="Task groups found in the DRES export",
+    )
+    users: List[str] = Field(
+        default_factory=list,
+        description="Submission users found in the DRES export",
+    )
+    taskCount: int = Field(
+        default=0,
+        description="Number of runtime tasks found in the DRES export",
+    )
+    submissionCount: int = Field(
+        default=0,
+        description="Number of submissions found in the DRES export",
+    )
+    errorMessage: Optional[str] = Field(
+        default=None,
+        description="Error message if inspection failed; null if inspection succeeded",
+    )
+
+
 class UserRow(BaseModel):
     """
     Response model for a single user row.

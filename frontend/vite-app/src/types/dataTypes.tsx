@@ -21,6 +21,20 @@ export type ValidJsonFile = {
   data: unknown;
 }
 
+export type DresTaskGroupSummary = {
+  taskGroup: string;
+  taskCount: number;
+  sampleTasks: string[];
+};
+
+export type InspectDresLogsResponse = {
+  taskGroups: DresTaskGroupSummary[];
+  users: string[];
+  taskCount: number;
+  submissionCount: number;
+  errorMessage: string | null;
+};
+
 export type InteractionHierarchyNode = {
   Name: string;
   Visualize: boolean;

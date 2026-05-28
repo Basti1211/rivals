@@ -45,6 +45,71 @@
   border-radius: var(--radius-md);
 }
 
+.dres-import-config {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.dres-import-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.dres-import-summary span {
+  padding: 0.35rem 0.55rem;
+  color: var(--color-text);
+  font-size: 0.85rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.dres-config-section {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.dres-config-section h4 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.dres-config-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.55fr) minmax(180px, 1fr);
+  gap: 0.75rem;
+  align-items: center;
+  min-width: 0;
+}
+
+.dres-config-row > span {
+  min-width: 0;
+}
+
+.dres-config-row strong,
+.dres-config-row small {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dres-config-row small {
+  margin-top: 0.15rem;
+  color: var(--color-text-light);
+  font-size: 0.78rem;
+}
+
+@media (max-width: 720px) {
+  .dres-config-row {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* =========================
    JSON Upload Box
 ========================= */
