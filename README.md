@@ -4,6 +4,7 @@
 
 RIVALS is a visual analytics platform for analyzing interaction logs from video retrieval systems. It is designed for logs collected at academic competitions such as the Video Browser Showdown, the Lifelog Search Challenge, and CASTLE.
 
+
 ## Quick Start
 
 RIVALS is fully Dockerized. From the project root, start the frontend and backend with:
@@ -18,7 +19,11 @@ After the containers are running, open the visual interface at:
 
 ## Demo Data
 
-RIVALS includes demo data from the Video Browser Showdown 2026. The demo contains interaction logs from the PraK system with five users and Exquisitor with one user. After starting the application, use **Load Demo Data** in the interface to import the bundled tasks, answers, and logs.
+RIVALS includes demo data from the Video Browser Showdown 2026. The demo contains interaction logs from the PraK system with five users and Exquisitor with one user. After starting the application, use **Load Demo Data** in the interface to import the bundled tasks, answers, and logs. The demo data was also analyzued in below publication.
+
+## Related Publication
+
+This repository includes a preprint of the related paper [What Drove Success at the 15th Video Browser Showdown? A Comprehensive Interaction-Logging Analysis](Exquisitor_PraK_Logging.pdf). The paper has been accepted for presentation and inclusion in the proceedings of the International Conference on Multimedia Retrieval (2026) and provides the basis for the interaction-logging work behind this project.
 
 ## Requirements
 
