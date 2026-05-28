@@ -128,13 +128,13 @@ const Summary: React.FC = () => {
       )}
 
       <div className="summary-view-charts">
-        <CountBarchartView
-          data={displayedData}
-          informationAction={<Information information={summaryCountInformation} />}
-        />
         <DurationBarchartView
           data={displayedData}
           informationAction={<Information information={summaryDurationInformation} />}
+        />
+        <CountBarchartView
+          data={displayedData}
+          informationAction={<Information information={summaryCountInformation} />}
         />
       </div>
     </div>
