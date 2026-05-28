@@ -244,4 +244,3 @@ Optional fields:
 
 - `frontend/`: React/Vite frontend. See [frontend/README.md](frontend/README.md).
 - `backend/`: FastAPI backend. See [backend/README.md](backend/README.md).
-- `k8s/`: Kubernetes deployment files. See [k8s/README.md](k8s/README.md).
