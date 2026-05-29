@@ -176,10 +176,6 @@
                             {
                                 "Name": "imageQueryByID",
                                 "Children": []
-                            },
-                            {
-                                "Name": "loadVideoSummary",
-                                "Children": []
                             }
                         ]
                     },
@@ -198,6 +194,10 @@
                     },
                     {
                         "Name": "reset",
+                        "Children": []
+                    },
+                    {
+                        "Name": "loadVideoSummary",
                         "Children": []
                     }
                 ]
