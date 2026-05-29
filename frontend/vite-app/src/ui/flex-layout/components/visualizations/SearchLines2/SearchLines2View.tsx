@@ -553,7 +553,8 @@ const ShapeIcon: React.FC<{
   shape: MarkerShape;
   color: string;
   title: string;
-}> = ({shape, color, title}) => {
+  className?: string;
+}> = ({shape, color, title, className = "search-lines-2-symbol-key-icon"}) => {
   const size = 4.2;
   const commonProps = {
     fill: color,
@@ -563,7 +564,7 @@ const ShapeIcon: React.FC<{
 
   return (
     <svg
-      className="search-lines-2-symbol-key-icon"
+      className={className}
       viewBox="-6 -6 12 12"
       role="img"
       aria-label={title}
@@ -597,6 +598,43 @@ const ShapeIcon: React.FC<{
         />
       )}
     </svg>
+  );
+};
+
+const SelectionSymbolIcon: React.FC<{
+  selection: OverlaySelection;
+  option: OverlayOption;
+  selectionIndex: number;
+}> = ({selection, option, selectionIndex}) => {
+  if (selection.useLeafSymbols) {
+    const previewLeafNames = option.leafNames.slice(0, 3);
+
+    return (
+      <span
+        className="search-lines-2-overlay-symbol-cluster"
+        aria-label={`${option.name} leaf symbols`}
+        title={`${option.name} leaf symbols`}
+      >
+        {previewLeafNames.map((leafName, leafIndex) => (
+          <ShapeIcon
+            key={`${option.id}-${leafName}`}
+            shape={getShapeByIndex(leafIndex)}
+            color={option.color}
+            title={`${leafName} symbol`}
+            className="search-lines-2-overlay-symbol-icon"
+          />
+        ))}
+      </span>
+    );
+  }
+
+  return (
+    <ShapeIcon
+      shape={getShapeByIndex(selectionIndex)}
+      color={option.color}
+      title={`${option.name} symbol`}
+      className="search-lines-2-overlay-symbol-icon"
+    />
   );
 };
 
@@ -1639,6 +1677,9 @@ const OverlayControls: React.FC<{
   }
 
   const selectedOptionIds = new Set(overlaySelections.map((selection) => selection.optionId));
+  const selectionIndexByOptionId = new Map(
+    overlaySelections.map((selection, selectionIndex) => [selection.optionId, selectionIndex] as const),
+  );
 
   return (
     <section className="search-lines-overlay-controls">
@@ -1709,9 +1750,10 @@ const OverlayControls: React.FC<{
                 return (
                   <div className="search-lines-overlay-chip search-lines-2-overlay-chip" key={selection.optionId}>
                     <div className="search-lines-2-overlay-chip-main">
-                      <span
-                        className="search-lines-overlay-color"
-                        style={{backgroundColor: option.color}}
+                      <SelectionSymbolIcon
+                        selection={selection}
+                        option={option}
+                        selectionIndex={selectionIndexByOptionId.get(selection.optionId) ?? 0}
                       />
                       <span>{option.name}</span>
                       <Switch

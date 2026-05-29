@@ -24,6 +24,9 @@ const HeaderMenu: React.FC = () => {
     const handleSummary = () => {
         addTabToActiveTabSet("Summary", "summary");
     };
+    const handleExplanationVideo = () => {
+        addTabToActiveTabSet("Explanation Video", "explanationVideo");
+    };
 
     return (
         <Header className="app-header">
@@ -69,6 +72,13 @@ const HeaderMenu: React.FC = () => {
                     onClick={handleSummary}
                 >
                     Summary
+                </Button>
+                <Button
+                    className="app-header__summary-button app-header__video-button"
+                    type="primary"
+                    onClick={handleExplanationVideo}
+                >
+                    Explanation Video
                 </Button>
             </div>
         </Header>

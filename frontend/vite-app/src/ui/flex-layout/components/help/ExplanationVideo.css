@@ -1,0 +1,26 @@
+.explanation-video {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+    overflow: auto;
+    padding: 16px;
+}
+
+.explanation-video__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.explanation-video__header h1 {
+    margin: 0;
+}
+
+.explanation-video__player {
+    align-self: center;
+    background: #000000;
+    max-height: calc(100% - 64px);
+    max-width: 100%;
+    width: min(100%, 1100px);
+}

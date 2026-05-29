@@ -4,6 +4,9 @@
 
 RIVALS is a visual analytics platform for analyzing interaction logs from video retrieval systems. It is designed for logs collected at academic competitions such as the Video Browser Showdown, the Lifelog Search Challenge, and CASTLE.
 
+## Need Help? Watch the explanation video!
+
+The application walkthrough is available in the frontend assets: [explanation_video.mp4](frontend/vite-app/public/explanation_video.mp4).
 
 ## Quick Start
 

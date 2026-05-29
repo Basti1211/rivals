@@ -49,6 +49,7 @@
     align-items: center;
     justify-content: flex-end;
     flex: 0 0 auto;
+    flex-wrap: wrap;
     gap: 0.75rem;
 }
 
@@ -58,6 +59,18 @@
     font-weight: 700;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(37, 99, 235, 0.18);
+}
+
+.app-header__video-button.ant-btn {
+    background: #f97316;
+    border-color: #f97316;
+    box-shadow: 0 10px 20px rgba(249, 115, 22, 0.24);
+}
+
+.app-header__video-button.ant-btn:not(:disabled):hover,
+.app-header__video-button.ant-btn:not(:disabled):focus {
+    background: #ea580c;
+    border-color: #ea580c;
 }
 
 
