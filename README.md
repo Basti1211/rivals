@@ -10,6 +10,8 @@ The application walkthrough is available in the frontend assets: [explanation_vi
 
 ## Quick Start
 
+If you clone this repository with Git, make sure [Git LFS](https://git-lfs.com/) is installed before downloading the project files. The explanation video is stored with Git LFS, so it will not be available in the application without LFS support. Downloading the repository as an archive works by default and includes the video file.
+
 RIVALS is fully Dockerized. From the project root, start the frontend and backend with:
 
 ```bash
