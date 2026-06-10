@@ -24,7 +24,7 @@ After the containers are running, open the visual interface at:
 
 ## Demo Data
 
-RIVALS includes demo data from the Video Browser Showdown 2026. The demo contains interaction logs from the PraK system with five users and Exquisitor with one user. After starting the application, use **Load Demo Data** in the interface to import the bundled tasks, answers, and logs. The demo data was also analyzued in below publication.
+RIVALS includes demo data from the Video Browser Showdown 2026. The demo contains interaction logs from the PraK system with five users and Exquisitor with one user. After starting the application, use **Load Demo Data** in the interface to import the bundled tasks, answers, and logs. The demo data was also analyzed in below publication.
 
 ## Related Publication
 
