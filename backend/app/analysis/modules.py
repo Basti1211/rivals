@@ -221,6 +221,9 @@ class EfficiencyAnalyzer:
             restarts = sum(1 for act in seq if act in restart_set)
             refines = sum(1 for act in seq if act in refine_set)
 
+            if restarts < 1:
+                continue
+
             metrics.append({
                 'intensity': float(refines / (restarts + 1)),
                 'persistence': float(total / (restarts + 1)),
