@@ -127,7 +127,7 @@ const BAND_HEIGHT = 18;
 const BAND_GAP = 4;
 const COLUMN_HEADER_HEIGHT = 18;
 const COLUMN_FOOTER_HEIGHT = 12;
-const RANK_MAX = 1000;
+const RANK_MAX = 100;
 const RANK_BACKGROUND_COLOR = "rgb(22, 163, 74)";
 const OVERLOOK_COLOR = "#dc2626";
 const SUBMISSION_CORRECT_COLOR = "#16a34a";
@@ -1611,6 +1611,51 @@ const SearchLines2Column: React.FC<{
             sourceInteraction: index === 0 ? null : visibleInteractions[index - 1],
             nextInteraction: index < visibleInteractions.length ? visibleInteractions[index] : null,
           }));
+          const renderSegments = segments.reduce<{
+            id: string;
+            startTimestamp: number;
+            endTimestamp: number;
+            sourceInteraction: FetchInteractionLogRow | null;
+            fillColor: string;
+            opacity: number;
+          }[]>((mergedSegments, segment) => {
+            const opacity = getRankOpacity(getRankValue(segment.sourceInteraction, rankField));
+
+            if (opacity <= 0) {
+              return mergedSegments;
+            }
+
+            const fillColor = shouldMarkOverlook(
+              segment.sourceInteraction,
+              segment.nextInteraction,
+              band.user,
+              systemByUser,
+            )
+              ? OVERLOOK_COLOR
+              : RANK_BACKGROUND_COLOR;
+
+            const lastSegment = mergedSegments[mergedSegments.length - 1];
+
+            if (
+              lastSegment
+              && lastSegment.fillColor === fillColor
+              && lastSegment.opacity === opacity
+            ) {
+              lastSegment.endTimestamp = segment.endTimestamp;
+              return mergedSegments;
+            }
+
+            mergedSegments.push({
+              id: segment.id,
+              startTimestamp: segment.startTimestamp,
+              endTimestamp: segment.endTimestamp,
+              sourceInteraction: segment.sourceInteraction,
+              fillColor,
+              opacity,
+            });
+
+            return mergedSegments;
+          }, []);
           const taskEnd = band.task?.ended ?? null;
 
           return (
@@ -1657,34 +1702,23 @@ const SearchLines2Column: React.FC<{
                 y1={centerY}
                 y2={centerY}
               />
-              {segments.map((segment) => {
-                const opacity = getRankOpacity(getRankValue(segment.sourceInteraction, rankField));
-                const fillColor = shouldMarkOverlook(
-                  segment.sourceInteraction,
-                  segment.nextInteraction,
-                  band.user,
-                  systemByUser,
-                )
-                  ? OVERLOOK_COLOR
-                  : RANK_BACKGROUND_COLOR;
-
-                if (opacity <= 0) {
-                  return null;
-                }
+              {renderSegments.map((segment) => {
+                const segmentX = xScale(segment.startTimestamp - bandBounds.start);
+                const segmentWidth = Math.max(
+                  0.5,
+                  xScale(segment.endTimestamp - bandBounds.start) - segmentX,
+                );
 
                 return (
                   <rect
                     className="search-lines-2-rank-band"
                     key={segment.id}
-                    x={xScale(segment.startTimestamp - bandBounds.start)}
+                    x={segmentX}
                     y={bandY + 1}
-                    width={Math.max(
-                      0.5,
-                      xScale(segment.endTimestamp - bandBounds.start) - xScale(segment.startTimestamp - bandBounds.start),
-                    )}
+                    width={segmentWidth}
                     height={BAND_HEIGHT - 2}
-                    fill={fillColor}
-                    opacity={opacity}
+                    fill={segment.fillColor}
+                    opacity={segment.opacity}
                   >
                     <title>{getSegmentTooltip(segment.sourceInteraction, segment.startTimestamp, bandBounds.start)}</title>
                   </rect>
@@ -2103,7 +2137,7 @@ const SearchLines2View: React.FC<SearchLines2ViewProps> = ({
           <div className="search-lines-legend" aria-label="Rank opacity legend">
             <span>0</span>
             <div className="search-lines-2-legend-ramp" />
-            <span> &gt; 1000</span>
+            <span> &gt; {RANK_MAX}</span>
           </div>
           <div className="search-lines-rank-switch" aria-label="Overlook legend">
             <span>PraK overlooks are red</span>
