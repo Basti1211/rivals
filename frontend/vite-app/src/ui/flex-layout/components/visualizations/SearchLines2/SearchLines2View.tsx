@@ -34,6 +34,7 @@ type SearchLines2Model = {
   panelsByCell: Map<string, InteractionTaskUser>;
   submissionsByCell: Map<string, SubmissionRow[]>;
 };
+  systemByUser: Map<string, string>;
 
 type TimelineBounds = {
   start: number;
@@ -80,6 +81,11 @@ type MutableHierarchyNode = {
   children: MutableHierarchyNode[];
 };
 
+type ScrollMetadataRange = {
+  start: number;
+  end: number;
+};
+
 export type OverlayOption = {
   id: string;
   name: string;
@@ -121,8 +127,9 @@ const BAND_HEIGHT = 18;
 const BAND_GAP = 4;
 const COLUMN_HEADER_HEIGHT = 18;
 const COLUMN_FOOTER_HEIGHT = 12;
-const RANK_MAX = 1000;
+const RANK_MAX = 100;
 const RANK_BACKGROUND_COLOR = "rgb(22, 163, 74)";
+const OVERLOOK_COLOR = "#dc2626";
 const SUBMISSION_CORRECT_COLOR = "#16a34a";
 const SUBMISSION_UNEVALUATED_COLOR = "#9ca3af";
 const SUBMISSION_WRONG_COLOR = "#dc2626";
@@ -191,6 +198,120 @@ const formatMetadata = (metadata: unknown): string => {
   } catch {
     return String(metadata);
   }
+};
+
+const parseScrollMetadataRange = (metadata: unknown): ScrollMetadataRange | null => {
+  if (metadata === null || metadata === undefined) {
+    return null;
+  }
+
+  if (Array.isArray(metadata) && metadata.length >= 2) {
+    const start = Number(metadata[0]);
+    const end = Number(metadata[1]);
+
+    if (Number.isFinite(start) && Number.isFinite(end)) {
+      return {start, end};
+    }
+  }
+
+  if (typeof metadata === "object") {
+    const scrollMetadata = metadata as Record<string, unknown>;
+    const start = Number(scrollMetadata.start ?? scrollMetadata.Start);
+    const end = Number(scrollMetadata.end ?? scrollMetadata.End);
+
+    if (Number.isFinite(start) && Number.isFinite(end)) {
+      return {start, end};
+    }
+  }
+
+  if (typeof metadata === "string") {
+    const trimmed = metadata.trim();
+    const exactMatch = trimmed.match(/^(\d+)\s*-\s*(\d+)$/);
+
+    if (exactMatch) {
+      return {
+        start: Number(exactMatch[1]),
+        end: Number(exactMatch[2]),
+      };
+    }
+
+    const numberPairMatch = trimmed.match(/(\d+)\D+(\d+)/);
+
+    if (numberPairMatch) {
+      return {
+        start: Number(numberPairMatch[1]),
+        end: Number(numberPairMatch[2]),
+      };
+    }
+
+    try {
+      return parseScrollMetadataRange(JSON.parse(trimmed));
+    } catch {
+      return null;
+    }
+  }
+
+  return null;
+};
+
+const normalizeScrollMetadataRange = (range: ScrollMetadataRange): ScrollMetadataRange => ({
+  start: Math.min(range.start, range.end),
+  end: Math.max(range.start, range.end),
+});
+
+const isScrollAction = (action: string): boolean => action.toLowerCase().includes("scroll");
+
+const isSubmitAction = (action: string): boolean => action.toLowerCase().includes("submit");
+
+const isFrameVisibleInScroll = (
+  frameRank: number | null,
+  metadata: unknown,
+): boolean => {
+  if (frameRank === null) {
+    return false;
+  }
+
+  const range = parseScrollMetadataRange(metadata);
+
+  if (!range) {
+    return false;
+  }
+
+  const normalizedRange = normalizeScrollMetadataRange(range);
+  const zeroBasedStart = normalizedRange.start * 4;
+  const zeroBasedEnd = normalizedRange.end * 4 + 3;
+  const oneBasedStart = Math.max(1, (normalizedRange.start - 1) * 4 + 1);
+  const oneBasedEnd = normalizedRange.end * 4;
+
+  return (
+    frameRank >= zeroBasedStart && frameRank <= zeroBasedEnd
+  ) || (
+    frameRank >= oneBasedStart && frameRank <= oneBasedEnd
+  );
+};
+
+const isPraKUser = (user: string, systemByUser: Map<string, string>): boolean => {
+  return systemByUser.get(user) === "PraK";
+};
+
+const shouldMarkOverlook = (
+  sourceInteraction: FetchInteractionLogRow | null,
+  nextInteraction: FetchInteractionLogRow | null,
+  user: string,
+  systemByUser: Map<string, string>,
+): boolean => {
+  if (!sourceInteraction || !nextInteraction || !isPraKUser(user, systemByUser)) {
+    return false;
+  }
+
+  if (!isScrollAction(sourceInteraction.action)) {
+    return false;
+  }
+
+  const sourceVisible = isFrameVisibleInScroll(sourceInteraction.frameRank ?? null, sourceInteraction.metadata);
+  const nextVisible = isFrameVisibleInScroll(nextInteraction.frameRank ?? null, nextInteraction.metadata);
+
+  return sourceVisible && !nextVisible && !isSubmitAction(nextInteraction.action);
 };
 
 const elapsedSecondsFormatter = new Intl.NumberFormat(undefined, {
@@ -883,6 +1004,7 @@ const buildModel = (data: FetchInteractionDataResponse | null): SearchLines2Mode
       tasksByName: new Map(),
       panelsByCell: new Map(),
       submissionsByCell: new Map(),
+      systemByUser: new Map(),
     };
   }
 
@@ -901,6 +1023,7 @@ const buildModel = (data: FetchInteractionDataResponse | null): SearchLines2Mode
       ]),
     ),
     submissionsByCell: getSubmissionsByCell(data),
+    systemByUser: new Map(data.users.users.map((user) => [user.user, user.system])),
   };
 };
 
@@ -1169,6 +1292,7 @@ const SearchLines2Column: React.FC<{
   includeDescendantMarkers: boolean;
   topLevelColorsByUser: Map<string, Map<string, string>>;
   topLevelGroupIdsByUser: Map<string, Map<string, string>>;
+  systemByUser: Map<string, string>;
   selectedBandId: string | null;
   timeRangeSelections: TimeRangeSelection[];
   onSelectBand: (bandId: string) => void;
@@ -1183,6 +1307,7 @@ const SearchLines2Column: React.FC<{
   includeDescendantMarkers,
   topLevelColorsByUser,
   topLevelGroupIdsByUser,
+  systemByUser,
   selectedBandId,
   timeRangeSelections,
   onSelectBand,
@@ -1484,7 +1609,53 @@ const SearchLines2Column: React.FC<{
             startTimestamp,
             endTimestamp: points[index + 1],
             sourceInteraction: index === 0 ? null : visibleInteractions[index - 1],
+            nextInteraction: index < visibleInteractions.length ? visibleInteractions[index] : null,
           }));
+          const renderSegments = segments.reduce<{
+            id: string;
+            startTimestamp: number;
+            endTimestamp: number;
+            sourceInteraction: FetchInteractionLogRow | null;
+            fillColor: string;
+            opacity: number;
+          }[]>((mergedSegments, segment) => {
+            const opacity = getRankOpacity(getRankValue(segment.sourceInteraction, rankField));
+
+            if (opacity <= 0) {
+              return mergedSegments;
+            }
+
+            const fillColor = shouldMarkOverlook(
+              segment.sourceInteraction,
+              segment.nextInteraction,
+              band.user,
+              systemByUser,
+            )
+              ? OVERLOOK_COLOR
+              : RANK_BACKGROUND_COLOR;
+
+            const lastSegment = mergedSegments[mergedSegments.length - 1];
+
+            if (
+              lastSegment
+              && lastSegment.fillColor === fillColor
+              && lastSegment.opacity === opacity
+            ) {
+              lastSegment.endTimestamp = segment.endTimestamp;
+              return mergedSegments;
+            }
+
+            mergedSegments.push({
+              id: segment.id,
+              startTimestamp: segment.startTimestamp,
+              endTimestamp: segment.endTimestamp,
+              sourceInteraction: segment.sourceInteraction,
+              fillColor,
+              opacity,
+            });
+
+            return mergedSegments;
+          }, []);
           const taskEnd = band.task?.ended ?? null;
 
           return (
@@ -1531,26 +1702,23 @@ const SearchLines2Column: React.FC<{
                 y1={centerY}
                 y2={centerY}
               />
-              {segments.map((segment) => {
-                const opacity = getRankOpacity(getRankValue(segment.sourceInteraction, rankField));
-
-                if (opacity <= 0) {
-                  return null;
-                }
+              {renderSegments.map((segment) => {
+                const segmentX = xScale(segment.startTimestamp - bandBounds.start);
+                const segmentWidth = Math.max(
+                  0.5,
+                  xScale(segment.endTimestamp - bandBounds.start) - segmentX,
+                );
 
                 return (
                   <rect
                     className="search-lines-2-rank-band"
                     key={segment.id}
-                    x={xScale(segment.startTimestamp - bandBounds.start)}
+                    x={segmentX}
                     y={bandY + 1}
-                    width={Math.max(
-                      0.5,
-                      xScale(segment.endTimestamp - bandBounds.start) - xScale(segment.startTimestamp - bandBounds.start),
-                    )}
+                    width={segmentWidth}
                     height={BAND_HEIGHT - 2}
-                    fill={RANK_BACKGROUND_COLOR}
-                    opacity={opacity}
+                    fill={segment.fillColor}
+                    opacity={segment.opacity}
                   >
                     <title>{getSegmentTooltip(segment.sourceInteraction, segment.startTimestamp, bandBounds.start)}</title>
                   </rect>
@@ -1969,7 +2137,10 @@ const SearchLines2View: React.FC<SearchLines2ViewProps> = ({
           <div className="search-lines-legend" aria-label="Rank opacity legend">
             <span>0</span>
             <div className="search-lines-2-legend-ramp" />
-            <span> &gt; 1000</span>
+            <span> &gt; {RANK_MAX}</span>
+          </div>
+          <div className="search-lines-rank-switch" aria-label="Overlook legend">
+            <span>PraK overlooks are red</span>
           </div>
         </div>
         <div className="task-barchart-summary">
@@ -2031,6 +2202,7 @@ const SearchLines2View: React.FC<SearchLines2ViewProps> = ({
                   includeDescendantMarkers={includeDescendantMarkers}
                   topLevelColorsByUser={topLevelColorsByUser}
                   topLevelGroupIdsByUser={topLevelGroupIdsByUser}
+                  systemByUser={model.systemByUser}
                   selectedBandId={selectedBandId}
                   timeRangeSelections={timeRangeSelections}
                   onSelectBand={setSelectedBandId}

@@ -43,7 +43,7 @@ const ZOOM_HEIGHT = 680;
 const ZOOM_MARGIN_TOP = 42;
 const ZOOM_MARGIN_BOTTOM = 34;
 const TIMELINE_X = 150;
-const RANK_MAX = 1000;
+const RANK_MAX = 100;
 const RANK_BACKGROUND_COLOR = "rgb(22, 163, 74)";
 const SUBMISSION_CORRECT_COLOR = "#16a34a";
 const SUBMISSION_UNEVALUATED_COLOR = "#9ca3af";
@@ -521,6 +521,36 @@ const SearchLines2ZoomPanel: React.FC<SearchLines2ZoomPanelProps> = ({
     endTimestamp: points[index + 1],
     sourceInteraction: index === 0 ? previousInteraction : visibleDetailInteractions[index - 1],
   }));
+  const renderSegments = segments.reduce<{
+    id: string;
+    startTimestamp: number;
+    endTimestamp: number;
+    sourceInteraction: FetchInteractionLogRow | null;
+    opacity: number;
+  }[]>((mergedSegments, segment) => {
+    const opacity = getRankOpacity(getRankValue(segment.sourceInteraction, rankField));
+
+    if (opacity <= 0) {
+      return mergedSegments;
+    }
+
+    const lastSegment = mergedSegments[mergedSegments.length - 1];
+
+    if (lastSegment && lastSegment.opacity === opacity) {
+      lastSegment.endTimestamp = segment.endTimestamp;
+      return mergedSegments;
+    }
+
+    mergedSegments.push({
+      id: segment.id,
+      startTimestamp: segment.startTimestamp,
+      endTimestamp: segment.endTimestamp,
+      sourceInteraction: segment.sourceInteraction,
+      opacity,
+    });
+
+    return mergedSegments;
+  }, []);
   const taskEnd = band.task?.ended ?? null;
   const lassoTop = lassoSelection
     ? Math.min(lassoSelection.startY, lassoSelection.currentY)
@@ -616,23 +646,20 @@ const SearchLines2ZoomPanel: React.FC<SearchLines2ZoomPanelProps> = ({
           y1={yScale(activeStart)}
           y2={yScale(activeEnd)}
         />
-        {segments.map((segment) => {
-          const opacity = getRankOpacity(getRankValue(segment.sourceInteraction, rankField));
-
-          if (opacity <= 0) {
-            return null;
-          }
+        {renderSegments.map((segment) => {
+          const segmentY = yScale(segment.startTimestamp);
+          const segmentHeight = Math.max(1, yScale(segment.endTimestamp) - segmentY);
 
           return (
             <rect
               className="search-lines-2-zoom-rank-band"
               key={segment.id}
               x={TIMELINE_X - 58}
-              y={yScale(segment.startTimestamp)}
+              y={segmentY}
               width={116}
-              height={Math.max(1, yScale(segment.endTimestamp) - yScale(segment.startTimestamp))}
+              height={segmentHeight}
               fill={RANK_BACKGROUND_COLOR}
-              opacity={opacity}
+              opacity={segment.opacity}
             >
               <title>{getSegmentTooltip(segment.sourceInteraction, segment.startTimestamp, bounds.start)}</title>
             </rect>
