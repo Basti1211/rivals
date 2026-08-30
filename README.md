@@ -35,8 +35,6 @@ This repository includes a preprint of the related paper [What Drove Success at 
 - Docker
 - Docker Compose
 
-If you experience any problems, contact [bastian.jaeckl@uni-konstanz.de](mailto:bastian.jaeckl@uni-konstanz.de) or create an issue on GitHub.
-
 ## Component Documentation
 
 - [Frontend documentation](frontend/README.md)
